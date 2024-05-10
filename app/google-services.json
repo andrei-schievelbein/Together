@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "296793478448",
+    "project_id": "twogether-a2d04",
+    "storage_bucket": "twogether-a2d04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296793478448:android:eb573114107fd70bfee4f5",
+        "android_client_info": {
+          "package_name": "br.com.noke.twogether"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzk52gGgKoUIynVjwNQM6JXdlMIjXs3_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
