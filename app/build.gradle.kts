@@ -74,6 +74,10 @@ dependencies {
 
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    implementation("com.google.code.gson:gson:2.10")
+
+
 
 
 
