@@ -41,6 +41,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import br.com.noke.twogether.model.User
 import br.com.noke.twogether.viewmodel.UserViewModel
 
@@ -58,8 +59,8 @@ fun CadastroScreen(viewModel: UserViewModel, navController: NavController) {
 
 
     Box(modifier = Modifier.fillMaxSize()) {
-        // Construir o logo
         Column(modifier = Modifier.fillMaxSize()) {
+            Spacer(modifier = Modifier.height(15.dp))
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier
@@ -208,14 +209,14 @@ fun TextWithIcon(text: String, icon: ImageVector, contentDescription: String? = 
             contentDescription = contentDescription,
             modifier = Modifier.align(Alignment.CenterVertically)
         )
-        Spacer(modifier = Modifier.width(8.dp)) // Espaçamento entre o ícone e o texto
+        Spacer(modifier = Modifier.width(8.dp))
         Text(text = text)
     }
 }
 
-
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun CadastroScreenPreview() {
-    CadastroScreen(viewModel = viewModel(), NavController(LocalContext.current))
+    val fakeNavController = rememberNavController()
+    CadastroScreen(viewModel = viewModel(), navController = fakeNavController)
 }

@@ -26,7 +26,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.TextStyle
@@ -39,41 +38,12 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import br.com.noke.twogether.R
 
-
-//@Composable
-//fun LoginScreen(navController: NavController) {
-//    Box(modifier = Modifier
-//        .fillMaxSize()
-//        .background(Color(0xFFED145B))
-//        .padding(32.dp)
-//    ){
-//        Text(
-//            text = "LOGIN",
-//            fontSize = 24.sp,
-//            fontWeight = FontWeight.Bold,
-//            color = Color.White
-//        )
-//        Button(
-//            onClick = { navController.navigate("cadastro") },
-//            colors = ButtonDefaults.buttonColors(Color.White),
-//            modifier = Modifier.align(Alignment.Center)
-//        ) {
-//            Text(text = "ENTRAR", fontSize = 20.sp, color = Color.Blue)
-//        }
-//    }
-//}
-//
-//@Preview
-//@Composable
-//private fun LoginScreenPreview() {
-//    LoginScreen(NavController(LocalContext.current))
-//}
-
 @Composable
 fun LoginScreen(navController: NavController) {
     Box(modifier = Modifier.fillMaxSize()) {
 
         Column(modifier = Modifier.fillMaxSize()) {
+            Spacer(modifier = Modifier.height(15.dp))
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier
@@ -380,7 +350,13 @@ fun LoginScreen(navController: NavController) {
                 modifier = Modifier
                     .padding(16.dp)
                     .fillMaxWidth(),
-                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF34A5D8))
+                shape = RoundedCornerShape(
+                    topStart = 4.dp,
+                    topEnd = 4.dp,
+                    bottomEnd = 4.dp,
+                    bottomStart = 4.dp
+                ),
+                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF03A9F4))
             )
 
             {
