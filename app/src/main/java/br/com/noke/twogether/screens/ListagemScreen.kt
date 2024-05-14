@@ -36,7 +36,11 @@ fun UserImage(imageUrl: String) {
         painter = rememberAsyncImagePainter(imageUrl),
         contentDescription = null,
         contentScale = ContentScale.FillWidth,
-        modifier = Modifier.clip(CircleShape).height(70.dp).width(70.dp).border(1.dp, color = Color.Black, shape = CircleShape)
+        modifier = Modifier
+            .clip(CircleShape)
+            .height(50.dp)
+            .width(50.dp)
+            .border(1.dp, color = Color.Black, shape = CircleShape)
     )
 }
 

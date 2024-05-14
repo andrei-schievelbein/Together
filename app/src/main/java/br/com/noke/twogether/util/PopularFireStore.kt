@@ -10,28 +10,6 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.IOException
 
-fun addDataToFirestore(viewModel: UserViewModel) {
-    val db = Firebase.firestore
-
-    // Criar um novo usuário com campos adicionais
-    val user = hashMapOf(
-        "first" to "teste população",
-        "last" to "Lovelace",
-        "born" to 1815
-    )
-
-    // Adicionar um documento com um ID gerado automaticamente
-    db.collection("users").add(user)
-        .addOnSuccessListener { documentReference ->
-            Log.d("Firestore", "DocumentSnapshot added with ID: ${documentReference.id}")
-        }
-        .addOnFailureListener { e ->
-            Log.w("Firestore", "Error adding document", e)
-        }
-}
-
-
-
 fun importDataFromJson(context: Context) {
     val jsonString: String
     try {

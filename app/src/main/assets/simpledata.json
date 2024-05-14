@@ -1,0 +1,34 @@
+[
+  {
+    "nome": "Mark",
+    "sobrenome": "Zuckerberg",
+    "categories": ["TECNOLOGIA"],
+    "cargo": "CEO do Meta",
+    "perfil": "Mark Zuckerberg é o fundador do Facebook, que agora faz parte do conglomerado Meta, focando em conectar pessoas e construir comunidades.",
+    "habilidades": "Desenvolvimento de software, inovação em redes sociais",
+    "celular": "Não disponível",
+    "email": "mark@meta.com",
+    "endereco": "1 Hacker Way, Menlo Park, CA 94025, EUA",
+    "website": "https://www.meta.com",
+	"imagemURL": "https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg",
+    "seguir": false,
+    "match": false,
+    "aprendiz": false
+  },
+  {
+    "nome": "Satya",
+    "sobrenome": "Nadella",
+    "categories": ["TECNOLOGIA"],
+    "cargo": "CEO da Microsoft",
+    "perfil": "Satya Nadella trouxe uma nova era de inovação e expansão na nuvem para a Microsoft, focando em eficiência e inclusividade.",
+    "habilidades": "Gestão empresarial, desenvolvimento em nuvem",
+    "celular": "Não disponível",
+    "email": "satya@microsoft.com",
+    "endereco": "One Microsoft Way, Redmond, WA 98052, EUA",
+    "website": "https://www.microsoft.com",
+	"imagemURL": "https://wikipediamy.com/wp-content/uploads/2023/03/Satya-Nadella.jpg",
+    "seguir": false,
+    "match": false,
+    "aprendiz": false
+  }
+  ]

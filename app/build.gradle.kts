@@ -75,10 +75,19 @@ dependencies {
 
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+
     // https://mvnrepository.com/artifact/com.google.code.gson/gson
     implementation("com.google.code.gson:gson:2.10")
+
     // https://mvnrepository.com/artifact/io.coil-kt/coil-compose
     implementation("io.coil-kt:coil-compose:2.6.0")
+
+    //Dependências para navegação entre telas
+    implementation("androidx.navigation:navigation-compose:2.7.7")
+
+    //Dependências para animação entre telas
+    // https://mvnrepository.com/artifact/androidx.navigation/navigation-compose
+    runtimeOnly("androidx.navigation:navigation-compose:2.7.7")
 
 
 
