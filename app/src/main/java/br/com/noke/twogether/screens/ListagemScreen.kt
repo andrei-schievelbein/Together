@@ -24,6 +24,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
 import br.com.noke.twogether.model.User
 import br.com.noke.twogether.viewmodel.UserViewModel
 import coil.compose.rememberAsyncImagePainter
@@ -80,7 +81,7 @@ fun UserList(users: List<User>) {
 
 // Composable function to display the user screen
 @Composable
-fun UserScreen(viewModel: UserViewModel) {
+fun ListagemScreen(viewModel: UserViewModel, navController: NavHostController) {
     Log.d("UserScreen", "Displaying UserScreen")
     val users by viewModel.users.collectAsState()
     UserList(users = users) //composable

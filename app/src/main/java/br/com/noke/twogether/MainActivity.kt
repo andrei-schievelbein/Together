@@ -24,6 +24,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import br.com.noke.twogether.screens.CadastroScreen
 import br.com.noke.twogether.screens.CategoriaScreen
+import br.com.noke.twogether.screens.ListagemScreen
 import br.com.noke.twogether.screens.LoginScreen
 import br.com.noke.twogether.ui.theme.TwogetherTheme
 
@@ -84,6 +85,7 @@ class MainActivity : ComponentActivity() {
                         composable(route = "login") { LoginScreen(navController) }
                         composable(route = "cadastro") { CadastroScreen(viewModel, navController) }
                         composable(route = "categoria") { CategoriaScreen(viewModel, navController) }
+                        composable(route = "listagem") { ListagemScreen(viewModel, navController) }
 
 
 

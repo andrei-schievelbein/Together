@@ -35,7 +35,7 @@ fun CategoriaScreen(viewModel: UserViewModel, navController: NavHostController) 
     ) {
         categories.forEach { category ->
             CategoryButton(
-                category = category.displayName,  // Use displayName para o botão
+                category = category.displayName,
                 isSelected = selectedCategories.value.contains(category),
                 onSelectedChange = { isSelected ->
                     val newSet = selectedCategories.value.toMutableSet()
@@ -46,6 +46,7 @@ fun CategoriaScreen(viewModel: UserViewModel, navController: NavHostController) 
         }
         Button(
             onClick = {
+                navController.navigate("listagem")
                 if (selectedCategories.value.size in 3..28) {
                     viewModel.updateUserCategories(selectedCategories.value.toList()) { success ->
                         // Aqui você pode tratar o resultado do sucesso ou falha

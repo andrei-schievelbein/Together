@@ -57,15 +57,6 @@ class UserViewModel(val userRepository: UserRepository) : ViewModel() {
             }
         } ?: onComplete(false)  // Se userId for null, retorna falso
     }
-
-
-
-
-
-
-
-
-    // Adicionar métodos para buscar, atualizar e deletar
 }
 
 

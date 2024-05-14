@@ -159,9 +159,6 @@ fun CadastroScreen(viewModel: UserViewModel, navController: NavController) {
             }
             Spacer(modifier = Modifier.height(90.dp))
 
-
-            // AQUI CRIEI O BOTÃO PARA CADASTRAR
-
             Button(
                 onClick = {
                     viewModel.addUser(
@@ -201,7 +198,7 @@ fun CadastroScreen(viewModel: UserViewModel, navController: NavController) {
 }
 
 
-@Composable // Ic //
+@Composable
 fun TextWithIcon(text: String, icon: ImageVector, contentDescription: String? = null) {
     Row(modifier = Modifier.fillMaxWidth()) {
         Icon(
