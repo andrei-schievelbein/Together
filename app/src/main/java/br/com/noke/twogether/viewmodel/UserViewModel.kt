@@ -1,5 +1,6 @@
 package br.com.noke.twogether.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import br.com.noke.twogether.model.Category
@@ -15,23 +16,31 @@ class UserViewModel(val userRepository: UserRepository) : ViewModel() {
     var userId: String? = null
 
     init {
+        Log.d("UserViewModel", "UserViewModel initialized")
         loadUsers()
     }
 
+//    private fun loadUsers() {
+//        viewModelScope.launch {
+//            userRepository.getUsers().collect { userList ->
+//                _users.value = userList
+//                Log.d("UserViewModel", "Users loaded: $userList")
+//            }
+//        }
+//    }
+
     private fun loadUsers() {
         viewModelScope.launch {
-            userRepository.getUsers().collect { userList ->
-                _users.value = userList
+            try {
+                userRepository.getUsers().collect { userList ->
+                    _users.value = userList
+                    Log.d("UserViewModel", "Users loaded: $userList")
+                }
+            } catch (e: Exception) {
+                Log.e("UserViewModel", "Error loading users", e)
             }
         }
     }
-
-//    fun addUser(user: User, onComplete: (Boolean) -> Unit = {}) {
-//        viewModelScope.launch {
-//            val result = userRepository.addUser(user)
-//            onComplete(result)
-//        }
-//    }
 
     fun addUser(user: User, onComplete: (Boolean) -> Unit = {}) {
         viewModelScope.launch {

@@ -1,5 +1,6 @@
 package br.com.noke.twogether.repository
 
+import android.util.Log
 import br.com.noke.twogether.model.User
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.coroutines.Dispatchers
@@ -8,8 +9,6 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.withContext
-import kotlinx.coroutines.Dispatchers.IO
-
 
 
 class UserRepository(private val db: FirebaseFirestore) {
@@ -49,31 +48,68 @@ class UserRepository(private val db: FirebaseFirestore) {
     // Função para converter User para um Map antes de salvar no Firestore
     private fun User.toMap(): Map<String, Any> {
         return mapOf(
-            "first" to first,
-            "last" to last,
-            "categories" to categories.map { it.name }  // Converte enums para strings
+            "nome" to nome,
+            "sobrenome" to sobrenome,
+            "categories" to categories.map { it.name },  // Converte enums para strings
+            "cargo" to cargo,
+            "perfil" to perfil,
+            "habilidades" to habilidades,
+            "celular" to celular,
+            "email" to email,
+            "endereço" to endereco,
+            "website" to website,
+            "imagemURL" to imagemURL,
+            "seguir" to seguir,
+            "match" to match,
+            "aprendizado" to aprendiz
         )
     }
 
 
-    fun getUsers(): Flow<List<User>> = callbackFlow {
-        val listenerRegistration = db.collection("users")
-            .addSnapshotListener { snapshot, e ->
-                if (e != null) {
-                    close(e) // Fechar o fluxo com erro
-                    return@addSnapshotListener
-                }
 
-                val users = snapshot?.documents?.mapNotNull {
-                    it.toObject<User>(User::class.java)
-                }
-                trySend(users ?: emptyList()).isSuccess
+//    fun getUsers(): Flow<List<User>> = callbackFlow {
+//        val listenerRegistration = db.collection("users")
+//            .addSnapshotListener { snapshot, e ->
+//                if (e != null) {
+//                    Log.e("UserRepository", "Error fetching users", e)
+//                    close(e) // Fechar o fluxo com erro
+//                    return@addSnapshotListener
+//                }
+//
+//                val users = snapshot?.documents?.mapNotNull {
+//                    it.toObject<User>(User::class.java)
+//                    Log.d("UserRepository", "Fetched user: $user")
+//                    user
+//
+//                }
+//                trySend(users ?: emptyList()).isSuccess
+//            }
+//
+//        awaitClose {
+//            listenerRegistration.remove()
+//        }
+//    }
+suspend fun getUsers(): Flow<List<User>> = callbackFlow {
+    val listenerRegistration = db.collection("users")
+        .addSnapshotListener { snapshot, e ->
+            if (e != null) {
+                Log.e("UserRepository", "Error fetching users", e)
+                close(e) // Fechar o fluxo com erro
+                return@addSnapshotListener
             }
 
-        awaitClose {
-            listenerRegistration.remove()
+            val users = snapshot?.documents?.mapNotNull { document ->
+                val user = document.toObject(User::class.java)
+                Log.d("UserRepository", "Fetched user: $user")
+                user
+            }
+            trySend(users ?: emptyList()).isSuccess
         }
+
+    awaitClose {
+        listenerRegistration.remove()
     }
+}
 }
 
 

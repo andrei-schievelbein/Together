@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.PaddingValues
-
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -45,12 +44,28 @@ import br.com.noke.twogether.model.User
 import br.com.noke.twogether.util.addDataToFirestore
 import br.com.noke.twogether.util.deleteAllDocumentsFromCollection
 import br.com.noke.twogether.util.importDataFromJson
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.res.painterResource
+import br.com.noke.twogether.R
+import br.com.noke.twogether.screens.UserScreen
+import coil.compose.AsyncImage
+import com.google.android.gms.ads.MobileAds
 
 
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        MobileAds.initialize(this)
 
         // Criação do UserRepository
         val userRepository = UserRepository(FirebaseFirestore.getInstance())
@@ -62,49 +77,57 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             UserScreen(viewModel)
+//            HelloWorld()
         }
     }
 }
 
 @Composable
-fun UserScreen(viewModel: UserViewModel, modifier: Modifier = Modifier.fillMaxSize()) {
-    val users by viewModel.users.collectAsState()
-    val context = LocalContext.current
-    LaunchedEffect(key1 = Unit) {
-        importDataFromJson(context)
-    }
+fun HelloWorld() {
+    Text(text = "Hello World")
+}
 
+@Composable
+fun UserScreen2(viewModel: UserViewModel, modifier: Modifier = Modifier.fillMaxSize()) {
+//    val users by viewModel.users.collectAsState()
+//    val context = LocalContext.current
+//    LaunchedEffect(key1 = Unit) {
+//        importDataFromJson(context)
+//    }
+//
 //        addDataToFirestore(viewModel)
 //        deleteAllDocumentsFromCollection("users")
 //        CategoriesScreen(viewModel)
 //        LazyColumn(modifier = Modifier.height(200.dp)) {
 //            items(users) { user ->
-//                Text(text = "User: ${user.first} ${user.last}")
+//                Text(text = "User: ${user.nome} ${user.sobrenome}")
 //            }
 //        }
 //        CategoriesSelectionScreen(viewModel)
+
+
     }
 
 
 @Composable
 fun AddUserScreen(viewModel: UserViewModel) {
-    var first by remember { mutableStateOf("") }
-    var last by remember { mutableStateOf("") }
+    var nome by remember { mutableStateOf("") }
+    var sobrenome by remember { mutableStateOf("") }
     var showMessage by remember { mutableStateOf(false) }
 
     Column {
         TextField(
-            value = first,
-            onValueChange = { first = it },
+            value = nome,
+            onValueChange = { nome = it },
             label = { Text("First Name") }
         )
         TextField(
-            value = last,
-            onValueChange = { last = it },
+            value = sobrenome,
+            onValueChange = { sobrenome = it },
             label = { Text("Last Name") }
         )
         Button(onClick = {
-            viewModel.addUser(User(first = first, last = last)) { success ->
+            viewModel.addUser(User(nome = nome, sobrenome = sobrenome)) { success ->
                 showMessage = success
             }
         }) {
@@ -190,41 +213,6 @@ fun CategoriesScreen(viewModel: UserViewModel) {
 }
 
 
-//@Composable
-//fun CategoriesScreen(viewModel: UserViewModel) {
-//    val categories = Category.values()
-//    val selectedCategories = remember { mutableStateOf(setOf<Category>()) }
-//
-//    LazyColumn(modifier = Modifier.padding(16.dp)) {
-//        items(categories) { category ->
-//            CategoryButton(
-//                category = category.displayName,  // Use displayName para o botão
-//                isSelected = selectedCategories.value.contains(category),
-//                onSelectedChange = { isSelected ->
-//                    val newSet = selectedCategories.value.toMutableSet()
-//                    if (isSelected) newSet.add(category) else newSet.remove(category)
-//                    selectedCategories.value = newSet
-//                }
-//            )
-//        }
-//        item {
-//            Button(
-//                onClick = {
-//                    // Assegura que a seleção é adequada antes de salvar
-//                    if (selectedCategories.value.size in 3..28) {
-//                        viewModel.updateUserCategories(selectedCategories.value.toList()) { success ->
-//                            // Aqui você pode tratar o resultado do sucesso ou falha
-//                        }
-//                    }
-//                },
-//                modifier = Modifier.padding(top = 20.dp)
-//            ) {
-//                Text("Continuar")
-//            }
-//        }
-//    }
-//}
-
 @Composable
 fun CategoryButton(category: String, isSelected: Boolean, onSelectedChange: (Boolean) -> Unit) {
     Button(
@@ -251,13 +239,4 @@ fun CategoryButton(category: String, isSelected: Boolean, onSelectedChange: (Boo
         )
     }
 }
-
-
-
-
-
-
-
-
-
 

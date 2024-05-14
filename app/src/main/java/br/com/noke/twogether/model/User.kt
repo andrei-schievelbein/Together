@@ -2,9 +2,18 @@ package br.com.noke.twogether.model
 
 
 data class User(
-    val id: String = "",
-    val first: String = "",
-    val last: String = "",
-    val born: Int = 0,
-    val categories: List<Category> = listOf()
+    val nome: String = "",
+    val sobrenome: String = "",
+    val categories: List<Category> = listOf(),
+    val cargo: String = "",
+    val perfil: String = "",
+    val habilidades: String = "",
+    val celular: String = "",
+    val email: String = "",
+    val endereco: String = "",
+    val website: String = "",
+    val imagemURL: String = "",
+    val seguir: Boolean = false,
+    val match: Boolean = false,
+    val aprendiz: Boolean = false
 )

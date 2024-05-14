@@ -1,38 +1,8 @@
 [
   {
-    "first": "Ada",
-    "last": "Lovelace",
-    "born": 1815,
-    "categories": ["TECNOLOGIA", "MUSICA", "VIAGENS"]
-  },
-  {
-    "first": "Charles",
-    "last": "Babbage",
-    "born": 1791,
-    "categories": ["TECNOLOGIA", "SAUDE", "GASTRONOMIA"]
-  },
-  {
-    "first": "Alan",
-    "last": "Turing",
-    "born": 1912,
-    "categories": ["TECNOLOGIA", "MUSICA", "SAUDE"]
-  },
-  {
-    "first": "Grace",
-    "last": "Hopper",
-    "born": 1906,
-    "categories": ["TECNOLOGIA", "VIAGENS", "GASTRONOMIA"]
-  },
-  {
-    "first": "Margaret",
-    "last": "Hamilton",
-    "born": 1936,
-    "categories": ["TECNOLOGIA", "MUSICA", "VIAGENS"]
-  },
-  {
     "Nome": "Mark",
     "Sobrenome": "Zuckerberg",
-    "Categoria": "#TECNOLOGIA",
+    "categories": ["TECNOLOGIA"],
     "Cargo": "CEO do Meta",
     "Perfil": "Mark Zuckerberg é o fundador do Facebook, que agora faz parte do conglomerado Meta, focando em conectar pessoas e construir comunidades.",
     "Habilidades": "Desenvolvimento de software, inovação em redes sociais",
@@ -47,7 +17,7 @@
   {
     "Nome": "Satya",
     "Sobrenome": "Nadella",
-    "Categoria": "#TECNOLOGIA",
+    "categories": ["TECNOLOGIA"],
     "Cargo": "CEO da Microsoft",
     "Perfil": "Satya Nadella trouxe uma nova era de inovação e expansão na nuvem para a Microsoft, focando em eficiência e inclusividade.",
     "Habilidades": "Gestão empresarial, desenvolvimento em nuvem",
@@ -62,7 +32,7 @@
   {
     "Nome": "Sundar",
     "Sobrenome": "Pichai",
-    "Categoria": "#TECNOLOGIA",
+    "categories": ["TECNOLOGIA"],
     "Cargo": "CEO da Alphabet Inc.",
     "Perfil": "Sundar Pichai lidera a Alphabet Inc., a empresa-mãe do Google, priorizando IA e acessibilidade tecnológica para todos.",
     "Habilidades": "Liderança tecnológica, inteligência artificial",
@@ -77,7 +47,7 @@
   {
     "Nome": "Sheryl",
     "Sobrenome": "Sandberg",
-    "Categoria": "#TECNOLOGIA",
+    "categories": ["TECNOLOGIA"],
     "Cargo": "Ex-COO do Facebook",
     "Perfil": "Sheryl Sandberg ajudou a escalar o Facebook em uma potência global e é uma defensora proeminente das mulheres na tecnologia.",
     "Habilidades": "Liderança operacional, advocacia de igualdade de gênero",
@@ -92,7 +62,7 @@
   {
     "Nome": "Elon",
     "Sobrenome": "Musk",
-    "Categoria": "#TECNOLOGIA",
+    "categories": ["TECNOLOGIA"],
     "Cargo": "CEO da SpaceX e Tesla",
     "Perfil": "Elon Musk é conhecido por seus empreendimentos ambiciosos em carros elétricos, espaço e além.",
     "Habilidades": "Inovação disruptiva, engenharia aeroespacial",
@@ -107,7 +77,7 @@
   {
     "Nome": "Susan",
     "Sobrenome": "Wojcicki",
-    "Categoria": "#TECNOLOGIA",
+    "categories": ["TECNOLOGIA"],
     "Cargo": "CEO do YouTube",
     "Perfil": "Susan Wojcicki tem sido a CEO do YouTube desde 2014, transformando-o em um gigante de mídia e uma plataforma vital para criadores de conteúdo.",
     "Habilidades": "Gestão de mídia, desenvolvimento de plataforma",
@@ -122,7 +92,7 @@
   {
     "Nome": "Anderson",
     "Sobrenome": "Cooper",
-    "Categoria": "#NOTÍCIAS",
+    "categories": ["NOTICIAS"],
     "Cargo": "Jornalista",
     "Perfil": "Anderson Cooper é conhecido por seu trabalho no CNN, onde cobre eventos importantes com profundidade e sensibilidade.",
     "Habilidades": "Reportagem, entrevista, análise política",
@@ -137,7 +107,7 @@
   {
     "Nome": "Christiane",
     "Sobrenome": "Amanpour",
-    "Categoria": "#NOTÍCIAS",
+    "categories": ["NOTICIAS"],
     "Cargo": "Chefe de Correspondentes Internacionais",
     "Perfil": "Christiane Amanpour é uma jornalista britânico-iraniana e apresentadora na CNN, conhecida por seu foco em questões de política internacional.",
     "Habilidades": "Jornalismo internacional, mediação de conflitos",
@@ -152,7 +122,7 @@
   {
     "Nome": "Lester",
     "Sobrenome": "Holt",
-    "Categoria": "#NOTÍCIAS",
+    "categories": ["NOTICIAS"],
     "Cargo": "Âncora do NBC Nightly News",
     "Perfil": "Lester Holt é um jornalista americano e âncora de notícias, reconhecido por seu trabalho sólido e confiável no NBC Nightly News.",
     "Habilidades": "Apresentação de notícias, reportagem investigativa",
@@ -167,7 +137,7 @@
   {
     "Nome": "Rachel",
     "Sobrenome": "Maddow",
-    "Categoria": "#NOTÍCIAS",
+    "categories": ["NOTICIAS"],
     "Cargo": "Apresentadora de TV",
     "Perfil": "Rachel Maddow é melhor conhecida por seu programa no MSNBC, onde ela examina eventos atuais através de uma lente crítica e informada.",
     "Habilidades": "Análise política, advocacia, comunicação",
@@ -182,7 +152,7 @@
   {
     "Nome": "Robin",
     "Sobrenome": "Roberts",
-    "Categoria": "#NOTÍCIAS",
+    "categories": ["NOTICIAS"],
     "Cargo": "Co-âncora do Good Morning America",
     "Perfil": "Robin Roberts é co-âncora do popular programa da manhã da ABC, Good Morning America, onde ela traz notícias e entrevistas com uma abordagem energética e empática.",
     "Habilidades": "Televisão ao vivo, entrevistas, jornalismo esportivo",
@@ -197,7 +167,7 @@
   {
     "Nome": "Tucker",
     "Sobrenome": "Carlson",
-    "Categoria": "#NOTÍCIAS",
+    "categories": ["NOTICIAS"],
     "Cargo": "Apresentador de Televisão",
     "Perfil": "Tucker Carlson é o anfitrião do Tucker Carlson Tonight no Fox News, conhecido por seu estilo direto e frequentemente polêmico de comentário político.",
     "Habilidades": "Comentário político, debate, jornalismo",
@@ -212,7 +182,7 @@
   {
     "Nome": "Elon",
     "Sobrenome": "Musk",
-    "Categoria": "#GADGETS",
+    "categories": ["GADGETS"],
     "Cargo": "CEO da SpaceX e Tesla",
     "Perfil": "Elon Musk é conhecido por sua inovação em carros elétricos e exploração espacial, trazendo ao mercado gadgets que transformam a indústria.",
     "Habilidades": "Inovação, engenharia aeroespacial, empreendedorismo",
@@ -227,7 +197,7 @@
   {
     "Nome": "Steve",
     "Sobrenome": "Wozniak",
-    "Categoria": "#GADGETS",
+    "categories": ["GADGETS"],
     "Cargo": "Co-fundador da Apple Inc.",
     "Perfil": "Steve Wozniak ajudou a moldar o mercado de computadores pessoais com o design do Apple I e Apple II no início da Apple.",
     "Habilidades": "Desenvolvimento de hardware, programação",
@@ -242,7 +212,7 @@
   {
     "Nome": "Ginni",
     "Sobrenome": "Rometty",
-    "Categoria": "#GADGETS",
+    "categories": ["GADGETS"],
     "Cargo": "Ex-CEO da IBM",
     "Perfil": "Ginni Rometty liderou a IBM durante uma era de transformação, focando em áreas como inteligência artificial e computação em nuvem.",
     "Habilidades": "Liderança, tecnologia da informação",
@@ -257,7 +227,7 @@
   {
     "Nome": "Jeff",
     "Sobrenome": "Bezos",
-    "Categoria": "#GADGETS",
+    "categories": ["GADGETS"],
     "Cargo": "Fundador da Amazon",
     "Perfil": "Jeff Bezos fundou a Amazon, que revolucionou o e-commerce e lidera no desenvolvimento de dispositivos como Kindle e Echo.",
     "Habilidades": "Empreendedorismo, e-commerce",
@@ -272,7 +242,7 @@
   {
     "Nome": "Sundar",
     "Sobrenome": "Pichai",
-    "Categoria": "#GADGETS",
+    "categories": ["GADGETS"],
     "Cargo": "CEO da Alphabet Inc. e Google",
     "Perfil": "Sundar Pichai lidera o desenvolvimento de gadgets inovadores no Google, incluindo smartphones Pixel e Google Home.",
     "Habilidades": "Liderança tecnológica, desenvolvimento de produto",
@@ -287,7 +257,7 @@
   {
     "Nome": "Tim",
     "Sobrenome": "Cook",
-    "Categoria": "#GADGETS",
+    "categories": ["GADGETS"],
     "Cargo": "CEO da Apple",
     "Perfil": "Tim Cook tem liderado a Apple na introdução de tecnologias inovadoras e dispositivos desejados como iPhones, iPads e Apple Watches.",
     "Habilidades": "Gestão empresarial, desenvolvimento de produtos",
@@ -302,7 +272,7 @@
   {
     "Nome": "Anthony",
     "Sobrenome": "Fauci",
-    "Categoria": "#SAÚDE",
+    "categories": ["SAUDE"],
     "Cargo": "Diretor do NIAID",
     "Perfil": "Anthony Fauci é um imunologista americano e diretor do National Institute of Allergy and Infectious Diseases, sendo um dos principais rostos na luta contra a pandemia de COVID-19.",
     "Habilidades": "Pesquisa em doenças infecciosas, políticas de saúde pública",
@@ -317,7 +287,7 @@
   {
     "Nome": "Sanjay",
     "Sobrenome": "Gupta",
-    "Categoria": "#SAÚDE",
+    "categories": ["SAUDE"],
     "Cargo": "Neurocirurgião e Correspondente Médico",
     "Perfil": "Sanjay Gupta é um neurocirurgião americano e o correspondente médico chefe da CNN, conhecido por simplificar complexos problemas médicos em termos que o público pode entender.",
     "Habilidades": "Neurocirurgia, comunicação",
@@ -332,7 +302,7 @@
   {
     "Nome": "Atul",
     "Sobrenome": "Gawande",
-    "Categoria": "#SAÚDE",
+    "categories": ["SAUDE"],
     "Cargo": "Cirurgião e Autor",
     "Perfil": "Atul Gawande é um renomado cirurgião, escritor e pesquisador americano, famoso por seus livros sobre medicina e a complexidade do sistema de saúde.",
     "Habilidades": "Cirurgia, escrita médica",
@@ -347,7 +317,7 @@
   {
     "Nome": "Paul",
     "Sobrenome": "Farmer",
-    "Categoria": "#SAÚDE",
+    "categories": ["SAUDE"],
     "Cargo": "Médico e Co-fundador da Partners In Health",
     "Perfil": "Paul Farmer foi um médico e antropólogo conhecido por seu trabalho humanitário em saúde global e por tratar pacientes em algumas das áreas mais desfavorecidas do mundo.",
     "Habilidades": "Medicina global, antropologia médica",
@@ -362,7 +332,7 @@
   {
     "Nome": "Margaret",
     "Sobrenome": "Hamburg",
-    "Categoria": "#SAÚDE",
+    "categories": ["SAUDE"],
     "Cargo": "Ex-Comissária da FDA",
     "Perfil": "Margaret Hamburg foi comissária da Food and Drug Administration, onde liderou iniciativas para avançar na segurança médica e inovações em saúde.",
     "Habilidades": "Política de saúde, desenvolvimento de drogas",
@@ -377,7 +347,7 @@
   {
     "Nome": "Gail",
     "Sobrenome": "Anderson",
-    "Categoria": "#SAÚDE",
+    "categories": ["SAUDE"],
     "Cargo": "Pesquisadora Médica",
     "Perfil": "Gail Anderson é uma pioneira no campo da pesquisa médica, especialmente conhecida por seu trabalho inovador no desenvolvimento de novas técnicas cirúrgicas e tratamentos para doenças crônicas.",
     "Habilidades": "Pesquisa clínica, inovação em cirurgia",
@@ -392,7 +362,7 @@
   {
     "Nome": "Robert",
     "Sobrenome": "Parker",
-    "Categoria": "#VINHOS E BEBIDAS",
+    "categories": ["VINHOS_E_BEBIDAS"],
     "Cargo": "Crítico de Vinhos",
     "Perfil": "Robert Parker é conhecido mundialmente por sua influência na indústria do vinho, tendo criado o sistema de pontuação de 100 pontos que revolucionou a avaliação de vinhos.",
     "Habilidades": "Degustação de vinhos, crítica enológica",
@@ -407,7 +377,7 @@
   {
     "Nome": "Jancis",
     "Sobrenome": "Robinson",
-    "Categoria": "#VINHOS E BEBIDAS",
+    "categories": ["VINHOS_E_BEBIDAS"],
     "Cargo": "Jornalista e Crítica de Vinhos",
     "Perfil": "Jancis Robinson é uma das vozes mais respeitadas no jornalismo de vinhos, autora de vários livros influentes e editora de guias de vinho.",
     "Habilidades": "Escrita, educação sobre vinhos",
@@ -422,7 +392,7 @@
   {
     "Nome": "James",
     "Sobrenome": "Suckling",
-    "Categoria": "#VINHOS E BEBIDAS",
+    "categories": ["VINHOS_E_BEBIDAS"],
     "Cargo": "Crítico de Vinhos",
     "Perfil": "James Suckling é conhecido por sua carreira internacional como crítico de vinhos, com foco em vinhos da América Latina e Europa.",
     "Habilidades": "Degustação, jornalismo de vinhos",
@@ -437,7 +407,7 @@
   {
     "Nome": "Gina",
     "Sobrenome": "Gallo",
-    "Categoria": "#VINHOS E BEBIDAS",
+    "categories": ["VINHOS_E_BEBIDAS"],
     "Cargo": "Enóloga",
     "Perfil": "Gina Gallo é uma enóloga que representa a terceira geração da família Gallo, levando a vinícola familiar a novos patamares com inovações e técnicas sustentáveis.",
     "Habilidades": "Produção de vinho, gestão de vinícola",
@@ -452,7 +422,7 @@
   {
     "Nome": "Ernest",
     "Sobrenome": "Loosen",
-    "Categoria": "#VINHOS E BEBIDAS",
+    "categories": ["VINHOS_E_BEBIDAS"],
     "Cargo": "Proprietário e Enólogo",
     "Perfil": "Ernest Loosen é renomado por revitalizar vinhas antigas na Alemanha e é conhecido por seus Rieslings excepcionais que capturam a essência da região de Mosel.",
     "Habilidades": "Viticultura, enologia",
@@ -467,7 +437,7 @@
   {
     "Nome": "Antinori",
     "Sobrenome": "Marchese",
-    "Categoria": "#VINHOS E BEBIDAS",
+    "categories": ["VINHOS_E_BEBIDAS"],
     "Cargo": "Produtor de Vinho",
     "Perfil": "Marchese Antinori é um dos nomes mais influentes na indústria vinícola italiana, conhecido por combinar métodos tradicionais com inovações modernas para produzir vinhos de qualidade superior.",
     "Habilidades": "Herança vinícola, inovação em vinificação",
@@ -482,7 +452,7 @@
   {
     "Nome": "Gordon",
     "Sobrenome": "Ramsay",
-    "Categoria": "#RECEITAS",
+    "categories": ["RECEITAS"],
     "Cargo": "Chef e Personalidade de TV",
     "Perfil": "Gordon Ramsay é um renomado chef britânico conhecido por seus programas de televisão e restaurantes premiados, famoso por sua excelência culinária e temperamento forte.",
     "Habilidades": "Culinária de alta gastronomia, entretenimento televisivo",
@@ -497,7 +467,7 @@
   {
     "Nome": "Jamie",
     "Sobrenome": "Oliver",
-    "Categoria": "#RECEITAS",
+    "categories": ["RECEITAS"],
     "Cargo": "Chef e Autor",
     "Perfil": "Jamie Oliver é um chef e autor britânico que promove a culinária saudável e acessível, com um foco especial em reformar os hábitos alimentares nas escolas e em casa.",
     "Habilidades": "Culinária saudável, advocacia por alimentação saudável",
@@ -512,7 +482,7 @@
   {
     "Nome": "Nigella",
     "Sobrenome": "Lawson",
-    "Categoria": "#RECEITAS",
+    "categories": ["RECEITAS"],
     "Cargo": "Chef e Escritora",
     "Perfil": "Nigella Lawson é uma chef e escritora inglesa que se especializa em trazer um toque de luxo e indulgência para a culinária caseira.",
     "Habilidades": "Culinária, escrita gastronômica",
@@ -527,7 +497,7 @@
   {
     "Nome": "Anthony",
     "Sobrenome": "Bourdain",
-    "Categoria": "#RECEITAS",
+    "categories": ["RECEITAS"],
     "Cargo": "Chef e Autor",
     "Perfil": "Anthony Bourdain foi um chef americano e personalidade de televisão conhecido por explorar culturas e culinárias internacionais através de seus programas de viagem e comida.",
     "Habilidades": "Culinária internacional, storytelling",
@@ -542,7 +512,7 @@
   {
     "Nome": "Rachel",
     "Sobrenome": "Ray",
-    "Categoria": "#RECEITAS",
+    "categories": ["RECEITAS"],
     "Cargo": "Chef de TV e Autora",
     "Perfil": "Rachel Ray é conhecida por seus programas de televisão onde apresenta receitas rápidas e acessíveis, promovendo a ideia de que todos podem cozinhar.",
     "Habilidades": "Culinária rápida, apresentação de TV",
@@ -557,7 +527,7 @@
   {
     "Nome": "Thomas",
     "Sobrenome": "Keller",
-    "Categoria": "#RECEITAS",
+    "categories": ["RECEITAS"],
     "Cargo": "Chef e Proprietário de Restaurante",
     "Perfil": "Thomas Keller é um chef americano que opera vários restaurantes estrelados Michelin, conhecido por sua precisão técnica e pratos inovadores.",
     "Habilidades": "Alta gastronomia, gestão de restaurantes",
@@ -572,7 +542,7 @@
   {
     "Nome": "Beyoncé",
     "Sobrenome": "Knowles-Carter",
-    "Categoria": "#MÚSICA",
+    "categories": ["MUSICA_POP"],
     "Cargo": "Cantora, Compositora e Produtora",
     "Perfil": "Beyoncé é uma das artistas mais influentes da indústria da música, conhecida por seu poderoso vocal e performances dinâmicas.",
     "Habilidades": "Canto, composição, produção musical, performance",
@@ -587,7 +557,7 @@
   {
     "Nome": "David",
     "Sobrenome": "Bowie",
-    "Categoria": "#MÚSICA",
+    "categories": ["MUSICA_POP"],
     "Cargo": "Cantor, Compositor",
     "Perfil": "David Bowie foi um ícone musical conhecido por sua música inovadora e a capacidade de reinventar sua persona.",
     "Habilidades": "Canto, composição, inovação artística",
@@ -602,7 +572,7 @@
   {
     "Nome": "Adele",
     "Sobrenome": "Adkins",
-    "Categoria": "#MÚSICA",
+    "categories": ["MUSICA_POP"],
     "Cargo": "Cantora e Compositora",
     "Perfil": "Adele é conhecida por sua voz única e emotiva, além de suas letras profundas que têm resonância global.",
     "Habilidades": "Canto, composição, interpretação emocional",
@@ -617,7 +587,7 @@
   {
     "Nome": "Prince",
     "Sobrenome": "Rogers Nelson",
-    "Categoria": "#MÚSICA",
+    "categories": ["MUSICA_POP"],
     "Cargo": "Cantor, Compositor, Multi-Instrumentista",
     "Perfil": "Prince foi um músico revolucionário conhecido por seu estilo eclético, virtuosismo instrumental e inovação.",
     "Habilidades": "Múltiplos instrumentos, composição, performance",
@@ -632,7 +602,7 @@
   {
     "Nome": "Taylor",
     "Sobrenome": "Swift",
-    "Categoria": "#MÚSICA",
+    "categories": ["MUSICA_POP"],
     "Cargo": "Cantora, Compositora",
     "Perfil": "Taylor Swift é uma das maiores artistas da sua geração, conhecida por suas narrativas líricas que frequentemente refletem sua vida pessoal.",
     "Habilidades": "Canto, composição, habilidades narrativas",
@@ -647,7 +617,7 @@
   {
     "Nome": "Bob",
     "Sobrenome": "Dylan",
-    "Categoria": "#MÚSICA",
+    "categories": ["MUSICA_POP"],
     "Cargo": "Cantor, Compositor",
     "Perfil": "Bob Dylan é um ícone cultural cuja influência na música e cultura do século 20 é imensurável, conhecido por suas letras poéticas e engajadas.",
     "Habilidades": "Canto, composição, guitarra, harmonica",
@@ -662,7 +632,7 @@
   {
     "Nome": "Dave",
     "Sobrenome": "Chappelle",
-    "Categoria": "#HUMOR",
+    "categories": ["HUMOR"],
     "Cargo": "Comediante, Ator",
     "Perfil": "Dave Chappelle é conhecido por seu humor incisivo e suas atuações perspicazes que abordam questões culturais e sociais profundas.",
     "Habilidades": "Stand-up, atuação, escrita",
@@ -677,7 +647,7 @@
   {
     "Nome": "Ellen",
     "Sobrenome": "DeGeneres",
-    "Categoria": "#HUMOR",
+    "categories": ["HUMOR"],
     "Cargo": "Comediante, Apresentadora de TV",
     "Perfil": "Ellen DeGeneres é uma pioneira do entretenimento televisivo, conhecida por seu talk show que combina comédia, entrevistas e ativismo social.",
     "Habilidades": "Comédia, apresentação de TV, ativismo",
@@ -692,7 +662,7 @@
   {
     "Nome": "Trevor",
     "Sobrenome": "Noah",
-    "Categoria": "#HUMOR",
+    "categories": ["HUMOR"],
     "Cargo": "Comediante, Apresentador de TV",
     "Perfil": "Trevor Noah é um comediante sul-africano que ganhou reconhecimento mundial como o apresentador do 'The Daily Show', conhecido por seu olhar perspicaz sobre política e cultura.",
     "Habilidades": "Stand-up, apresentação de TV, comentário político",
@@ -707,7 +677,7 @@
   {
     "Nome": "Tina",
     "Sobrenome": "Fey",
-    "Categoria": "#HUMOR",
+    "categories": ["HUMOR"],
     "Cargo": "Comediante, Escritora",
     "Perfil": "Tina Fey é conhecida por seu trabalho em 'Saturday Night Live' e '30 Rock', com um talento especial para a sátira e a comédia de esquetes.",
     "Habilidades": "Escrita, atuação, produção televisiva",
@@ -722,7 +692,7 @@
   {
     "Nome": "Robin",
     "Sobrenome": "Williams",
-    "Categoria": "#HUMOR",
+    "categories": ["HUMOR"],
     "Cargo": "Comediante, Ator",
     "Perfil": "Robin Williams foi um ator e comediante americano cuja energia e versatilidade no palco e na tela cativaram audiências ao redor do mundo.",
     "Habilidades": "Improviso, atuação, comédia stand-up",
@@ -737,7 +707,7 @@
   {
     "Nome": "Joan",
     "Sobrenome": "Rivers",
-    "Categoria": "#HUMOR",
+    "categories": ["HUMOR"],
     "Cargo": "Comediante, Apresentadora de TV",
     "Perfil": "Joan Rivers foi uma comediante e apresentadora de TV americana, conhecida por seu humor ácido e pioneirismo na comédia de stand-up feminina.",
     "Habilidades": "Comédia stand-up, apresentação de TV, comentário de moda",
@@ -752,7 +722,7 @@
   {
     "Nome": "Yuval",
     "Sobrenome": "Harari",
-    "Categoria": "#CULTURA",
+    "categories": ["CULTURA"],
     "Cargo": "Historiador, Autor",
     "Perfil": "Yuval Noah Harari é um proeminente historiador e filósofo israelense, conhecido por seus livros 'Sapiens', 'Homo Deus' e '21 Lições para o Século 21', que exploram conceitos de evolução humana, ética e futuro.",
     "Habilidades": "História, filosofia, análise crítica",
@@ -767,7 +737,7 @@
   {
     "Nome": "Frida",
     "Sobrenome": "Kahlo",
-    "Categoria": "#CULTURA",
+    "categories": ["CULTURA"],
     "Cargo": "Artista",
     "Perfil": "Frida Kahlo foi uma das mais significativas e emblemáticas artistas mexicanas, conhecida por suas obras intensas e vibrantes, muitas das quais são autorretratos que expressam sua própria dor e paixão.",
     "Habilidades": "Pintura, arte visual, simbolismo",
@@ -782,7 +752,7 @@
   {
     "Nome": "Zaha",
     "Sobrenome": "Hadid",
-    "Categoria": "#CULTURA",
+    "categories": ["CULTURA"],
     "Cargo": "Arquiteta",
     "Perfil": "Zaha Hadid foi uma revolucionária arquiteta britânico-iraquiana, conhecida por seu design futurista e a dinâmica fluida de suas construções, que transformaram paisagens urbanas ao redor do mundo.",
     "Habilidades": "Arquitetura, design urbano, inovação",
@@ -797,7 +767,7 @@
   {
     "Nome": "Banksy",
     "Sobrenome": "Desconhecido",
-    "Categoria": "#CULTURA",
+    "categories": ["CULTURA"],
     "Cargo": "Artista de Rua",
     "Perfil": "Banksy é um artista de rua britânico, cuja arte é conhecida mundialmente por suas fortes mensagens políticas e sociais, frequentemente infundidas com humor.",
     "Habilidades": "Arte de rua, subversão, ativismo",
@@ -812,7 +782,7 @@
   {
     "Nome": "Ai",
     "Sobrenome": "Weiwei",
-    "Categoria": "#CULTURA",
+    "categories": ["CULTURA"],
     "Cargo": "Artista, Ativista",
     "Perfil": "Ai Weiwei é um artista contemporâneo chinês e um ativista político, cuja obra inclui escultura, instalação, arquitetura e fotografia, frequentemente focada em temas de direitos humanos.",
     "Habilidades": "Arte contemporânea, ativismo, crítica social",
@@ -827,7 +797,7 @@
   {
     "Nome": "Jean-Michel",
     "Sobrenome": "Basquiat",
-    "Categoria": "#CULTURA",
+    "categories": ["CULTURA"],
     "Cargo": "Artista",
     "Perfil": "Jean-Michel Basquiat foi um artista americano de ascendência haitiana e porto-riquenha, cuja obra é caracterizada por expressões brutais de crítica social, misturadas com fragmentos de texto e imagens sugestivas.",
     "Habilidades": "Pintura, desenho, arte contemporânea",
@@ -842,7 +812,7 @@
   {
     "Nome": "Elon",
     "Sobrenome": "Musk",
-    "Categoria": "#EMPREENDEDORISMO",
+    "categories": ["EMPREENDEDORISMO"],
     "Cargo": "CEO da SpaceX e Tesla",
     "Perfil": "Elon Musk é um empreendedor sul-africano-americano conhecido por fundar a SpaceX e liderar a Tesla, promovendo inovações em transporte espacial e elétrico.",
     "Habilidades": "Inovação tecnológica, liderança empresarial",
@@ -857,7 +827,7 @@
   {
     "Nome": "Jeff",
     "Sobrenome": "Bezos",
-    "Categoria": "#EMPREENDEDORISMO",
+    "categories": ["EMPREENDEDORISMO"],
     "Cargo": "Fundador da Amazon",
     "Perfil": "Jeff Bezos fundou a Amazon.com em 1994, que começou como uma livraria online e cresceu para se tornar o maior varejista online do mundo.",
     "Habilidades": "Empreendedorismo, gestão de negócios",
@@ -872,7 +842,7 @@
   {
     "Nome": "Sara",
     "Sobrenome": "Blakely",
-    "Categoria": "#EMPREENDEDORISMO",
+    "categories": ["EMPREENDEDORISMO"],
     "Cargo": "Fundadora da Spanx",
     "Perfil": "Sara Blakely fundou a Spanx com apenas $5,000 em economias, revolucionando a indústria de moda íntima feminina com suas inovações em shapewear.",
     "Habilidades": "Design de produto, marketing, vendas",
@@ -887,7 +857,7 @@
   {
     "Nome": "Mark",
     "Sobrenome": "Zuckerberg",
-    "Categoria": "#EMPREENDEDORISMO",
+    "categories": ["EMPREENDEDORISMO"],
     "Cargo": "CEO do Meta",
     "Perfil": "Mark Zuckerberg co-fundou o Facebook enquanto estudava em Harvard e transformou a startup em um dos maiores conglomerados de mídia social do mundo, agora conhecido como Meta.",
     "Habilidades": "Desenvolvimento de software, liderança corporativa",
@@ -902,7 +872,7 @@
   {
     "Nome": "Richard",
     "Sobrenome": "Branson",
-    "Categoria": "#EMPREENDEDORISMO",
+    "categories": ["EMPREENDEDORISMO"],
     "Cargo": "Fundador do Virgin Group",
     "Perfil": "Richard Branson é um magnata dos negócios britânico conhecido por sua marca Virgin, que abrange empresas de aviação, telecomunicações, e até viagens espaciais com a Virgin Galactic.",
     "Habilidades": "Marketing, aventura empresarial",
@@ -917,7 +887,7 @@
   {
     "Nome": "Sheryl",
     "Sobrenome": "Sandberg",
-    "Categoria": "#EMPREENDEDORISMO",
+    "categories": ["EMPREENDEDORISMO"],
     "Cargo": "Ex-COO do Facebook",
     "Perfil": "Sheryl Sandberg ajudou a escalar o Facebook como sua COO, impulsionando o crescimento massivo e a monetização da plataforma, além de ser autora de 'Lean In', incentivando mulheres a buscar liderança ativa em suas carreiras.",
     "Habilidades": "Liderança operacional, advocacia de igualdade de gênero",
@@ -932,7 +902,7 @@
   {
     "Nome": "Suze",
     "Sobrenome": "Orman",
-    "Categoria": "#FINANÇAS PESSOAIS",
+    "categories": ["FINANCAS_PESSOAIS"],
     "Cargo": "Consultora Financeira, Autora",
     "Perfil": "Suze Orman é uma das consultoras financeiras mais influentes nos EUA, conhecida por seus programas de TV e livros que promovem a literacia financeira e independência.",
     "Habilidades": "Planejamento financeiro, educação financeira",
@@ -947,7 +917,7 @@
   {
     "Nome": "Dave",
     "Sobrenome": "Ramsey",
-    "Categoria": "#FINANÇAS PESSOAIS",
+    "categories": ["FINANCAS_PESSOAIS"],
     "Cargo": "Consultor Financeiro, Autor",
     "Perfil": "Dave Ramsey é conhecido por sua abordagem direta para a liberdade financeira, enfatizando a eliminação de dívidas e a construção de riqueza através de métodos conservadores.",
     "Habilidades": "Gestão de dívidas, investimentos, orçamento",
@@ -962,7 +932,7 @@
   {
     "Nome": "Robert",
     "Sobrenome": "Kiyosaki",
-    "Categoria": "#FINANÇAS PESSOAIS",
+    "categories": ["FINANCAS_PESSOAIS"],
     "Cargo": "Empreendedor, Autor",
     "Perfil": "Robert Kiyosaki é autor do best-seller 'Pai Rico, Pai Pobre', que oferece educação financeira destacando a importância do investimento e do empreendedorismo.",
     "Habilidades": "Educação financeira, investimentos imobiliários",
@@ -977,7 +947,7 @@
   {
     "Nome": "Jean",
     "Sobrenome": "Chatzky",
-    "Categoria": "#FINANÇAS PESSOAIS",
+    "categories": ["FINANCAS_PESSOAIS"],
     "Cargo": "Jornalista Financeira, Autora",
     "Perfil": "Jean Chatzky é bem conhecida como jornalista financeira, promovendo a educação financeira com um foco especial em mulheres e famílias.",
     "Habilidades": "Planejamento financeiro, comunicação",
@@ -992,7 +962,7 @@
   {
     "Nome": "Ramit",
     "Sobrenome": "Sethi",
-    "Categoria": "#FINANÇAS PESSOAIS",
+    "categories": ["FINANCAS_PESSOAIS"],
     "Cargo": "Autor, Empreendedor",
     "Perfil": "Ramit Sethi é autor do livro 'I Will Teach You to Be Rich', onde ele oferece conselhos práticos sobre como gastar, poupar e investir com inteligência sem abrir mão dos pequenos prazeres da vida.",
     "Habilidades": "Finanças comportamentais, planejamento estratégico",
@@ -1007,7 +977,7 @@
   {
     "Nome": "Timothy",
     "Sobrenome": "Ferriss",
-    "Categoria": "#FINANÇAS PESSOAIS",
+    "categories": ["FINANCAS_PESSOAIS"],
     "Cargo": "Autor, Empreendedor",
     "Perfil": "Tim Ferriss é conhecido pelo seu livro 'The 4-Hour Workweek', que desafia as convenções tradicionais do trabalho e promove a automação e a externalização para alcançar a eficiência financeira e pessoal.",
     "Habilidades": "Automação de negócios, lifestyle design",
@@ -1022,7 +992,7 @@
   {
     "Nome": "Seth",
     "Sobrenome": "Godin",
-    "Categoria": "#PROPAGANDA E MARKETING",
+    "categories": ["PROPAGANDA_E_MARKETING"],
     "Cargo": "Autor, Empreendedor",
     "Perfil": "Seth Godin é um influente autor e especialista em marketing, conhecido por seus livros sobre marketing, liderança e a maneira como as ideias se espalham.",
     "Habilidades": "Marketing digital, escrita, branding",
@@ -1037,7 +1007,7 @@
   {
     "Nome": "Philip",
     "Sobrenome": "Kotler",
-    "Categoria": "#PROPAGANDA E MARKETING",
+    "categories": ["PROPAGANDA_E_MARKETING"],
     "Cargo": "Professor, Autor",
     "Perfil": "Philip Kotler é conhecido como o 'pai do marketing moderno'. Ele é autor de vários livros-texto essenciais e um professor influente na área de marketing.",
     "Habilidades": "Teoria do marketing, pesquisa de marketing",
@@ -1052,7 +1022,7 @@
   {
     "Nome": "Mary",
     "Sobrenome": "Barra",
-    "Categoria": "#PROPAGANDA E MARKETING",
+    "categories": ["PROPAGANDA_E_MARKETING"],
     "Cargo": "CEO da General Motors",
     "Perfil": "Mary Barra lidera a General Motors com uma visão focada em inovação automotiva e marketing, impulsionando a empresa em direção a um futuro mais sustentável e tecnologicamente avançado.",
     "Habilidades": "Liderança empresarial, marketing automotivo",
@@ -1067,7 +1037,7 @@
   {
     "Nome": "Guy",
     "Sobrenome": "Kawasaki",
-    "Categoria": "#PROPAGANDA E MARKETING",
+    "categories": ["PROPAGANDA_E_MARKETING"],
     "Cargo": "Autor, Empreendedor",
     "Perfil": "Guy Kawasaki é um autor, investidor e negócios e um dos primeiros evangelistas de marketing da Apple, conhecido por seu trabalho em transformar produtos em experiências culturais.",
     "Habilidades": "Evangelismo de produtos, start-up growth",
@@ -1082,7 +1052,7 @@
   {
     "Nome": "Charlene",
     "Sobrenome": "Li",
-    "Categoria": "#PROPAGANDA E MARKETING",
+    "categories": ["PROPAGANDA_E_MARKETING"],
     "Cargo": "Analista e Autora",
     "Perfil": "Charlene Li é uma analista de negócios e autora focada em estratégias de marketing digital e liderança, conhecida por seu pensamento inovador em como as empresas podem prosperar em era digital.",
     "Habilidades": "Marketing digital, liderança disruptiva",
@@ -1097,7 +1067,7 @@
   {
     "Nome": "Sheryl",
     "Sobrenome": "Sandberg",
-    "Categoria": "#PROPAGANDA E MARKETING",
+    "categories": ["PROPAGANDA_E_MARKETING"],
     "Cargo": "Ex-COO do Facebook",
     "Perfil": "Sheryl Sandberg, ex-COO do Facebook, desempenhou um papel crucial na escalada das operações de negócios e publicidade da plataforma, transformando-a numa gigante global.",
     "Habilidades": "Publicidade online, operações de mídia",
@@ -1112,7 +1082,7 @@
   {
     "Nome": "Norman",
     "Sobrenome": "Foster",
-    "Categoria": "#ARQUITETURA",
+    "categories": ["ARQUITETURA"],
     "Cargo": "Arquiteto",
     "Perfil": "Norman Foster é um renomado arquiteto britânico conhecido por seu estilo modernista de alta tecnologia, envolvido em projetos icônicos como o prédio do parlamento alemão e a Millau Viaduct na França.",
     "Habilidades": "Design sustentável, arquitetura de alta tecnologia",
@@ -1127,7 +1097,7 @@
   {
     "Nome": "Zaha",
     "Sobrenome": "Hadid",
-    "Categoria": "#ARQUITETURA",
+    "categories": ["ARQUITETURA"],
     "Cargo": "Arquiteta",
     "Perfil": "Zaha Hadid foi uma arquiteta iraquiano-britânica conhecida por seu trabalho radical que inclui o Centro Aquático de Londres e o Museu MAXXI em Roma. Ela foi a primeira mulher a receber o Prêmio Pritzker de Arquitetura.",
     "Habilidades": "Design conceitual, inovações arquitetônicas",
@@ -1142,7 +1112,7 @@
   {
     "Nome": "Frank",
     "Sobrenome": "Gehry",
-    "Categoria": "#ARQUITETURA",
+    "categories": ["ARQUITETURA"],
     "Cargo": "Arquiteto",
     "Perfil": "Frank Gehry é um arquiteto canadense-americano conhecido por suas criações pós-modernas únicas, como o Museu Guggenheim de Bilbao e a Fundação Louis Vuitton em Paris.",
     "Habilidades": "Design escultural, inovação de materiais",
@@ -1157,7 +1127,7 @@
   {
     "Nome": "Renzo",
     "Sobrenome": "Piano",
-    "Categoria": "#ARQUITETURA",
+    "categories": ["ARQUITETURA"],
     "Cargo": "Arquiteto",
     "Perfil": "Renzo Piano é um arquiteto italiano famoso por seu design responsivo e respeitoso ao contexto, incluindo o Centro Georges Pompidou em Paris e o Shard em Londres.",
     "Habilidades": "Design integrado, arquitetura cultural",
@@ -1172,7 +1142,7 @@
   {
     "Nome": "Jeanne",
     "Sobrenome": "Gang",
-    "Categoria": "#ARQUITETURA",
+    "categories": ["ARQUITETURA"],
     "Cargo": "Arquiteta",
     "Perfil": "Jeanne Gang é uma arquiteta americana conhecida por sua abordagem inovadora e sustentável no design urbano, exemplificada pela Aqua Tower em Chicago.",
     "Habilidades": "Design sustentável, inovação arquitetônica",
@@ -1187,7 +1157,7 @@
   {
     "Nome": "Bjarke",
     "Sobrenome": "Ingels",
-    "Categoria": "#ARQUITETURA",
+    "categories": ["ARQUITETURA"],
     "Cargo": "Arquiteto",
     "Perfil": "Bjarke Ingels é um arquiteto dinamarquês que lidera o grupo BIG, famoso por seus projetos inovadores que combinam aspetos lúdicos e funcionais, como o VIA 57 West em Nova York.",
     "Habilidades": "Design inovador, planejamento urbano",
@@ -1202,7 +1172,7 @@
   {
     "Nome": "Pat",
     "Sobrenome": "McGrath",
-    "Categoria": "#BELEZA",
+    "categories": ["BELEZA"],
     "Cargo": "Maquiadora, Empreendedora",
     "Perfil": "Pat McGrath é uma das maquiadoras mais influentes do mundo, conhecida por suas técnicas inovadoras e linhas de maquiagem que redefiniram os padrões de beleza global.",
     "Habilidades": "Maquiagem artística, desenvolvimento de produto",
@@ -1217,7 +1187,7 @@
   {
     "Nome": "Bobbi",
     "Sobrenome": "Brown",
-    "Categoria": "#BELEZA",
+    "categories": ["BELEZA"],
     "Cargo": "Maquiadora, Autora",
     "Perfil": "Bobbi Brown é uma maquiadora e empresária americana, fundadora da Bobbi Brown Cosmetics, que popularizou uma abordagem mais natural à maquiagem.",
     "Habilidades": "Maquiagem, branding, escrita",
@@ -1232,7 +1202,7 @@
   {
     "Nome": "Charlotte",
     "Sobrenome": "Tilbury",
-    "Categoria": "#BELEZA",
+    "categories": ["BELEZA"],
     "Cargo": "Maquiadora, Empreendedora",
     "Perfil": "Charlotte Tilbury é uma renomada maquiadora britânica que lançou sua própria linha de maquiagem e cuidados com a pele, conhecida por produtos que promovem glamour e eficácia.",
     "Habilidades": "Maquiagem de celebridades, desenvolvimento de cosméticos",
@@ -1247,7 +1217,7 @@
   {
     "Nome": "Anastasia",
     "Sobrenome": "Soare",
-    "Categoria": "#BELEZA",
+    "categories": ["BELEZA"],
     "Cargo": "Fundadora da Anastasia Beverly Hills",
     "Perfil": "Anastasia Soare é fundadora da Anastasia Beverly Hills, conhecida por revolucionar produtos para design de sobrancelhas e técnicas que moldaram a indústria da beleza.",
     "Habilidades": "Design de sobrancelhas, empreendedorismo",
@@ -1262,7 +1232,7 @@
   {
     "Nome": "Jeffree",
     "Sobrenome": "Star",
-    "Categoria": "#BELEZA",
+    "categories": ["BELEZA"],
     "Cargo": "Fundador da Jeffree Star Cosmetics",
     "Perfil": "Jeffree Star é um empreendedor, maquiador e influenciador, fundador da Jeffree Star Cosmetics, conhecido por sua abordagem ousada e colorida à maquiagem.",
     "Habilidades": "Marketing de influência, criação de produto",
@@ -1277,7 +1247,7 @@
   {
     "Nome": "Huda",
     "Sobrenome": "Kattan",
-    "Categoria": "#BELEZA",
+    "categories": ["BELEZA"],
     "Cargo": "Fundadora da Huda Beauty",
     "Perfil": "Huda Kattan é uma maquiadora e empresária que fundou a Huda Beauty, uma das marcas de maquiagem mais bem-sucedidas, com produtos que se tornaram indispensáveis para entusiastas de beleza em todo o mundo.",
     "Habilidades": "Empreendedorismo, influência digital",
@@ -1292,7 +1262,7 @@
   {
     "Nome": "Dieter",
     "Sobrenome": "Rams",
-    "Categoria": "#DESIGN",
+    "categories": ["DESIGN"],
     "Cargo": "Designer Industrial",
     "Perfil": "Dieter Rams é um designer industrial alemão conhecido por sua filosofia de design funcionalista e sua influência duradoura na Braun e na Apple.",
     "Habilidades": "Design de produto, minimalismo",
@@ -1307,7 +1277,7 @@
   {
     "Nome": "Philippe",
     "Sobrenome": "Starck",
-    "Categoria": "#DESIGN",
+    "categories": ["DESIGN"],
     "Cargo": "Designer",
     "Perfil": "Philippe Starck é um designer francês mundialmente famoso por seu amplo alcance de designs, de móveis e objetos de decoração a hotéis e arquitetura.",
     "Habilidades": "Design de interiores, arquitetura",
@@ -1322,7 +1292,7 @@
   {
     "Nome": "Karim",
     "Sobrenome": "Rashid",
-    "Categoria": "#DESIGN",
+    "categories": ["DESIGN"],
     "Cargo": "Designer Industrial",
     "Perfil": "Karim Rashid é conhecido por seus designs de produtos coloridos e futuristas, que vão desde mobiliário urbano e moda até design de ambientes.",
     "Habilidades": "Design de produto, branding",
@@ -1337,7 +1307,7 @@
   {
     "Nome": "Marcel",
     "Sobrenome": "Wanders",
-    "Categoria": "#DESIGN",
+    "categories": ["DESIGN"],
     "Cargo": "Designer de Interiores",
     "Perfil": "Marcel Wanders é um designer holandês reconhecido por seus móveis e ambientes de interiores cheios de vida e emoção, que desafiam as convenções do design moderno.",
     "Habilidades": "Design de interiores, mobiliário",
@@ -1352,7 +1322,7 @@
   {
     "Nome": "Jonathan",
     "Sobrenome": "Ive",
-    "Categoria": "#DESIGN",
+    "categories": ["DESIGN"],
     "Cargo": "Designer de Produto",
     "Perfil": "Jonathan Ive, antigo chefe de design da Apple, é reconhecido mundialmente por seu papel crítico no design de produtos icônicos como o iPhone e o MacBook.",
     "Habilidades": "Design de produto, inovação tecnológica",
@@ -1367,7 +1337,7 @@
   {
     "Nome": "Patricia",
     "Sobrenome": "Urquiola",
-    "Categoria": "#DESIGN",
+    "categories": ["DESIGN"],
     "Cargo": "Designer e Arquiteta",
     "Perfil": "Patricia Urquiola é uma designer e arquiteta espanhola, conhecida por suas obras que unem funcionalidade e poética nos campos de design de interiores e mobiliário.",
     "Habilidades": "Design arquitetônico, mobiliário",
@@ -1382,7 +1352,7 @@
   {
     "Nome": "Annie",
     "Sobrenome": "Leibovitz",
-    "Categoria": "#FOTOGRAFIA",
+    "categories": ["FOTOGRAFIA"],
     "Cargo": "Fotógrafa",
     "Perfil": "Annie Leibovitz é uma das fotógrafas mais renomadas do mundo, conhecida por seus retratos poderosos e artisticamente únicos, muitas vezes de celebridades.",
     "Habilidades": "Retratos, fotografia artística",
@@ -1397,7 +1367,7 @@
   {
     "Nome": "Steve",
     "Sobrenome": "McCurry",
-    "Categoria": "#FOTOGRAFIA",
+    "categories": ["FOTOGRAFIA"],
     "Cargo": "Fotógrafo",
     "Perfil": "Steve McCurry é mundialmente famoso por sua foto 'The Afghan Girl', com um estilo que captura histórias humanas e culturais com cores vibrantes e composição emocional.",
     "Habilidades": "Fotografia de viagens, documentário",
@@ -1412,7 +1382,7 @@
   {
     "Nome": "Cindy",
     "Sobrenome": "Sherman",
-    "Categoria": "#FOTOGRAFIA",
+    "categories": ["FOTOGRAFIA"],
     "Cargo": "Fotógrafa",
     "Perfil": "Cindy Sherman é uma artista e fotógrafa americana que usa a fotografia conceitual para explorar a identidade e o papel social, frequentemente usando-se como modelo em suas próprias fotografias.",
     "Habilidades": "Fotografia conceitual, auto-retrato",
@@ -1427,7 +1397,7 @@
   {
     "Nome": "Sebastião",
     "Sobrenome": "Salgado",
-    "Categoria": "#FOTOGRAFIA",
+    "categories": ["FOTOGRAFIA"],
     "Cargo": "Fotógrafo",
     "Perfil": "Sebastião Salgado é um fotógrafo brasileiro que trabalha principalmente em projetos documentais de longo prazo que exploram a humanidade e o impacto ambiental sobre as sociedades.",
     "Habilidades": "Fotografia documental, ambiental",
@@ -1442,7 +1412,7 @@
   {
     "Nome": "Henri",
     "Sobrenome": "Cartier-Bresson",
-    "Categoria": "#FOTOGRAFIA",
+    "categories": ["FOTOGRAFIA"],
     "Cargo": "Fotógrafo",
     "Perfil": "Henri Cartier-Bresson foi um fotógrafo francês considerado o pai do fotojornalismo moderno, famoso por sua técnica de 'momento decisivo' que busca capturar o ponto culminante de uma ação.",
     "Habilidades": "Fotojornalismo, fotografia de rua",
@@ -1457,7 +1427,7 @@
   {
     "Nome": "Dorothea",
     "Sobrenome": "Lange",
-    "Categoria": "#FOTOGRAFIA",
+    "categories": ["FOTOGRAFIA"],
     "Cargo": "Fotógrafa",
     "Perfil": "Dorothea Lange foi uma influente fotógrafa americana, conhecida por suas obras impactantes durante a Grande Depressão, que destacam as dificuldades humanas e a dignidade.",
     "Habilidades": "Fotografia documental, retrato social",
@@ -1472,7 +1442,7 @@
   {
     "Nome": "Indra",
     "Sobrenome": "Nooyi",
-    "Categoria": "#NEGÓCIOS",
+    "categories": ["NEGOCIOS"],
     "Cargo": "Ex-CEO da PepsiCo",
     "Perfil": "Indra Nooyi é uma líder empresarial americana de origem indiana, conhecida por seu papel como CEO da PepsiCo, onde redefiniu a empresa com um foco em crescimento saudável e sustentabilidade.",
     "Habilidades": "Liderança corporativa, sustentabilidade",
@@ -1487,7 +1457,7 @@
   {
     "Nome": "Jack",
     "Sobrenome": "Ma",
-    "Categoria": "#NEGÓCIOS",
+    "categories": ["NEGOCIOS"],
     "Cargo": "Fundador do Alibaba Group",
     "Perfil": "Jack Ma é o fundador do Alibaba Group, um pioneiro no e-commerce e tecnologia na China, conhecido por sua visão empreendedora e habilidades de negociação.",
     "Habilidades": "Empreendedorismo, e-commerce, liderança",
@@ -1502,7 +1472,7 @@
   {
     "Nome": "Mary",
     "Sobrenome": "Barra",
-    "Categoria": "#NEGÓCIOS",
+    "categories": ["NEGOCIOS"],
     "Cargo": "CEO da General Motors",
     "Perfil": "Mary Barra lidera a General Motors com uma visão focada em inovação automotiva e marketing, impulsionando a empresa em direção a um futuro mais sustentável e tecnologicamente avançado.",
     "Habilidades": "Liderança empresarial, marketing automotivo",
@@ -1517,7 +1487,7 @@
   {
     "Nome": "Ginni",
     "Sobrenome": "Rometty",
-    "Categoria": "#NEGÓCIOS",
+    "categories": ["NEGOCIOS"],
     "Cargo": "Ex-CEO da IBM",
     "Perfil": "Ginni Rometty serviu como CEO da IBM, onde ela impulsionou a transformação da empresa em direção a áreas de alto crescimento como cloud computing, inteligência artificial e blockchain.",
     "Habilidades": "Liderança em tecnologia, transformação empresarial",
@@ -1532,7 +1502,7 @@
   {
     "Nome": "Satya",
     "Sobrenome": "Nadella",
-    "Categoria": "#NEGÓCIOS",
+    "categories": ["NEGOCIOS"],
     "Cargo": "CEO da Microsoft",
     "Perfil": "Satya Nadella é o CEO da Microsoft, reconhecido por revitalizar a empresa e focar em tecnologias de cloud computing e inteligência artificial para manter a relevância da Microsoft na nova era digital.",
     "Habilidades": "Liderança em tecnologia, inovação em software",
@@ -1547,7 +1517,7 @@
   {
     "Nome": "Ursula",
     "Sobrenome": "Burns",
-    "Categoria": "#NEGÓCIOS",
+    "categories": ["NEGOCIOS"],
     "Cargo": "Ex-CEO da Xerox",
     "Perfil": "Ursula Burns serviu como CEO da Xerox, tornando-se a primeira mulher afro-americana a liderar uma empresa Fortune 500, onde ela liderou a transformação da empresa de uma focada em fotocópias para uma de serviços e tecnologia.",
     "Habilidades": "Liderança empresarial, transformação corporativa",
@@ -1562,7 +1532,7 @@
   {
     "Nome": "Serena",
     "Sobrenome": "Williams",
-    "Categoria": "#ESPORTES",
+    "categories": ["ESPORTES"],
     "Cargo": "Tenista Profissional",
     "Perfil": "Serena Williams é uma das tenistas mais dominantes de todos os tempos, conhecida por sua força, habilidade e longevidade no esporte, acumulando inúmeros títulos de Grand Slam.",
     "Habilidades": "Jogo de base, força física, resiliência mental",
@@ -1577,7 +1547,7 @@
   {
     "Nome": "Cristiano",
     "Sobrenome": "Ronaldo",
-    "Categoria": "#ESPORTES",
+    "categories": ["ESPORTES"],
     "Cargo": "Futebolista Profissional",
     "Perfil": "Cristiano Ronaldo é um dos futebolistas mais famosos e bem-sucedidos do mundo, conhecido por sua habilidade técnica, velocidade e capacidade de gol.",
     "Habilidades": "Finalização, drible, jogo aéreo",
@@ -1592,7 +1562,7 @@
   {
     "Nome": "Simone",
     "Sobrenome": "Biles",
-    "Categoria": "#ESPORTES",
+    "categories": ["ESPORTES"],
     "Cargo": "Ginasta Artística",
     "Perfil": "Simone Biles é considerada uma das melhores e mais decoradas ginastas de todos os tempos, conhecida por sua inovação e domínio nas competições mundiais.",
     "Habilidades": "Flexibilidade, força, técnicas de ginástica",
@@ -1607,7 +1577,7 @@
   {
     "Nome": "Usain",
     "Sobrenome": "Bolt",
-    "Categoria": "#ESPORTES",
+    "categories": ["ESPORTES"],
     "Cargo": "Sprinter",
     "Perfil": "Usain Bolt, apelidado de 'Raio', é um ex-sprinter jamaicano e o homem mais rápido de todos os tempos, detendo os recordes mundiais dos 100 metros, 200 metros e 4x100 metros estafetas.",
     "Habilidades": "Velocidade, aceleração, resistência",
@@ -1622,7 +1592,7 @@
   {
     "Nome": "Michael",
     "Sobrenome": "Phelps",
-    "Categoria": "#ESPORTES",
+    "categories": ["ESPORTES"],
     "Cargo": "Nadador",
     "Perfil": "Michael Phelps é um ex-nadador competitivo americano e o atleta mais condecorado da história das Olimpíadas, conhecido por suas performances excepcionais em diversas edições dos jogos.",
     "Habilidades": "Natação, técnicas de braçada, capacidade pulmonar",
@@ -1637,7 +1607,7 @@
   {
     "Nome": "LeBron",
     "Sobrenome": "James",
-    "Categoria": "#ESPORTES",
+    "categories": ["ESPORTES"],
     "Cargo": "Jogador de Basquete",
     "Perfil": "LeBron James é uma superestrela da NBA, conhecido por seu jogo versátil, inteligência em quadra e liderança, tanto dentro quanto fora da quadra.",
     "Habilidades": "Basquetebol, visão de jogo, liderança",
@@ -1652,7 +1622,7 @@
   {
     "Nome": "Kobe",
     "Sobrenome": "Bryant",
-    "Categoria": "#BASQUETE",
+    "categories": ["BASQUETE"],
     "Cargo": "Jogador de Basquete Profissional",
     "Perfil": "Kobe Bryant foi uma lenda da NBA, jogando toda a sua carreira de 20 anos com o Los Angeles Lakers. Ele é conhecido por sua ética de trabalho incansável e sua habilidade fenomenal de pontuação.",
     "Habilidades": "Pontuação, ética de trabalho, liderança",
@@ -1667,7 +1637,7 @@
   {
     "Nome": "Shaquille",
     "Sobrenome": "O'Neal",
-    "Categoria": "#BASQUETE",
+    "categories": ["BASQUETE"],
     "Cargo": "Jogador de Basquete Profissional",
     "Perfil": "Shaquille O'Neal, conhecido simplesmente como Shaq, é um dos jogadores mais dominantes na história da NBA, famoso por sua presença imponente no garrafão.",
     "Habilidades": "Jogo interior, bloqueios, presença física",
@@ -1682,7 +1652,7 @@
   {
     "Nome": "Larry",
     "Sobrenome": "Bird",
-    "Categoria": "#BASQUETE",
+    "categories": ["BASQUETE"],
     "Cargo": "Jogador de Basquete Profissional",
     "Perfil": "Larry Bird é um dos grandes nomes da NBA, conhecido por sua precisão nos arremessos, inteligência de jogo e rivalidade feroz com Magic Johnson durante os anos 1980.",
     "Habilidades": "Arremesso, inteligência de jogo, competitividade",
@@ -1697,7 +1667,7 @@
   {
     "Nome": "Magic",
     "Sobrenome": "Johnson",
-    "Categoria": "#BASQUETE",
+    "categories": ["BASQUETE"],
     "Cargo": "Jogador de Basquete Profissional",
     "Perfil": "Magic Johnson é celebrado por sua versatilidade em quadra e por liderar o Los Angeles Lakers ao sucesso nos anos 1980 com seu estilo de jogo espetacular e carismático.",
     "Habilidades": "Passes, visão de jogo, liderança",
@@ -1712,7 +1682,7 @@
   {
     "Nome": "Tim",
     "Sobrenome": "Duncan",
-    "Categoria": "#BASQUETE",
+    "categories": ["BASQUETE"],
     "Cargo": "Jogador de Basquete Profissional",
     "Perfil": "Tim Duncan, apelidado de 'The Big Fundamental', é conhecido por sua eficiência técnica e liderança tranquila, levando o San Antonio Spurs a vários títulos da NBA.",
     "Habilidades": "Fundamentos do basquete, bloqueios, rebotes",
@@ -1727,7 +1697,7 @@
   {
     "Nome": "Allen",
     "Sobrenome": "Iverson",
-    "Categoria": "#BASQUETE",
+    "categories": ["BASQUETE"],
     "Cargo": "Jogador de Basquete Profissional",
     "Perfil": "Allen Iverson, também conhecido como 'The Answer', é famoso por sua atitude implacável e estilo de jogo energético, sendo um dos maiores pontuadores da história da NBA apesar de sua estatura relativamente baixa.",
     "Habilidades": "Pontuação, agilidade, atitude competitiva",
@@ -1742,7 +1712,7 @@
   {
     "Nome": "Coco",
     "Sobrenome": "Chanel",
-    "Categoria": "#MODA",
+    "categories": ["MODA"],
     "Cargo": "Designer de Moda",
     "Perfil": "Coco Chanel foi uma revolucionária designer de moda francesa, conhecida por liberar as mulheres dos corsets e introduzir um estilo mais casual e chic que definiu a moda feminina do século 20.",
     "Habilidades": "Design de alta costura, branding",
@@ -1757,7 +1727,7 @@
   {
     "Nome": "Giorgio",
     "Sobrenome": "Armani",
-    "Categoria": "#MODA",
+    "categories": ["MODA"],
     "Cargo": "Designer de Moda",
     "Perfil": "Giorgio Armani é conhecido por seu estilo limpo e sobrio que trouxe uma nova definição de elegância e conforto na moda masculina e feminina.",
     "Habilidades": "Design de moda, desenvolvimento de produto",
@@ -1772,7 +1742,7 @@
   {
     "Nome": "Vivienne",
     "Sobrenome": "Westwood",
-    "Categoria": "#MODA",
+    "categories": ["MODA"],
     "Cargo": "Designer de Moda",
     "Perfil": "Vivienne Westwood é uma designer britânica conhecida por suas contribuições ao punk e à moda new wave, trazendo um espírito de rebelião e inovação para as passarelas.",
     "Habilidades": "Design de moda, ativismo",
@@ -1787,7 +1757,7 @@
   {
     "Nome": "Karl",
     "Sobrenome": "Lagerfeld",
-    "Categoria": "#MODA",
+    "categories": ["MODA"],
     "Cargo": "Designer de Moda",
     "Perfil": "Karl Lagerfeld foi um icônico designer de moda conhecido por sua liderança nas casas de moda Chanel e Fendi, além de sua própria marca homônima, deixando um legado duradouro com seu estilo inconfundível e sua abordagem inovadora.",
     "Habilidades": "Design de alta costura, fotografia, branding",
@@ -1802,7 +1772,7 @@
   {
     "Nome": "Alexander",
     "Sobrenome": "McQueen",
-    "Categoria": "#MODA",
+    "categories": ["MODA"],
     "Cargo": "Designer de Moda",
     "Perfil": "Alexander McQueen foi um designer britânico conhecido por sua abordagem emocional e teatral à moda, com designs que frequentemente desafiavam normas e exploravam temas profundos de beleza e decadência.",
     "Habilidades": "Design de moda, showmanship",
@@ -1817,7 +1787,7 @@
   {
     "Nome": "Yves",
     "Sobrenome": "Saint Laurent",
-    "Categoria": "#MODA",
+    "categories": ["MODA"],
     "Cargo": "Designer de Moda",
     "Perfil": "Yves Saint Laurent foi um influente designer francês, conhecido por revolucionar a moda feminina com a introdução do terno feminino e por suas coleções que mesclavam arte e alta costura.",
     "Habilidades": "Alta costura, design revolucionário",
@@ -1832,7 +1802,7 @@
   {
     "Nome": "Anthony",
     "Sobrenome": "Bourdain",
-    "Categoria": "#VIAGEM",
+    "categories": ["VIAGEM"],
     "Cargo": "Chef, Autor, Apresentador de TV",
     "Perfil": "Anthony Bourdain foi um chef renomado e personalidade da televisão conhecido por seus programas que exploravam a intersecção entre culturas alimentares e viagens, destacando destinos menos conhecidos com uma abordagem crua e honesta.",
     "Habilidades": "Culinária, storytelling, exploração cultural",
@@ -1847,7 +1817,7 @@
   {
     "Nome": "Rick",
     "Sobrenome": "Steves",
-    "Categoria": "#VIAGEM",
+    "categories": ["VIAGEM"],
     "Cargo": "Autor, Apresentador de TV",
     "Perfil": "Rick Steves é um autor e apresentador de televisão americano especializado em viagens europeias. Seus guias e programas de TV têm ajudado milhões de pessoas a explorar a Europa de forma econômica e culturalmente enriquecedora.",
     "Habilidades": "Planejamento de viagens, educação cultural",
@@ -1862,7 +1832,7 @@
   {
     "Nome": "Paul",
     "Sobrenome": "Theroux",
-    "Categoria": "#VIAGEM",
+    "categories": ["VIAGEM"],
     "Cargo": "Autor",
     "Perfil": "Paul Theroux é um renomado escritor de viagens cujos livros, como 'The Great Railway Bazaar', são clássicos do gênero, conhecidos por suas observações perspicazes e frequentemente críticas sobre as sociedades que visita.",
     "Habilidades": "Escrita, exploração ferroviária, análise cultural",
@@ -1877,7 +1847,7 @@
   {
     "Nome": "Bruce",
     "Sobrenome": "Chatwin",
-    "Categoria": "#VIAGEM",
+    "categories": ["VIAGEM"],
     "Cargo": "Escritor",
     "Perfil": "Bruce Chatwin foi um escritor inglês cujas obras exploram conceitos de nomadismo, a complexidade das relações humanas e o desejo de aventura, destacando-se com livros como 'In Patagonia'.",
     "Habilidades": "Escrita, antropologia, exploração",
@@ -1892,7 +1862,7 @@
   {
     "Nome": "Michael",
     "Sobrenome": "Palin",
-    "Categoria": "#VIAGEM",
+    "categories": ["VIAGEM"],
     "Cargo": "Apresentador de TV, Escritor",
     "Perfil": "Michael Palin, ex-membro do grupo Monty Python, tornou-se um respeitado apresentador de programas de viagem, conhecido por sua série 'Around the World in 80 Days' que captura o espírito de aventura e humor.",
     "Habilidades": "Exploração global, apresentação, escrita humorística",
@@ -1907,7 +1877,7 @@
   {
     "Nome": "Elizabeth",
     "Sobrenome": "Gilbert",
-    "Categoria": "#VIAGEM",
+    "categories": ["VIAGEM"],
     "Cargo": "Autora",
     "Perfil": "Elizabeth Gilbert é conhecida por seu livro 'Eat, Pray, Love', no qual narra sua jornada de auto-descoberta ao viajar pelo mundo após um divórcio, explorando a comida, a espiritualidade e o amor.",
     "Habilidades": "Escrita, exploração pessoal, inspiração",
@@ -1922,7 +1892,7 @@
   {
     "Nome": "Angela",
     "Sobrenome": "Merkel",
-    "Categoria": "#POLÍTICA",
+    "categories": ["POLITICA"],
     "Cargo": "Ex-Chanceler da Alemanha",
     "Perfil": "Angela Merkel serviu como Chanceler da Alemanha por quatro mandatos, sendo reconhecida por sua liderança pragmática e firme durante crises econômicas e políticas significativas na Europa.",
     "Habilidades": "Liderança política, diplomacia, gestão de crises",
@@ -1937,7 +1907,7 @@
   {
     "Nome": "Barack",
     "Sobrenome": "Obama",
-    "Categoria": "#POLÍTICA",
+    "categories": ["POLITICA"],
     "Cargo": "Ex-Presidente dos Estados Unidos",
     "Perfil": "Barack Obama foi o 44º presidente dos Estados Unidos, conhecido por suas políticas progressistas, incluindo a reforma da saúde e seus esforços em política externa.",
     "Habilidades": "Oratória, legislação, relações internacionais",
@@ -1952,7 +1922,7 @@
   {
     "Nome": "Jacinda",
     "Sobrenome": "Ardern",
-    "Categoria": "#POLÍTICA",
+    "categories": ["POLITICA"],
     "Cargo": "Primeira-Ministra da Nova Zelândia",
     "Perfil": "Jacinda Ardern é conhecida por seu estilo de liderança empático e eficaz, destacando-se durante a gestão de crises, como os ataques em Christchurch e a pandemia de COVID-19.",
     "Habilidades": "Gestão de crises, política de inclusão, comunicação",
@@ -1967,7 +1937,7 @@
   {
     "Nome": "Vladimir",
     "Sobrenome": "Putin",
-    "Categoria": "#POLÍTICA",
+    "categories": ["POLITICA"],
     "Cargo": "Presidente da Rússia",
     "Perfil": "Vladimir Putin tem sido uma figura central na política russa desde o final dos anos 90, dominando o cenário político do país através de sua presidência e primeiros-ministros.",
     "Habilidades": "Estratégia política, controle de mídia, operações de segurança",
@@ -1982,7 +1952,7 @@
   {
     "Nome": "Narendra",
     "Sobrenome": "Modi",
-    "Categoria": "#POLÍTICA",
+    "categories": ["POLITICA"],
     "Cargo": "Primeiro-Ministro da Índia",
     "Perfil": "Narendra Modi é conhecido por sua governança vigorosa e políticas de reforma econômica na Índia, além de ser uma figura polarizadora na política interna e externa do país.",
     "Habilidades": "Gestão governamental, oratória, reformas econômicas",
@@ -1997,7 +1967,7 @@
   {
     "Nome": "Margaret",
     "Sobrenome": "Thatcher",
-    "Categoria": "#POLÍTICA",
+    "categories": ["POLITICA"],
     "Cargo": "Ex-Primeira-Ministra do Reino Unido",
     "Perfil": "Margaret Thatcher foi a primeira mulher a ocupar o cargo de Primeira-Ministra no Reino Unido, conhecida por suas políticas conservadoras e a condução de reformas econômicas radicais nos anos 80.",
     "Habilidades": "Liderança, políticas econômicas, diplomacia",
@@ -2012,7 +1982,7 @@
   {
     "Nome": "Gordon",
     "Sobrenome": "Ramsay",
-    "Categoria": "#GASTRONOMIA",
+    "categories": ["GASTRONOMIA"],
     "Cargo": "Chef, Restaurateur, Personalidade de TV",
     "Perfil": "Gordon Ramsay é um chef britânico conhecido por seus restaurantes premiados e sua presença forte em programas de culinária como 'Hell's Kitchen'. Ramsay é famoso por sua abordagem direta e exigente na cozinha.",
     "Habilidades": "Culinária de alta cozinha, gestão de restaurantes, mídia",
@@ -2027,7 +1997,7 @@
   {
     "Nome": "Alain",
     "Sobrenome": "Ducasse",
-    "Categoria": "#GASTRONOMIA",
+    "categories": ["GASTRONOMIA"],
     "Cargo": "Chef, Restaurateur",
     "Perfil": "Alain Ducasse é um dos chefs mais renomados do mundo, com um número recorde de estrelas Michelin. Ducasse promove uma filosofia de ingredientes simples que falam por si, com ênfase em sabores naturais e técnicas precisas.",
     "Habilidades": "Culinária francesa, educação culinária, sustentabilidade",
@@ -2042,7 +2012,7 @@
   {
     "Nome": "Alice",
     "Sobrenome": "Waters",
-    "Categoria": "#GASTRONOMIA",
+    "categories": ["GASTRONOMIA"],
     "Cargo": "Chef, Ativista",
     "Perfil": "Alice Waters é uma chef americana, autora e proprietária do restaurante Chez Panisse, em Berkeley, Califórnia. Ela é uma pioneira da culinária sustentável e defensora do movimento 'farm-to-table'.",
     "Habilidades": "Culinária orgânica, educação alimentar, ativismo",
@@ -2057,7 +2027,7 @@
   {
     "Nome": "René",
     "Sobrenome": "Redzepi",
-    "Categoria": "#GASTRONOMIA",
+    "categories": ["GASTRONOMIA"],
     "Cargo": "Chef, Restaurateur",
     "Perfil": "René Redzepi é o chef e co-proprietário do Noma em Copenhague, Dinamarca, frequentemente classificado como um dos melhores restaurantes do mundo. Redzepi é célebre por sua reinvenção da cozinha nórdica.",
     "Habilidades": "Culinária nórdica, forrageamento, inovação culinária",
@@ -2072,7 +2042,7 @@
   {
     "Nome": "Massimo",
     "Sobrenome": "Bottura",
-    "Categoria": "#GASTRONOMIA",
+    "categories": ["GASTRONOMIA"],
     "Cargo": "Chef, Restaurateur",
     "Perfil": "Massimo Bottura é um chef italiano, cujo restaurante Osteria Francescana foi classificado várias vezes como o melhor do mundo. Ele é conhecido por suas interpretações contemporâneas de pratos italianos clássicos.",
     "Habilidades": "Culinária italiana moderna, arte culinária",
@@ -2087,7 +2057,7 @@
   {
     "Nome": "Ferran",
     "Sobrenome": "Adrià",
-    "Categoria": "#GASTRONOMIA",
+    "categories": ["GASTRONOMIA"],
     "Cargo": "Chef, Restaurateur",
     "Perfil": "Ferran Adrià é conhecido por ter sido o chef do elBulli, em Roses, Espanha, onde praticava uma forma de culinária conhecida como 'gastronomia molecular'. Seu trabalho no elBulli redefiniu as possibilidades da culinária moderna.",
     "Habilidades": "Gastronomia molecular, inovação culinária",
@@ -2102,7 +2072,7 @@
   {
     "Nome": "Beyoncé",
     "Sobrenome": "Knowles-Carter",
-    "Categoria": "#MÚSICA",
+    "categories": ["MUSICA"],
     "Cargo": "Cantora, Compositora, Produtora",
     "Perfil": "Beyoncé é uma das artistas mais influentes do mundo, conhecida por sua poderosa voz, performances dinâmicas e seu papel na cultura pop. Ela tem múltiplos álbuns aclamados pela crítica e prêmios Grammy.",
     "Habilidades": "Vocal, dança, produção musical",
@@ -2117,7 +2087,7 @@
   {
     "Nome": "Bob",
     "Sobrenome": "Dylan",
-    "Categoria": "#MÚSICA",
+    "categories": ["MUSICA"],
     "Cargo": "Cantor, Compositor",
     "Perfil": "Bob Dylan é um icônico cantor e compositor americano, cujas letras poéticas e música têm influenciado inúmeras gerações. Ele é conhecido por suas contribuições ao folk, rock e música popular.",
     "Habilidades": "Composição, guitarra, harmonica",
@@ -2132,7 +2102,7 @@
   {
     "Nome": "Adele",
     "Sobrenome": "Adkins",
-    "Categoria": "#MÚSICA",
+    "categories": ["MUSICA"],
     "Cargo": "Cantora, Compositora",
     "Perfil": "Adele é uma cantora e compositora britânica, mundialmente famosa por sua voz emotiva e poderosa. Ela é conhecida por seus hits que frequentemente alcançam o topo das paradas de sucesso.",
     "Habilidades": "Vocal, composição emocional",
@@ -2147,7 +2117,7 @@
   {
     "Nome": "Bruce",
     "Sobrenome": "Springsteen",
-    "Categoria": "#MÚSICA",
+    "categories": ["MUSICA"],
     "Cargo": "Cantor, Compositor",
     "Perfil": "Bruce Springsteen, apelidado de 'The Boss', é um renomado músico americano conhecido por suas letras profundas, suas performances enérgicas e sua música que reflete questões sociais e pessoais.",
     "Habilidades": "Guitarra, composição, performance ao vivo",
@@ -2162,7 +2132,7 @@
   {
     "Nome": "Madonna",
     "Sobrenome": "Ciccone",
-    "Categoria": "#MÚSICA",
+    "categories": ["MUSICA"],
     "Cargo": "Cantora, Compositora, Produtora",
     "Perfil": "Madonna é conhecida como a 'Rainha do Pop' e é uma das figuras mais influentes na cultura pop. Ela é famosa por reinventar tanto sua música quanto sua imagem ao longo de sua carreira.",
     "Habilidades": "Vocal, dança, inovação artística",
@@ -2177,7 +2147,7 @@
   {
     "Nome": "Prince",
     "Sobrenome": "Nelson",
-    "Categoria": "#MÚSICA",
+    "categories": ["MUSICA"],
     "Cargo": "Cantor, Compositor, Multi-Instrumentista",
     "Perfil": "Prince foi um músico revolucionário conhecido por sua eclética obra, vasto alcance vocal e habilidades excepcionais como multi-instrumentista. Ele deixou um legado duradouro na música com hits que atravessam diversos gêneros.",
     "Habilidades": "Composição, instrumentos múltiplos, performance",
@@ -2192,7 +2162,7 @@
   {
     "Nome": "Steven",
     "Sobrenome": "Spielberg",
-    "Categoria": "#CINEMA",
+    "categories": ["CINEMA"],
     "Cargo": "Diretor, Produtor",
     "Perfil": "Steven Spielberg é um dos diretores mais influentes e reconhecidos no mundo do cinema, conhecido por filmes que marcaram gerações como 'E.T.', 'Jurassic Park' e 'Schindler's List'. Seu estilo narrativo envolvente e habilidade em trabalhar em diversos gêneros tornam suas obras amplamente aclamadas.",
     "Habilidades": "Direção cinematográfica, produção, storytelling visual",
@@ -2207,7 +2177,7 @@
   {
     "Nome": "Martin",
     "Sobrenome": "Scorsese",
-    "Categoria": "#CINEMA",
+    "categories": ["CINEMA"],
     "Cargo": "Diretor, Produtor",
     "Perfil": "Martin Scorsese é reconhecido por seus filmes intensos e detalhadamente construídos, com destaque para 'Taxi Driver', 'Goodfellas' e 'The Departed'. Ele explora temas complexos como crime, culpa e redenção, mostrando profundidade e humanidade em seus personagens.",
     "Habilidades": "Direção, produção, desenvolvimento de personagem",
@@ -2222,7 +2192,7 @@
   {
     "Nome": "Kathryn",
     "Sobrenome": "Bigelow",
-    "Categoria": "#CINEMA",
+    "categories": ["CINEMA"],
     "Cargo": "Diretora, Produtora",
     "Perfil": "Kathryn Bigelow é uma diretora e produtora de cinema que se destaca em filmes de ação e suspense. Ela é a primeira mulher a ganhar o Oscar de Melhor Direção por 'The Hurt Locker', um retrato intenso dos soldados desarmadores de bombas no Iraque.",
     "Habilidades": "Direção cinematográfica, narrativa de suspense, trabalho sob pressão",
@@ -2237,7 +2207,7 @@
   {
     "Nome": "Quentin",
     "Sobrenome": "Tarantino",
-    "Categoria": "#CINEMA",
+    "categories": ["CINEMA"],
     "Cargo": "Diretor, Roteirista",
     "Perfil": "Quentin Tarantino é conhecido por seu estilo distintivo que inclui diálogos afiados, estrutura narrativa não-linear e influência estética do cinema de exploração. Seus filmes, como 'Pulp Fiction' e 'Django Unchained', são culturalmente significativos e frequentemente controversos.",
     "Habilidades": "Roteirização, direção, desenvolvimento de diálogos",
@@ -2252,7 +2222,7 @@
   {
     "Nome": "Alfred",
     "Sobrenome": "Hitchcock",
-    "Categoria": "#CINEMA",
+    "categories": ["CINEMA"],
     "Cargo": "Diretor, Produtor",
     "Perfil": "Alfred Hitchcock, conhecido como o 'Mestre do Suspense', revolucionou o cinema com técnicas inovadoras de suspense e terror psicológico. Seus filmes, como 'Psycho' e 'Rear Window', são estudos de caso em tensão e medo, influenciando gerações de cineastas.",
     "Habilidades": "Direção, criação de suspense, inovação cinematográfica",
@@ -2267,7 +2237,7 @@
   {
     "Nome": "Wes",
     "Sobrenome": "Anderson",
-    "Categoria": "#CINEMA",
+    "categories": ["CINEMA"],
     "Cargo": "Diretor, Roteirista",
     "Perfil": "Wes Anderson é reconhecido por seu estilo visual e narrativo único, com uma abordagem meticulosamente detalhista. Seus filmes, como 'The Grand Budapest Hotel' e 'Moonrise Kingdom', são conhecidos por suas paletas de cores vibrantes e simetria visual.",
     "Habilidades": "Estilo visual, roteirização, direção",
@@ -2282,7 +2252,7 @@
   {
     "Nome": "Shigeru",
     "Sobrenome": "Miyamoto",
-    "Categoria": "#JOGOS",
+    "categories": ["JOGOS"],
     "Cargo": "Designer de Jogos, Produtor",
     "Perfil": "Shigeru Miyamoto é um designer de jogos japonês famoso por criar algumas das franquias mais bem-sucedidas da Nintendo, incluindo Mario, Donkey Kong e The Legend of Zelda. Ele é conhecido por seu estilo criativo e abordagem inovadora ao design de jogos.",
     "Habilidades": "Design de jogos, storytelling, inovação em gameplay",
@@ -2297,7 +2267,7 @@
   {
     "Nome": "Hideo",
     "Sobrenome": "Kojima",
-    "Categoria": "#JOGOS",
+    "categories": ["JOGOS"],
     "Cargo": "Designer de Jogos, Diretor",
     "Perfil": "Hideo Kojima é um influente criador de jogos conhecido mundialmente por sua série Metal Gear Solid, que revolucionou o gênero de jogos de stealth com sua narrativa complexa e cinemática.",
     "Habilidades": "Narrativa, design de jogos, direção criativa",
@@ -2312,7 +2282,7 @@
   {
     "Nome": "Sid",
     "Sobrenome": "Meier",
-    "Categoria": "#JOGOS",
+    "categories": ["JOGOS"],
     "Cargo": "Designer de Jogos",
     "Perfil": "Sid Meier é um designer de jogos canadense-americano, mais conhecido por sua série de jogos de estratégia Civilization. Ele é um pioneiro no campo dos jogos de estratégia e é frequentemente citado como 'o pai dos jogos de computador de estratégia modernos'.",
     "Habilidades": "Design de jogos de estratégia, programação, inovação",
@@ -2327,7 +2297,7 @@
   {
     "Nome": "John",
     "Sobrenome": "Carmack",
-    "Categoria": "#JOGOS",
+    "categories": ["JOGOS"],
     "Cargo": "Programador, Engenheiro",
     "Perfil": "John Carmack é um programador americano, co-fundador da id Software, conhecido por seu trabalho pioneiro em jogos como Doom e Quake. Seu trabalho no desenvolvimento de gráficos 3D teve um impacto profundo na indústria.",
     "Habilidades": "Programação gráfica, desenvolvimento de engines, inovação técnica",
@@ -2342,7 +2312,7 @@
   {
     "Nome": "Jane",
     "Sobrenome": "McGonigal",
-    "Categoria": "#JOGOS",
+    "categories": ["JOGOS"],
     "Cargo": "Designer de Jogos, Autora",
     "Perfil": "Jane McGonigal é uma designer de jogos e autora conhecida por sua advocacia nos jogos como meio de melhorar as habilidades humanas e enfrentar problemas reais através do engajamento lúdico e colaborativo.",
     "Habilidades": "Design de jogos, pesquisa, escrita",
@@ -2357,7 +2327,7 @@
   {
     "Nome": "Will",
     "Sobrenome": "Wright",
-    "Categoria": "#JOGOS",
+    "categories": ["JOGOS"],
     "Cargo": "Designer de Jogos",
     "Perfil": "Will Wright é um designer de jogos conhecido por criar SimCity e The Sims, dois dos jogos mais inovadores que permitiram aos jogadores experimentar simulações da vida real em um formato interativo e envolvente.",
     "Habilidades": "Design de simulação, criatividade, desenvolvimento de software",
@@ -2372,7 +2342,7 @@
   {
     "Nome": "Elon",
     "Sobrenome": "Musk",
-    "Categoria": "#AUTO",
+    "categories": ["AUTO"],
     "Cargo": "CEO da Tesla",
     "Perfil": "Elon Musk é o CEO da Tesla, Inc., onde ele tem sido uma figura chave na revolução dos veículos elétricos, promovendo inovações tecnológicas que têm transformado a indústria automobilística.",
     "Habilidades": "Inovação tecnológica, liderança empresarial, engenharia",
@@ -2387,7 +2357,7 @@
   {
     "Nome": "Enzo",
     "Sobrenome": "Ferrari",
-    "Categoria": "#AUTO",
+    "categories": ["AUTO"],
     "Cargo": "Fundador da Ferrari",
     "Perfil": "Enzo Ferrari foi o fundador da Ferrari, uma das marcas mais icônicas no mundo automobilístico, conhecida por seus carros de alto desempenho e presença dominante na Fórmula 1.",
     "Habilidades": "Design automotivo, gestão de equipes de corrida",
@@ -2402,7 +2372,7 @@
   {
     "Nome": "Ferdinand",
     "Sobrenome": "Porsche",
-    "Categoria": "#AUTO",
+    "categories": ["AUTO"],
     "Cargo": "Fundador da Porsche",
     "Perfil": "Ferdinand Porsche foi um engenheiro automotivo austríaco e o fundador da Porsche AG, famoso por criar o primeiro Volkswagen e vários veículos esportivos que levaram seu sobrenome a se tornar sinônimo de inovação e desempenho.",
     "Habilidades": "Engenharia automotiva, design de carros esportivos",
@@ -2417,7 +2387,7 @@
   {
     "Nome": "Henry",
     "Sobrenome": "Ford",
-    "Categoria": "#AUTO",
+    "categories": ["AUTO"],
     "Cargo": "Fundador da Ford Motor Company",
     "Perfil": "Henry Ford foi um industrial americano, fundador da Ford Motor Company, e o pioneiro das linhas de montagem usadas para a produção em massa de automóveis, revolucionando a indústria automotiva e a manufatura moderna.",
     "Habilidades": "Produção em massa, inovação industrial, liderança empresarial",
@@ -2432,7 +2402,7 @@
   {
     "Nome": "Ferruccio",
     "Sobrenome": "Lamborghini",
-    "Categoria": "#AUTO",
+    "categories": ["AUTO"],
     "Cargo": "Fundador da Lamborghini",
     "Perfil": "Ferruccio Lamborghini fundou a Automobili Lamborghini, uma empresa italiana de carros esportivos e supercarros, conhecida por seu design distintivo e inovações em desempenho que competem com os maiores nomes da indústria automobilística.",
     "Habilidades": "Empreendedorismo, design automotivo, desenvolvimento de produto",
@@ -2447,7 +2417,7 @@
   {
     "Nome": "Karl",
     "Sobrenome": "Benz",
-    "Categoria": "#AUTO",
+    "categories": ["AUTO"],
     "Cargo": "Inventor do Automóvel",
     "Perfil": "Karl Benz foi um engenheiro alemão e o inventor do primeiro automóvel movido a gasolina, o Benz Patent-Motorwagen. Sua invenção estabeleceu a base para o desenvolvimento moderno dos carros e fundou a Mercedes-Benz.",
     "Habilidades": "Engenharia mecânica, inovação automotiva, prototipagem",
@@ -2462,7 +2432,7 @@
   {
     "Nome": "Albert",
     "Sobrenome": "Einstein",
-    "Categoria": "#CIÊNCIA",
+    "categories": ["CIENCIA"],
     "Cargo": "Físico Teórico",
     "Perfil": "Albert Einstein foi um físico teórico nascido na Alemanha, conhecido por desenvolver a teoria da relatividade, um dos pilares da física moderna, ao lado da mecânica quântica. Suas ideias revolucionaram como entendemos o tempo, o espaço, a matéria e a energia.",
     "Habilidades": "Teoria da relatividade, física quântica, pensamento conceitual",
@@ -2477,7 +2447,7 @@
   {
     "Nome": "Marie",
     "Sobrenome": "Curie",
-    "Categoria": "#CIÊNCIA",
+    "categories": ["CIENCIA"],
     "Cargo": "Física e Química",
     "Perfil": "Marie Curie foi uma cientista polonesa-francesa pioneira no estudo da radioatividade, sendo a primeira mulher a ganhar um Prêmio Nobel e única a ganhá-lo em duas ciências diferentes (Física e Química). Seu trabalho foi crucial para o desenvolvimento de raios-X em cirurgias.",
     "Habilidades": "Radioatividade, pesquisa de radiação, química",
@@ -2492,7 +2462,7 @@
   {
     "Nome": "Stephen",
     "Sobrenome": "Hawking",
-    "Categoria": "#CIÊNCIA",
+    "categories": ["CIENCIA"],
     "Cargo": "Físico Teórico",
     "Perfil": "Stephen Hawking foi um físico britânico, autor e diretor de pesquisa no Centro de Cosmologia Teórica da Universidade de Cambridge. Ele é conhecido por seus trabalhos sobre os buracos negros e teorias relacionadas ao big bang.",
     "Habilidades": "Cosmologia, buracos negros, divulgação científica",
@@ -2507,7 +2477,7 @@
   {
     "Nome": "Rosalind",
     "Sobrenome": "Franklin",
-    "Categoria": "#CIÊNCIA",
+    "categories": ["CIENCIA"],
     "Cargo": "Química, Cristalógrafa",
     "Perfil": "Rosalind Franklin foi uma cientista notável cujo trabalho em cristalografia de raios X foi crucial para entender a estrutura do DNA. Apesar de seu papel fundamental, suas contribuições só foram amplamente reconhecidas postumamente.",
     "Habilidades": "Cristalografia de raios X, biologia molecular, fotografia científica",
@@ -2522,7 +2492,7 @@
   {
     "Nome": "Carl",
     "Sobrenome": "Sagan",
-    "Categoria": "#CIÊNCIA",
+    "categories": ["CIENCIA"],
     "Cargo": "Astrônomo, Astrofísico",
     "Perfil": "Carl Sagan foi um astrônomo americano, cosmólogo, astrobiólogo, autor e educador científico. Ele é mais conhecido por seu trabalho como apresentador da série 'Cosmos', que cultivou o fascínio público pelo universo.",
     "Habilidades": "Divulgação científica, pesquisa espacial, escrita",
@@ -2537,7 +2507,7 @@
   {
     "Nome": "Neil deGrasse",
     "Sobrenome": "Tyson",
-    "Categoria": "#CIÊNCIA",
+    "categories": ["CIENCIA"],
     "Cargo": "Astrofísico",
     "Perfil": "Neil deGrasse Tyson é um astrofísico americano e um dos comunicadores de ciência mais populares no mundo contemporâneo. Ele é diretor do Planetário Hayden no Museu Americano de História Natural e tem sido um defensor apaixonado da ciência e da educação espacial.",
     "Habilidades": "Astrofísica, educação pública, comunicação",

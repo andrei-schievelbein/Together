@@ -64,6 +64,7 @@ dependencies {
     implementation(libs.firebase.firestore)
     implementation(libs.androidx.media3.common)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.mediation.test.suite)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -76,6 +77,9 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
     // https://mvnrepository.com/artifact/com.google.code.gson/gson
     implementation("com.google.code.gson:gson:2.10")
+    // https://mvnrepository.com/artifact/io.coil-kt/coil-compose
+    implementation("io.coil-kt:coil-compose:2.6.0")
+
 
 
 
