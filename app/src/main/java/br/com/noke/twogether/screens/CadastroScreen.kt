@@ -54,6 +54,7 @@ fun CadastroScreen(viewModel: UserViewModel, navController: NavController) {
     var celular by remember { mutableStateOf("") }
     var senha by remember { mutableStateOf("") }
     var confirmacao by remember { mutableStateOf("") }
+    var showError by remember { mutableStateOf(false) }
 
 
 
@@ -107,8 +108,9 @@ fun CadastroScreen(viewModel: UserViewModel, navController: NavController) {
                     label = { TextWithIcon("Seu nome", Icons.Outlined.AccountCircle) },
                     modifier = Modifier
                         .padding(top = 10.dp)
-                        .width(380.dp)
-                        .height(70.dp)
+//                        .width(380.dp)
+//                        .height(70.dp)
+                        .fillMaxWidth()
                         .align(Alignment.CenterHorizontally)
 
                 )
@@ -157,18 +159,31 @@ fun CadastroScreen(viewModel: UserViewModel, navController: NavController) {
                         .align(Alignment.CenterHorizontally)
                 )
             }
+
+            if (showError) {
+                Text(
+                    text = "Favor preencha todos os campos.",
+                    color = Color.Red,
+                    modifier = Modifier.padding(top = 8.dp, start = 16.dp, end = 16.dp)
+                )
+            }
+
             Spacer(modifier = Modifier.height(90.dp))
 
             Button(
                 onClick = {
-                    viewModel.addUser(
-                        User(
-                            nome = nome,
-                            email = email,
-                            celular = celular
+                    if (nome.isNotBlank() && email.isNotBlank() && celular.isNotBlank()) {
+                        viewModel.addUser(
+                            User(
+                                nome = nome,
+                                email = email,
+                                celular = celular
+                            )
                         )
-                    )
-                    navController.navigate("categoria")
+                        navController.navigate("categoria")
+                    } else {
+                        showError = true
+                    }
                 },
                 modifier = Modifier
                     .padding(16.dp)

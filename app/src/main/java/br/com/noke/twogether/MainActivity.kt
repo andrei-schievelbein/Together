@@ -28,27 +28,6 @@ import br.com.noke.twogether.screens.ListagemScreen
 import br.com.noke.twogether.screens.LoginScreen
 import br.com.noke.twogether.ui.theme.TwogetherTheme
 
-
-//class MainActivity : ComponentActivity() {
-//
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        MobileAds.initialize(this)
-//
-//        // Criação do UserRepository
-//        val userRepository = UserRepository(FirebaseFirestore.getInstance())
-//        // Criação da Factory
-//        val factory = ViewModelFactory(userRepository)
-//
-//        // Obtenção do ViewModel
-//        val viewModel = ViewModelProvider(this, factory).get(UserViewModel::class.java)
-//
-//        setContent {
-//            CadastroScreen(viewModel)
-//        }
-//    }
-//}
-
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -72,12 +51,12 @@ class MainActivity : ComponentActivity() {
                         navController = navController,
                         startDestination = "login",
                         exitTransition = {
-                            slideOutHorizontally(animationSpec = tween(durationMillis = 2000)) + fadeOut(
+                            slideOutHorizontally(animationSpec = tween(durationMillis = 1000)) + fadeOut(
                                 animationSpec = tween(1000)
                             )
                         },
                         enterTransition = {
-                            slideInVertically(animationSpec = tween(durationMillis = 2000)) + fadeIn(
+                            slideInVertically(animationSpec = tween(durationMillis = 1000)) + fadeIn(
                                 animationSpec = tween(1000)
                             )
                         }

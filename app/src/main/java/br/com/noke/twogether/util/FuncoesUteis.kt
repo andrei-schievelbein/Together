@@ -33,7 +33,7 @@ fun DeleteAllDocuments(modifier: Modifier = Modifier) {
     deleteAllDocumentsFromCollection("users")
 }
 
-@Composable
+@Composable //lista dos os usuários do Firestore por nome e sobrenome
 fun ReadAllDocuments(viewModel: UserViewModel, modifier: Modifier = Modifier) {
     //Ler Nome e Sobrenome de todos os usuários do Firestore
     val users by viewModel.users.collectAsState()

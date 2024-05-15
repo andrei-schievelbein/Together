@@ -34,16 +34,17 @@ class UserRepository(private val db: FirebaseFirestore) {
     }
 
     // Atualiza as categorias do usuário
-    suspend fun updateUserCategories(userId: String, categories: List<String>): Boolean = withContext(Dispatchers.IO) {
-        try {
-            db.collection("users").document(userId)
-                .update("categories", categories)
-                .await()
-            true
-        } catch (e: Exception) {
-            false
+    suspend fun updateUserCategories(userId: String, categories: List<String>): Boolean =
+        withContext(Dispatchers.IO) {
+            try {
+                db.collection("users").document(userId)
+                    .update("categories", categories)
+                    .await()
+                true
+            } catch (e: Exception) {
+                false
+            }
         }
-    }
 
     // Função para converter User para um Map antes de salvar no Firestore
     private fun User.toMap(): Map<String, Any> {
@@ -65,51 +66,37 @@ class UserRepository(private val db: FirebaseFirestore) {
         )
     }
 
-
-
-//    fun getUsers(): Flow<List<User>> = callbackFlow {
-//        val listenerRegistration = db.collection("users")
-//            .addSnapshotListener { snapshot, e ->
-//                if (e != null) {
-//                    Log.e("UserRepository", "Error fetching users", e)
-//                    close(e) // Fechar o fluxo com erro
-//                    return@addSnapshotListener
-//                }
-//
-//                val users = snapshot?.documents?.mapNotNull {
-//                    it.toObject<User>(User::class.java)
-//                    Log.d("UserRepository", "Fetched user: $user")
-//                    user
-//
-//                }
-//                trySend(users ?: emptyList()).isSuccess
-//            }
-//
-//        awaitClose {
-//            listenerRegistration.remove()
-//        }
-//    }
-suspend fun getUsers(): Flow<List<User>> = callbackFlow {
-    val listenerRegistration = db.collection("users")
-        .addSnapshotListener { snapshot, e ->
-            if (e != null) {
-                Log.e("UserRepository", "Error fetching users", e)
-                close(e) // Fechar o fluxo com erro
-                return@addSnapshotListener
-            }
-
-            val users = snapshot?.documents?.mapNotNull { document ->
-                val user = document.toObject(User::class.java)
-                Log.d("UserRepository", "Fetched user: $user")
-                user
-            }
-            trySend(users ?: emptyList()).isSuccess
+    suspend fun getUserById(userId: String): User? = withContext(Dispatchers.IO) {
+        try {
+            val document = db.collection("users").document(userId).get().await()
+            document.toObject(User::class.java)
+        } catch (e: Exception) {
+            null
         }
-
-    awaitClose {
-        listenerRegistration.remove()
     }
-}
+
+
+    suspend fun getUsers(): Flow<List<User>> = callbackFlow {
+        val listenerRegistration = db.collection("users")
+            .addSnapshotListener { snapshot, e ->
+                if (e != null) {
+                    Log.e("UserRepository", "Error fetching users", e)
+                    close(e) // Fechar o fluxo com erro
+                    return@addSnapshotListener
+                }
+
+                val users = snapshot?.documents?.mapNotNull { document ->
+                    val user = document.toObject(User::class.java)
+                    Log.d("UserRepository", "Fetched user: $user")
+                    user
+                }
+                trySend(users ?: emptyList()).isSuccess
+            }
+
+        awaitClose {
+            listenerRegistration.remove()
+        }
+    }
 }
 
 
