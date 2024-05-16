@@ -48,12 +48,12 @@ import br.com.noke.twogether.viewmodel.UserViewModel
 
 @Composable
 fun CadastroScreen(viewModel: UserViewModel, navController: NavController) {
-    var nome by remember { mutableStateOf("") }
+    var nome by remember { mutableStateOf("teste") }
     var sobrenome by remember { mutableStateOf("") }
-    var email by remember { mutableStateOf("") }
-    var celular by remember { mutableStateOf("") }
-    var senha by remember { mutableStateOf("") }
-    var confirmacao by remember { mutableStateOf("") }
+    var email by remember { mutableStateOf("teste") }
+    var celular by remember { mutableStateOf("teste") }
+    var senha by remember { mutableStateOf("teste") }
+    var confirmacao by remember { mutableStateOf("teste") }
     var showError by remember { mutableStateOf(false) }
 
 

@@ -37,9 +37,13 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import br.com.noke.twogether.R
+import br.com.noke.twogether.util.DeleteAllDocuments
+import br.com.noke.twogether.util.ExportToFirestore
 
 @Composable
 fun LoginScreen(navController: NavController) {
+//    DeleteAllDocuments()
+//    ExportToFirestore()
     Box(modifier = Modifier.fillMaxSize()) {
 
         Column(modifier = Modifier.fillMaxSize()) {

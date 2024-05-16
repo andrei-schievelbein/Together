@@ -10,7 +10,7 @@
     "email": "mark@meta.com",
     "endereco": "1 Hacker Way, Menlo Park, CA 94025, EUA",
     "website": "https://www.meta.com",
-    "imagemURL": "",
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/220px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg",
 	"seguir": false,
     "match": false,
     "aprendiz": false
@@ -26,7 +26,7 @@
     "email": "satya@microsoft.com",
     "endereco": "One Microsoft Way, Redmond, WA 98052, EUA",
     "website": "https://www.microsoft.com",
-    "imagemURL": "",
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Satya_Nadella.jpg/250px-Satya_Nadella.jpg",
 	"seguir": false,
     "match": false,
     "aprendiz": false
@@ -42,7 +42,7 @@
     "email": "sundar@google.com",
     "endereco": "1600 Amphitheatre Parkway, Mountain View, CA 94043, EUA",
     "website": "https://www.google.com",
-    "imagemURL": "",
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Sundar_Pichai.jpg/250px-Sundar_Pichai.jpg",
 	"seguir": false,
     "match": false,
     "aprendiz": false
@@ -58,8 +58,8 @@
     "email": "sheryl@facebook.com",
     "endereco": "1 Hacker Way, Menlo Park, CA 94025, EUA",
     "website": "https://www.facebook.com",
-    "imagemURL": "",
-	"seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Sheryl_Sandberg_WEF_2013_%28crop_by_James_Tamim%29.jpg/200px-Sheryl_Sandberg_WEF_2013_%28crop_by_James_Tamim%29.jpg",
+	  "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -74,8 +74,8 @@
     "email": "elonmusk@tesla.com",
     "endereco": "3500 Deer Creek Road, Palo Alto, CA 94304, EUA",
     "website": "https://www.spacex.com",
-    "imagemURL": "",
-	"seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Elon_Musk_in_2023_%28cropped%29.jpg/220px-Elon_Musk_in_2023_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -90,7 +90,7 @@
     "email": "susan@youtube.com",
     "endereco": "901 Cherry Ave, San Bruno, CA 94066, EUA",
     "website": "https://www.youtube.com",
-    "imagemURL": "",
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Susan_Wojcicki_at_TechCrunch_Disrupt_SF_2013_%28cropped%29.jpg/200px-Susan_Wojcicki_at_TechCrunch_Disrupt_SF_2013_%28cropped%29.jpg",
 	"seguir": false,
     "match": false,
     "aprendiz": false
@@ -106,7 +106,8 @@
     "email": "anderson@cnn.com",
     "endereco": "One CNN Center, Atlanta, GA 30303, EUA",
     "website": "https://www.cnn.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Anderson_Cooper_by_Gage_Skidmore.jpg/220px-Anderson_Cooper_by_Gage_Skidmore.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -121,7 +122,8 @@
     "email": "christiane@cnn.com",
     "endereco": "CNN International, London, Reino Unido",
     "website": "https://www.cnn.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Christiane_Amanpour_2011_Shankbone.JPG/210px-Christiane_Amanpour_2011_Shankbone.JPG",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -136,7 +138,8 @@
     "email": "lester@nbcuni.com",
     "endereco": "30 Rockefeller Plaza, New York, NY 10112, EUA",
     "website": "https://www.nbcnews.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Lester_Holt_2022.jpg/200px-Lester_Holt_2022.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -151,7 +154,8 @@
     "email": "rachel@maddow.com",
     "endereco": "MSNBC, NBCUniversal, New York, NY, EUA",
     "website": "https://www.msnbc.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Rachel_Maddow_%282018%29.jpg/220px-Rachel_Maddow_%282018%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -166,7 +170,8 @@
     "email": "robin@gma.com",
     "endereco": "ABC News, New York, NY, EUA",
     "website": "https://www.goodmorningamerica.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Robin_Roberts_%2833613523178%29_%28cropped%29_%28Better_Version%29.jpg/220px-Robin_Roberts_%2833613523178%29_%28cropped%29_%28Better_Version%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -181,7 +186,8 @@
     "email": "tucker@foxnews.com",
     "endereco": "1211 Avenue of the Americas, New York, NY 10036, EUA",
     "website": "https://www.foxnews.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Tucker_Carlson_%2853067283901%29_%28cropped%29.jpg/220px-Tucker_Carlson_%2853067283901%29_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -196,7 +202,8 @@
     "email": "elon@spacex.com",
     "endereco": "1 Rocket Road, Hawthorne, CA 90250, EUA",
     "website": "https://www.spacex.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Elon_Musk_Colorado_2022_%28cropped2%29.jpg/220px-Elon_Musk_Colorado_2022_%28cropped2%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -211,7 +218,8 @@
     "email": "woz@apple.com",
     "endereco": "1 Infinite Loop, Cupertino, CA 95014, EUA",
     "website": "https://www.apple.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Steve_Wozniak_by_Gage_Skidmore_3_%28cropped%29.jpg/220px-Steve_Wozniak_by_Gage_Skidmore_3_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -226,7 +234,8 @@
     "email": "ginni@ibm.com",
     "endereco": "1 New Orchard Road, Armonk, NY 10504, EUA",
     "website": "https://www.ibm.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Ginni_Rometty_at_the_Fortune_MPW_Summit_in_2011.jpg/220px-Ginni_Rometty_at_the_Fortune_MPW_Summit_in_2011.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -241,7 +250,8 @@
     "email": "jeff@amazon.com",
     "endereco": "410 Terry Ave N, Seattle, WA 98109, EUA",
     "website": "https://www.amazon.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Jeff_Bezos_visits_LAAFB_SMC_%283908618%29_%28cropped%29.jpeg/200px-Jeff_Bezos_visits_LAAFB_SMC_%283908618%29_%28cropped%29.jpeg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -256,7 +266,8 @@
     "email": "sundar@google.com",
     "endereco": "1600 Amphitheatre Parkway, Mountain View, CA 94043, EUA",
     "website": "https://www.google.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Sundar_Pichai.jpg/250px-Sundar_Pichai.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -271,7 +282,8 @@
     "email": "tim@apple.com",
     "endereco": "1 Infinite Loop, Cupertino, CA 95014, EUA",
     "website": "https://www.apple.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Visit_of_Tim_Cook_to_the_European_Commission_-_P061904-946789.jpg/200px-Visit_of_Tim_Cook_to_the_European_Commission_-_P061904-946789.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -286,7 +298,8 @@
     "email": "fauci@niaid.nih.gov",
     "endereco": "Bethesda, MD 20892, EUA",
     "website": "https://www.niaid.nih.gov",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Anthony_Fauci_in_2023_02_%28cropped%29.jpg/200px-Anthony_Fauci_in_2023_02_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -301,7 +314,8 @@
     "email": "sgupta@cnn.com",
     "endereco": "Atlanta, GA, EUA",
     "website": "https://www.cnn.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Sanjay_Gupta_%28cropped%29.jpg/200px-Sanjay_Gupta_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -316,7 +330,8 @@
     "email": "atul@gawande.com",
     "endereco": "Boston, MA, EUA",
     "website": "http://www.atulgawande.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Atul_Gawande_and_Jack_Cochran_in_2010.jpg/200px-Atul_Gawande_and_Jack_Cochran_in_2010.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -331,7 +346,8 @@
     "email": "farmer@pih.org",
     "endereco": "Boston, MA, EUA",
     "website": "https://www.pih.org",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Paul_Farmer_2011.jpg/220px-Paul_Farmer_2011.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -346,7 +362,8 @@
     "email": "mhamburg@fda.gov",
     "endereco": "Silver Spring, MD, EUA",
     "website": "https://www.fda.gov",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Margaret_Hamburg_official_portrait.jpg/200px-Margaret_Hamburg_official_portrait.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -361,7 +378,8 @@
     "email": "ganderson@health.com",
     "endereco": "Seattle, WA, EUA",
     "website": "https://www.healthresearch.org",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Gail_Anderson_Creative_Repute_graphic_design_agency.jpg/220px-Gail_Anderson_Creative_Repute_graphic_design_agency.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -376,7 +394,8 @@
     "email": "robert@wineadvocate.com",
     "endereco": "Napa Valley, CA, EUA",
     "website": "https://www.robertparker.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Robert_M._Parker_cropped.jpg/220px-Robert_M._Parker_cropped.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -391,7 +410,8 @@
     "email": "jancis@jancisrobinson.com",
     "endereco": "Londres, Reino Unido",
     "website": "https://www.jancisrobinson.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Jancis_Robinson.jpg/200px-Jancis_Robinson.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -406,7 +426,8 @@
     "email": "james@jamessuckling.com",
     "endereco": "Toscana, Itália",
     "website": "https://www.jamessuckling.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/James_Suckling_%282011%29.jpg/220px-James_Suckling_%282011%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -421,7 +442,8 @@
     "email": "gina@gallo.com",
     "endereco": "Sonoma County, CA, EUA",
     "website": "https://www.gallo.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Red_and_white_wine_12-2015.jpg/220px-Red_and_white_wine_12-2015.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -436,7 +458,8 @@
     "email": "ernie@drloosen.com",
     "endereco": "Mosel, Alemanha",
     "website": "http://www.drloosen.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Ernst_Loosen.jpg/383px-Ernst_Loosen.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -451,7 +474,8 @@
     "email": "antinori@antinorichianticlassico.it",
     "endereco": "Chianti Classico, Toscana, Itália",
     "website": "https://www.antinori.it",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/en/9/99/Antinori_logo.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -466,7 +490,8 @@
     "email": "gordon@ramsay.com",
     "endereco": "Londres, Reino Unido",
     "website": "https://www.gordonramsay.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Gordon_Ramsay.jpg/246px-Gordon_Ramsay.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -481,7 +506,8 @@
     "email": "jamie@oliver.com",
     "endereco": "Londres, Reino Unido",
     "website": "https://www.jamieoliver.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Jamie_Oliver_retouched.jpg/200px-Jamie_Oliver_retouched.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -496,7 +522,8 @@
     "email": "nigella@lawson.com",
     "endereco": "Londres, Reino Unido",
     "website": "https://www.nigella.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Nigella_Lawson_booksigning.jpg/200px-Nigella_Lawson_booksigning.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -511,7 +538,8 @@
     "email": "anthony@bourdain.com",
     "endereco": "Nova York, EUA",
     "website": "http://www.anthonybourdain.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Anthony_Bourdain_2014_%28cropped%29.jpg/200px-Anthony_Bourdain_2014_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -526,7 +554,8 @@
     "email": "rachel@ray.com",
     "endereco": "Nova York, EUA",
     "website": "https://www.rachelray.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Rachael_Ray%2C_Red_Dress_Collection_2007.jpg/220px-Rachael_Ray%2C_Red_Dress_Collection_2007.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -541,7 +570,8 @@
     "email": "thomas@keller.com",
     "endereco": "Napa Valley, CA, EUA",
     "website": "https://www.thomaskeller.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Chef_Thomas_Keller_%284202807186%29.jpg/220px-Chef_Thomas_Keller_%284202807186%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -556,7 +586,8 @@
     "email": "contact@beyonce.com",
     "endereco": "Los Angeles, CA, EUA",
     "website": "https://www.beyonce.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Beyonc%C3%A9_-_Tottenham_Hotspur_Stadium_-_1st_June_2023_%2810_of_118%29_%2852946364598%29_%28best_crop%29.jpg/230px-Beyonc%C3%A9_-_Tottenham_Hotspur_Stadium_-_1st_June_2023_%2810_of_118%29_%2852946364598%29_%28best_crop%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -571,7 +602,8 @@
     "email": "info@davidbowie.com",
     "endereco": "New York, NY, EUA",
     "website": "http://www.davidbowie.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/David-Bowie_Chicago_2002-08-08_photoby_Adam-Bielawski-cropped.jpg/220px-David-Bowie_Chicago_2002-08-08_photoby_Adam-Bielawski-cropped.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -586,7 +618,8 @@
     "email": "adele@adele.com",
     "endereco": "London, Reino Unido",
     "website": "https://www.adele.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Adele_for_Vogue_in_2021.png/200px-Adele_for_Vogue_in_2021.png",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -601,7 +634,8 @@
     "email": "prince@paisleypark.com",
     "endereco": "Minneapolis, MN, EUA",
     "website": "https://www.officialprincemusic.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Prince_at_Coachella_%28cropped%29.jpg/200px-Prince_at_Coachella_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -616,7 +650,8 @@
     "email": "taylor@taylorswift.com",
     "endereco": "Nashville, TN, EUA",
     "website": "https://www.taylorswift.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Taylor_Swift_at_the_2023_MTV_Video_Music_Awards_%283%29.png/230px-Taylor_Swift_at_the_2023_MTV_Video_Music_Awards_%283%29.png",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -631,7 +666,8 @@
     "email": "bobdylan@bobdylan.com",
     "endereco": "Malibu, CA, EUA",
     "website": "https://www.bobdylan.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Joan_Baez_Bob_Dylan_crop.jpg/220px-Joan_Baez_Bob_Dylan_crop.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -646,7 +682,8 @@
     "email": "dave@chappelle.com",
     "endereco": "Yellow Springs, OH, EUA",
     "website": "https://www.davechappelle.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Dave_Chappelle_%2842791297960%29_%28cropped%29.jpg/200px-Dave_Chappelle_%2842791297960%29_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -661,7 +698,8 @@
     "email": "ellen@ellenshow.com",
     "endereco": "Los Angeles, CA, EUA",
     "website": "https://www.ellentube.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Ellen_DeGeneres_2011.jpg/230px-Ellen_DeGeneres_2011.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -676,7 +714,8 @@
     "email": "trevor@dailyshow.com",
     "endereco": "New York, NY, EUA",
     "website": "https://www.trevornoah.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Trevor_Noah_2017.jpg/200px-Trevor_Noah_2017.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -691,7 +730,8 @@
     "email": "tina@tinafey.com",
     "endereco": "New York, NY, EUA",
     "website": "http://www.tinafey.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Tina_Fey_Muppets_Most_Wanted_Premiere_%28cropped%29.jpg/250px-Tina_Fey_Muppets_Most_Wanted_Premiere_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -706,7 +746,8 @@
     "email": "info@robinwilliams.com",
     "endereco": "San Francisco, CA, EUA",
     "website": "https://www.robinwilliams.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Robin_Williams_Happy_Feet_premiere.jpg/200px-Robin_Williams_Happy_Feet_premiere.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -721,7 +762,8 @@
     "email": "contact@joanrivers.com",
     "endereco": "Los Angeles, CA, EUA",
     "website": "http://www.joanrivers.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Joan_Rivers_2010_-_David_Shankbone.jpg/200px-Joan_Rivers_2010_-_David_Shankbone.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -736,7 +778,8 @@
     "email": "contact@ynharari.com",
     "endereco": "Jerusalém, Israel",
     "website": "https://www.ynharari.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Yuval_Noah_Harari_cropped.jpg/200px-Yuval_Noah_Harari_cropped.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -751,7 +794,8 @@
     "email": "frida@kahlofoundation.org",
     "endereco": "Coyoacán, Cidade do México, México",
     "website": "https://www.fridakahlo.org",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg/220px-Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -766,7 +810,8 @@
     "email": "info@zaha-hadid.com",
     "endereco": "Londres, Reino Unido",
     "website": "https://www.zaha-hadid.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Zaha_Hadid_in_Heydar_Aliyev_Cultural_center_in_Baku_nov_2013.jpg/280px-Zaha_Hadid_in_Heydar_Aliyev_Cultural_center_in_Baku_nov_2013.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -781,7 +826,8 @@
     "email": "info@banksy.co.uk",
     "endereco": "Localização Desconhecida",
     "website": "https://www.banksy.co.uk",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Banksy_anarchist_rat_in_Sloane_Square.jpg/220px-Banksy_anarchist_rat_in_Sloane_Square.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -796,7 +842,8 @@
     "email": "aiww@aiweiwei.com",
     "endereco": "Berlim, Alemanha",
     "website": "https://www.aiweiwei.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ai_Weiwei.jpg/180px-Ai_Weiwei.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -811,7 +858,8 @@
     "email": "info@basquiat.com",
     "endereco": "Nova York, NY, EUA",
     "website": "http://www.basquiat.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Basquiat1984.tif/lossy-page1-200px-Basquiat1984.tif.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -826,7 +874,8 @@
     "email": "elon@spacex.com",
     "endereco": "Hawthorne, CA, EUA",
     "website": "https://www.spacex.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Elon_Musk_in_2023_%28cropped%29.jpg/220px-Elon_Musk_in_2023_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -841,7 +890,8 @@
     "email": "jeff@amazon.com",
     "endereco": "Seattle, WA, EUA",
     "website": "https://www.amazon.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Jeff_Bezos_visits_LAAFB_SMC_%283908618%29_%28cropped%29.jpeg/200px-Jeff_Bezos_visits_LAAFB_SMC_%283908618%29_%28cropped%29.jpeg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -856,7 +906,8 @@
     "email": "sara@spanx.com",
     "endereco": "Atlanta, GA, EUA",
     "website": "https://www.spanx.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Sara_Blakely.jpg/220px-Sara_Blakely.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -871,7 +922,8 @@
     "email": "mark@meta.com",
     "endereco": "Menlo Park, CA, EUA",
     "website": "https://www.meta.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/220px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -886,7 +938,8 @@
     "email": "richard@virgin.com",
     "endereco": "Londres, Reino Unido",
     "website": "https://www.virgin.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/5.3.10RichardBransonByDavidShankbone.jpg/250px-5.3.10RichardBransonByDavidShankbone.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -901,7 +954,8 @@
     "email": "sheryl@facebook.com",
     "endereco": "Menlo Park, CA, EUA",
     "website": "https://www.facebook.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Sheryl_Sandberg_WEF_2013_%28crop_by_James_Tamim%29.jpg/200px-Sheryl_Sandberg_WEF_2013_%28crop_by_James_Tamim%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -916,7 +970,8 @@
     "email": "suze@orman.com",
     "endereco": "Chicago, IL, EUA",
     "website": "https://www.suzeorman.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/5.3.10SuzeOrmanByDavidShankbone.jpg/220px-5.3.10SuzeOrmanByDavidShankbone.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -931,7 +986,8 @@
     "email": "dave@daveramsey.com",
     "endereco": "Nashville, TN, EUA",
     "website": "https://www.daveramsey.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Dave_Ramsey_by_Gage_Skidmore.jpg/220px-Dave_Ramsey_by_Gage_Skidmore.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -946,7 +1002,8 @@
     "email": "robert@kiyosaki.com",
     "endereco": "Phoenix, AZ, EUA",
     "website": "https://www.richdad.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Robert_Kiyosaki_by_Gage_Skidmore_2.jpg/220px-Robert_Kiyosaki_by_Gage_Skidmore_2.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -961,7 +1018,8 @@
     "email": "jean@chatzky.com",
     "endereco": "New York, NY, EUA",
     "website": "https://www.jeanchatzky.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Jean_Chatzky_-_NYSFair.jpg/220px-Jean_Chatzky_-_NYSFair.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -976,7 +1034,8 @@
     "email": "ramit@iwillteachyoutoberich.com",
     "endereco": "San Francisco, CA, EUA",
     "website": "https://www.iwillteachyoutoberich.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Ramit_Sethi%27s_Secrets_-_7977233279.jpg/220px-Ramit_Sethi%27s_Secrets_-_7977233279.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -991,7 +1050,8 @@
     "email": "tim@fourhourworkweek.com",
     "endereco": "Austin, TX, EUA",
     "website": "https://tim.blog",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Timothy_Ferriss.jpg/220px-Timothy_Ferriss.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1006,7 +1066,8 @@
     "email": "seth@sethgodin.com",
     "endereco": "Hastings on Hudson, NY, EUA",
     "website": "https://www.sethgodin.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Seth_Godin_in_2009.jpg/200px-Seth_Godin_in_2009.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1021,7 +1082,8 @@
     "email": "philip@kotlermarketing.com",
     "endereco": "Chicago, IL, EUA",
     "website": "https://www.kotlermarketing.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Philip_Kotler.jpg/220px-Philip_Kotler.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1036,7 +1098,8 @@
     "email": "mary.barra@gm.com",
     "endereco": "Detroit, MI, EUA",
     "website": "https://www.gm.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Mary_Barra%2C_official_portrait%2C_Homeland_Security_Council.jpg/220px-Mary_Barra%2C_official_portrait%2C_Homeland_Security_Council.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1051,7 +1114,8 @@
     "email": "guy@garage.com",
     "endereco": "Silicon Valley, CA, EUA",
     "website": "https://www.guykawasaki.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Guy_Kawasaki_at_Wikimania_2015_-_2.jpg/220px-Guy_Kawasaki_at_Wikimania_2015_-_2.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1066,7 +1130,8 @@
     "email": "charlene@altimetergroup.com",
     "endereco": "San Francisco, CA, EUA",
     "website": "https://www.charleneli.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/CharlyneYiByPhilKonstantin_%28cropped%29.jpg/220px-CharlyneYiByPhilKonstantin_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1081,7 +1146,8 @@
     "email": "sheryl@facebook.com",
     "endereco": "Menlo Park, CA, EUA",
     "website": "https://www.facebook.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Sheryl_Sandberg_WEF_2013_%28crop_by_James_Tamim%29.jpg/220px-Sheryl_Sandberg_WEF_2013_%28crop_by_James_Tamim%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1096,7 +1162,8 @@
     "email": "info@fosterandpartners.com",
     "endereco": "Londres, Reino Unido",
     "website": "https://www.fosterandpartners.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Norman_Foster_2008.jpg/220px-Norman_Foster_2008.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1111,7 +1178,8 @@
     "email": "contact@zaha-hadid.com",
     "endereco": "Londres, Reino Unido",
     "website": "https://www.zaha-hadid.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Zaha_Hadid_in_Heydar_Aliyev_Cultural_center_in_Baku_nov_2013.jpg/220px-Zaha_Hadid_in_Heydar_Aliyev_Cultural_center_in_Baku_nov_2013.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1126,7 +1194,8 @@
     "email": "info@foga.com",
     "endereco": "Los Angeles, CA, EUA",
     "website": "https://www.foga.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Frank_O._Gehry_-_Parc_des_Ateliers_%28cropped%29.jpg/220px-Frank_O._Gehry_-_Parc_des_Ateliers_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1141,7 +1210,8 @@
     "email": "info@rpbw.com",
     "endereco": "Gênova, Itália",
     "website": "https://www.rpbw.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Renzo_Piano%2C_portrait.jpg/200px-Renzo_Piano%2C_portrait.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1156,7 +1226,8 @@
     "email": "info@studiogang.com",
     "endereco": "Chicago, IL, EUA",
     "website": "https://www.studiogang.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Jeanne_Gang.jpg/220px-Jeanne_Gang.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1171,7 +1242,8 @@
     "email": "info@big.dk",
     "endereco": "Copenhague, Dinamarca",
     "website": "https://www.big.dk",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Bjarke_Ingels_in_Frankfurt.20150617.jpg/220px-Bjarke_Ingels_in_Frankfurt.20150617.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1186,7 +1258,8 @@
     "email": "contact@patmcgrath.com",
     "endereco": "Londres, Reino Unido",
     "website": "https://www.patmcgrath.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://www.sephora.com/contentimages/brands/PatMcGrathLabs/Pat-McGrath-Labs-brand-tile-460x772.jpg?imwidth=250",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1201,7 +1274,8 @@
     "email": "info@bobbibrown.com",
     "endereco": "Nova York, NY, EUA",
     "website": "https://www.bobbibrowncosmetics.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Bobbi_Brown_at_2009_Heart_Truth_fashion_show.jpg/220px-Bobbi_Brown_at_2009_Heart_Truth_fashion_show.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1216,7 +1290,8 @@
     "email": "info@charlottetilbury.com",
     "endereco": "Londres, Reino Unido",
     "website": "https://www.charlottetilbury.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Charlotte_Tilbury_Bathroom_Tour_for_Vogue.jpg/220px-Charlotte_Tilbury_Bathroom_Tour_for_Vogue.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1231,7 +1306,8 @@
     "email": "contact@anastasiabeverlyhills.com",
     "endereco": "Beverly Hills, CA, EUA",
     "website": "https://www.anastasiabeverlyhills.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Anastasia_Soare_2018.jpg/220px-Anastasia_Soare_2018.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1246,7 +1322,8 @@
     "email": "info@jeffreestarcosmetics.com",
     "endereco": "Los Angeles, CA, EUA",
     "website": "https://www.jeffreestarcosmetics.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Jeffree_Star_Rupaul_Dragcon_2018-337_%2841377487274%29_%28cropped%29.jpg/220px-Jeffree_Star_Rupaul_Dragcon_2018-337_%2841377487274%29_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1261,7 +1338,8 @@
     "email": "info@hudabeauty.com",
     "endereco": "Dubai, Emirados Árabes Unidos",
     "website": "https://www.hudabeauty.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Huda_Kattan_-_Vogue_Taiwan.png/220px-Huda_Kattan_-_Vogue_Taiwan.png",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1276,7 +1354,8 @@
     "email": "info@dieter-rams.com",
     "endereco": "Frankfurt, Alemanha",
     "website": "https://www.dieter-rams.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Designer-Dieter_Rams.jpg/220px-Designer-Dieter_Rams.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1291,7 +1370,8 @@
     "email": "contact@starck.com",
     "endereco": "Paris, França",
     "website": "https://www.starck.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Phillippe_Starck_2011.jpg/220px-Phillippe_Starck_2011.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1306,7 +1386,8 @@
     "email": "info@karimrashid.com",
     "endereco": "Nova York, NY, EUA",
     "website": "https://www.karimrashid.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Karim_Rashid_2016.png/220px-Karim_Rashid_2016.png",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1321,7 +1402,8 @@
     "email": "studio@marcelwanders.com",
     "endereco": "Amsterdã, Holanda",
     "website": "https://www.marcelwanders.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Marcel_Wanders.jpg/220px-Marcel_Wanders.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1336,7 +1418,8 @@
     "email": "contact@jonyive.com",
     "endereco": "San Francisco, CA, EUA",
     "website": "https://www.apple.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Jonathan_Ive_%28OTRS%29.jpg/200px-Jonathan_Ive_%28OTRS%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1351,7 +1434,8 @@
     "email": "studio@patriciaurquiola.com",
     "endereco": "Milão, Itália",
     "website": "https://www.patriciaurquiola.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Vico_Magistretti_-_Chaise_Longue_1996.jpg/660px-Vico_Magistretti_-_Chaise_Longue_1996.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1366,7 +1450,8 @@
     "email": "contact@annieleibovitzstudio.com",
     "endereco": "Nova York, NY, EUA",
     "website": "https://www.annieleibovitz.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Annie_Leibovitz-SF-1-Crop.jpg/200px-Annie_Leibovitz-SF-1-Crop.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1381,7 +1466,8 @@
     "email": "info@stevemccurry.com",
     "endereco": "Filadélfia, PA, EUA",
     "website": "https://www.stevemccurry.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Steve_McCurry_%285824371040%29_%28cropped%29.jpg/200px-Steve_McCurry_%285824371040%29_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1396,7 +1482,8 @@
     "email": "cindy@sherman.com",
     "endereco": "Nova York, NY, EUA",
     "website": "https://www.cindysherman.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Cindy_Sherman_%28cropped%29.jpg/200px-Cindy_Sherman_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1411,7 +1498,8 @@
     "email": "salgado@amazonasimages.com",
     "endereco": "Paris, França",
     "website": "https://www.amazonasimages.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Sebasti%C3%A3o_Salgado_%28cropped%29.jpg/200px-Sebasti%C3%A3o_Salgado_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1426,7 +1514,8 @@
     "email": "info@henricartierbresson.com",
     "endereco": "Paris, França",
     "website": "https://www.henricartierbresson.org",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Henri_Cartier-Bresson.jpg/220px-Henri_Cartier-Bresson.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1441,7 +1530,8 @@
     "email": "dorothea@lange.com",
     "endereco": "Oakland, CA, EUA",
     "website": "https://www.dorothealange.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Dorothea_Lange_atop_automobile_in_California_%28restored%29_%28cropped%29.jpg/220px-Dorothea_Lange_atop_automobile_in_California_%28restored%29_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1456,7 +1546,8 @@
     "email": "indra@pepsico.com",
     "endereco": "Purchase, NY, EUA",
     "website": "https://www.pepsico.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/IndraNooyiDavos2010ver2.jpg/220px-IndraNooyiDavos2010ver2.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1471,7 +1562,8 @@
     "email": "jackma@alibaba.com",
     "endereco": "Hangzhou, China",
     "website": "https://www.alibabagroup.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg/220px-Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1486,7 +1578,8 @@
     "email": "mary.barra@gm.com",
     "endereco": "Detroit, MI, EUA",
     "website": "https://www.gm.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Mary_Barra%2C_official_portrait%2C_Homeland_Security_Council.jpg/220px-Mary_Barra%2C_official_portrait%2C_Homeland_Security_Council.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1501,7 +1594,8 @@
     "email": "ginni@ibm.com",
     "endereco": "Armonk, NY, EUA",
     "website": "https://www.ibm.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Ginni_Rometty_at_the_Fortune_MPW_Summit_in_2011.jpg/220px-Ginni_Rometty_at_the_Fortune_MPW_Summit_in_2011.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1516,7 +1610,8 @@
     "email": "satya@microsoft.com",
     "endereco": "Redmond, WA, EUA",
     "website": "https://www.microsoft.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/MS-Exec-Nadella-Satya-2017-08-31-22_%28cropped%29.jpg/220px-MS-Exec-Nadella-Satya-2017-08-31-22_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1531,7 +1626,8 @@
     "email": "ursula@xerox.com",
     "endereco": "Norwalk, CT, EUA",
     "website": "https://www.xerox.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Ursula-Burns.jpg/220px-Ursula-Burns.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1546,7 +1642,8 @@
     "email": "serena@tennis.com",
     "endereco": "Palm Beach Gardens, FL, EUA",
     "website": "https://www.serenawilliams.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Serena_Williams_at_2013_US_Open.jpg/200px-Serena_Williams_at_2013_US_Open.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1561,7 +1658,8 @@
     "email": "cr7@futbol.com",
     "endereco": "Turim, Itália",
     "website": "https://www.cristianoronaldo.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg/220px-Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1576,7 +1674,8 @@
     "email": "simone@usa-gym.com",
     "endereco": "Spring, TX, EUA",
     "website": "https://www.simonebiles.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Simone_Biles_Rio_2016e.jpg/220px-Simone_Biles_Rio_2016e.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1591,7 +1690,8 @@
     "email": "usain@trackandfield.com",
     "endereco": "Kingston, Jamaica",
     "website": "https://www.usainbolt.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Usain_Bolt_after_4_%C3%97_100_m_Rio_2016.jpg/220px-Usain_Bolt_after_4_%C3%97_100_m_Rio_2016.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1606,7 +1706,8 @@
     "email": "phelps@swimming.com",
     "endereco": "Baltimore, MD, EUA",
     "website": "https://www.michaelphelps.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Michael_Phelps_Rio_Olympics_2016.jpg/220px-Michael_Phelps_Rio_Olympics_2016.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1621,7 +1722,8 @@
     "email": "lebron@nba.com",
     "endereco": "Los Angeles, CA, EUA",
     "website": "https://www.lebronjames.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/LeBron_James_%2851959977144%29_%28cropped2%29.jpg/250px-LeBron_James_%2851959977144%29_%28cropped2%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1636,7 +1738,8 @@
     "email": "kobe@lakers.com",
     "endereco": "Los Angeles, CA, EUA",
     "website": "https://www.lakers.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kobe_Bryant_2014.jpg/240px-Kobe_Bryant_2014.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1651,7 +1754,8 @@
     "email": "shaq@nba.com",
     "endereco": "Orlando, FL, EUA",
     "website": "https://www.shaq.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Shaquille_O%27Neal_October_2017_%28cropped%29.jpg/220px-Shaquille_O%27Neal_October_2017_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1666,7 +1770,8 @@
     "email": "larry@celtics.com",
     "endereco": "Boston, MA, EUA",
     "website": "https://www.celtics.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Larry_Bird_Lipofsky.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1681,7 +1786,8 @@
     "email": "magic@lakers.com",
     "endereco": "Los Angeles, CA, EUA",
     "website": "https://www.magicjohnson.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Magic_Johnson_at_SXSW_2022_%2851958828669%29_%28cropped%29.jpg/220px-Magic_Johnson_at_SXSW_2022_%2851958828669%29_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1696,7 +1802,8 @@
     "email": "tim@spurs.com",
     "endereco": "San Antonio, TX, EUA",
     "website": "https://www.spurs.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Tim_Duncan.jpg/220px-Tim_Duncan.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1711,7 +1818,8 @@
     "email": "allen@nba.com",
     "endereco": "Philadelphia, PA, EUA",
     "website": "https://www.nba.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Allen_Iverson_Lipofsky.jpg/220px-Allen_Iverson_Lipofsky.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1726,7 +1834,8 @@
     "email": "coco@chanel.com",
     "endereco": "Paris, França",
     "website": "https://www.chanel.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Coco_Chanel_in_Los_Angeles%2C_1931_%28cropped%29.jpg/220px-Coco_Chanel_in_Los_Angeles%2C_1931_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1741,7 +1850,8 @@
     "email": "info@armani.com",
     "endereco": "Milão, Itália",
     "website": "https://www.armani.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/GiorgioArmani.jpg/220px-GiorgioArmani.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1756,7 +1866,8 @@
     "email": "info@viviennewestwood.com",
     "endereco": "Londres, Reino Unido",
     "website": "https://www.viviennewestwood.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Vivienne_Westwood_by_Mattia_Passeri.jpg/220px-Vivienne_Westwood_by_Mattia_Passeri.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1771,7 +1882,8 @@
     "email": "karl@karllagerfeld.com",
     "endereco": "Paris, França",
     "website": "https://www.karllagerfeld.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Fendi_store_opening_-_Karl_Lagerfeld_%2814091153382%29.jpg/220px-Fendi_store_opening_-_Karl_Lagerfeld_%2814091153382%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1786,7 +1898,8 @@
     "email": "info@alexandermcqueen.com",
     "endereco": "Londres, Reino Unido",
     "website": "https://www.alexandermcqueen.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Alexander_McQueen_by_FashionWirePress.jpg/220px-Alexander_McQueen_by_FashionWirePress.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1801,7 +1914,8 @@
     "email": "contact@ysl.com",
     "endereco": "Paris, França",
     "website": "https://www.ysl.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Saint_Laurent_Paris_-_Store_%2851395501701%29.jpg/200px-Saint_Laurent_Paris_-_Store_%2851395501701%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1816,7 +1930,8 @@
     "email": "anthony@noreservations.com",
     "endereco": "Nova York, NY, EUA",
     "website": "https://www.anthonybourdain.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Anthony_Bourdain_Peabody_2014b.jpg/220px-Anthony_Bourdain_Peabody_2014b.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1831,7 +1946,8 @@
     "email": "rick@ricksteves.com",
     "endereco": "Edmonds, WA, EUA",
     "website": "https://www.ricksteves.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Rick_Steves_cropped.jpg/220px-Rick_Steves_cropped.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1846,7 +1962,8 @@
     "email": "paul@paultheroux.com",
     "endereco": "Hawaii, EUA",
     "website": "https://www.paultheroux.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/PaulTheroux_2008Sep.jpg/220px-PaulTheroux_2008Sep.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1861,7 +1978,8 @@
     "email": "bruce@chatwin.com",
     "endereco": "Londres, Reino Unido",
     "website": "https://www.brucechatwin.co.uk",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Bruce_Chatwin%2C_July_1982.jpg/220px-Bruce_Chatwin%2C_July_1982.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1876,7 +1994,8 @@
     "email": "michael@palin.com",
     "endereco": "Londres, Reino Unido",
     "website": "https://www.themichaelpalin.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Michael_Palin_%2846317977182%29_%28cropped%29.jpg/220px-Michael_Palin_%2846317977182%29_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1891,7 +2010,8 @@
     "email": "elizabeth@eatpraylove.com",
     "endereco": "Nova York, NY, EUA",
     "website": "https://www.elizabethgilbert.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Elizabeth_Gilbert_at_TED.jpg/220px-Elizabeth_Gilbert_at_TED.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1906,7 +2026,8 @@
     "email": "angela@bundeskanzlerin.de",
     "endereco": "Berlim, Alemanha",
     "website": "https://www.bundeskanzlerin.de",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Angela_Merkel_Juli_2010_-_3zu4%28cropped%29.jpg/220px-Angela_Merkel_Juli_2010_-_3zu4%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1921,7 +2042,8 @@
     "email": "barack@obama.org",
     "endereco": "Washington, D.C., EUA",
     "website": "https://www.obama.org",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/220px-President_Barack_Obama.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1936,7 +2058,8 @@
     "email": "jacinda@pm.govt.nz",
     "endereco": "Wellington, Nova Zelândia",
     "website": "https://www.beehive.govt.nz",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/New_Zealand_Prime_Minister_Jacinda_Ardern_in_2018.jpg/220px-New_Zealand_Prime_Minister_Jacinda_Ardern_in_2018.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1951,7 +2074,8 @@
     "email": "vladimir@kremlin.ru",
     "endereco": "Moscou, Rússia",
     "website": "https://www.kremlin.ru",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%9F%D1%83%D1%82%D0%B8%D0%BD_%2808-03-2024%29_%28cropped%29.jpg/220px-%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%9F%D1%83%D1%82%D0%B8%D0%BD_%2808-03-2024%29_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1966,7 +2090,8 @@
     "email": "narendra@pmo.gov.in",
     "endereco": "Nova Deli, Índia",
     "website": "https://www.pmindia.gov.in",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Prime_Minister%2C_Shri_Narendra_Modi%2C_in_New_Delhi_on_August_08%2C_2019_%28cropped%29.jpg/220px-Prime_Minister%2C_Shri_Narendra_Modi%2C_in_New_Delhi_on_August_08%2C_2019_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1981,7 +2106,8 @@
     "email": "margaret@parliament.uk",
     "endereco": "Londres, Reino Unido",
     "website": "https://www.parliament.uk",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Margaret_Thatcher_stock_portrait_%28cropped%29.jpg/220px-Margaret_Thatcher_stock_portrait_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -1996,7 +2122,8 @@
     "email": "gordon@ramsay.com",
     "endereco": "Londres, Reino Unido",
     "website": "https://www.gordonramsay.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Gordon_Ramsay.jpg/220px-Gordon_Ramsay.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2011,7 +2138,8 @@
     "email": "alain@ducasse.com",
     "endereco": "Paris, França",
     "website": "https://www.alain-ducasse.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Alain_Ducasse.jpg/220px-Alain_Ducasse.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2026,7 +2154,8 @@
     "email": "alice@chezpanisse.com",
     "endereco": "Berkeley, CA, EUA",
     "website": "https://www.chezpanisse.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Alice_Waters_2014.jpg/220px-Alice_Waters_2014.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2041,7 +2170,8 @@
     "email": "rene@noma.dk",
     "endereco": "Copenhague, Dinamarca",
     "website": "https://www.noma.dk",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Ren%C3%A9_Redzepi_en_la_cena_de_las_14_estrellas_Michel%C3%ADn_del_restaurante_Zaldiar%C3%A1n.jpg/220px-Ren%C3%A9_Redzepi_en_la_cena_de_las_14_estrellas_Michel%C3%ADn_del_restaurante_Zaldiar%C3%A1n.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2056,7 +2186,8 @@
     "email": "massimo@osteriafrancescana.it",
     "endereco": "Modena, Itália",
     "website": "https://www.osteriafrancescana.it",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Massimo_Bottura_Rimini.jpg/200px-Massimo_Bottura_Rimini.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2071,7 +2202,8 @@
     "email": "ferran@elbulli.com",
     "endereco": "Roses, Espanha",
     "website": "https://www.elbullifoundation.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Ferran_Adri%C3%A0_en_la_presentaci%C3%B3n_de_%27Un_proyecte_per_compartir%27.jpg/200px-Ferran_Adri%C3%A0_en_la_presentaci%C3%B3n_de_%27Un_proyecte_per_compartir%27.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2086,7 +2218,8 @@
     "email": "beyonce@beyonce.com",
     "endereco": "Los Angeles, CA, EUA",
     "website": "https://www.beyonce.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Beyonc%C3%A9_-_Tottenham_Hotspur_Stadium_-_1st_June_2023_%2810_of_118%29_%2852946364598%29_%28best_crop%29.jpg/230px-Beyonc%C3%A9_-_Tottenham_Hotspur_Stadium_-_1st_June_2023_%2810_of_118%29_%2852946364598%29_%28best_crop%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2101,7 +2234,8 @@
     "email": "dylan@bobdylan.com",
     "endereco": "Malibu, CA, EUA",
     "website": "https://www.bobdylan.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Joan_Baez_Bob_Dylan_crop.jpg/220px-Joan_Baez_Bob_Dylan_crop.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2116,7 +2250,8 @@
     "email": "adele@adele.com",
     "endereco": "Londres, Reino Unido",
     "website": "https://www.adele.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Adele_for_Vogue_in_2021.png/200px-Adele_for_Vogue_in_2021.png",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2131,7 +2266,8 @@
     "email": "bruce@springsteen.com",
     "endereco": "New Jersey, EUA",
     "website": "https://www.brucespringsteen.net",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Bruce_Springsteen_-_Roskilde_Festival_2012.jpg/250px-Bruce_Springsteen_-_Roskilde_Festival_2012.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2146,7 +2282,8 @@
     "email": "madonna@madonna.com",
     "endereco": "New York, NY, EUA",
     "website": "https://www.madonna.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/MadonnaO2171023_%28125_of_133%29_%2853270844239%29_%28cropped%29.jpg/240px-MadonnaO2171023_%28125_of_133%29_%2853270844239%29_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2161,7 +2298,8 @@
     "email": "prince@prince.com",
     "endereco": "Minneapolis, MN, EUA",
     "website": "https://www.prince.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Prince_at_Coachella_%28cropped%29.jpg/200px-Prince_at_Coachella_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2176,7 +2314,8 @@
     "email": "steven@amblin.com",
     "endereco": "Los Angeles, CA, EUA",
     "website": "https://www.amblin.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/MKr25425_Steven_Spielberg_%28Berlinale_2023%29.jpg/250px-MKr25425_Steven_Spielberg_%28Berlinale_2023%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2191,7 +2330,8 @@
     "email": "martin@scorsesefilms.com",
     "endereco": "New York, NY, EUA",
     "website": "https://www.scorsesefilms.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Martin_Scorsese_Berlinale_2010_%28cropped2%29.jpg/250px-Martin_Scorsese_Berlinale_2010_%28cropped2%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2206,7 +2346,8 @@
     "email": "kathryn@bigelowfilms.com",
     "endereco": "Los Angeles, CA, EUA",
     "website": "https://www.bigelowfilms.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/82nd_Academy_Awards%2C_Kathryn_Bigelow_-_army_mil-66453-2010-03-09-180354.jpg/250px-82nd_Academy_Awards%2C_Kathryn_Bigelow_-_army_mil-66453-2010-03-09-180354.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2221,7 +2362,8 @@
     "email": "quentin@tarantinofilms.com",
     "endereco": "Los Angeles, CA, EUA",
     "website": "https://www.tarantinofilms.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Quentin_Tarantino_by_Gage_Skidmore.jpg/250px-Quentin_Tarantino_by_Gage_Skidmore.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2236,7 +2378,8 @@
     "email": "alfred@hitchcock.com",
     "endereco": "Los Angeles, CA, EUA",
     "website": "https://www.hitchcock.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Alfred_Hitchcock_NYWTS.jpg/200px-Alfred_Hitchcock_NYWTS.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2251,7 +2394,8 @@
     "email": "wes@andersonfilms.com",
     "endereco": "New York, NY, EUA",
     "website": "https://www.andersonfilms.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Wes_Anderson_at_the_2018_Berlin_Film_Festival.jpg/240px-Wes_Anderson_at_the_2018_Berlin_Film_Festival.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2266,7 +2410,8 @@
     "email": "miyamoto@nintendo.com",
     "endereco": "Kyoto, Japão",
     "website": "https://www.nintendo.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Shigeru_Miyamoto_20150610_%28cropped%29.jpg/270px-Shigeru_Miyamoto_20150610_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2281,7 +2426,8 @@
     "email": "kojima@kojimaproductions.com",
     "endereco": "Tóquio, Japão",
     "website": "https://www.kojimaproductions.jp",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Kojima_Death_Stranding_2018.jpg/200px-Kojima_Death_Stranding_2018.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2296,7 +2442,8 @@
     "email": "sid@firaxis.com",
     "endereco": "Baltimore, MD, EUA",
     "website": "https://www.firaxis.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Sid_Meier_2015-02-25_%28cropped%29.jpg/200px-Sid_Meier_2015-02-25_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2311,7 +2458,8 @@
     "email": "carmack@idsoftware.com",
     "endereco": "Dallas, TX, EUA",
     "website": "https://www.idsoftware.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/John_Carmack_at_GDCA_2017_--_1_March_2017_%28cropped%29.jpeg/200px-John_Carmack_at_GDCA_2017_--_1_March_2017_%28cropped%29.jpeg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2326,7 +2474,8 @@
     "email": "jane@janemcgonigal.com",
     "endereco": "San Francisco, CA, EUA",
     "website": "https://www.janemcgonigal.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Jane_McGonigal_by_christopher_michel_in_2021.jpg/220px-Jane_McGonigal_by_christopher_michel_in_2021.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2341,7 +2490,8 @@
     "email": "will@maxis.com",
     "endereco": "Walnut Creek, CA, EUA",
     "website": "https://www.ea.com/studios/maxis",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Will_Wright_at_SXSW.jpg/200px-Will_Wright_at_SXSW.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2356,7 +2506,8 @@
     "email": "elon@tesla.com",
     "endereco": "Palo Alto, CA, EUA",
     "website": "https://www.tesla.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Elon_Musk_in_2023_%28cropped%29.jpg/220px-Elon_Musk_in_2023_%28cropped%29.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2371,7 +2522,8 @@
     "email": "info@ferrari.com",
     "endereco": "Maranello, Itália",
     "website": "https://www.ferrari.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Ferdinand_Porsche.jpg/200px-Ferdinand_Porsche.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2386,7 +2538,8 @@
     "email": "info@porsche.com",
     "endereco": "Stuttgart, Alemanha",
     "website": "https://www.porsche.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2401,7 +2554,8 @@
     "email": "contact@ford.com",
     "endereco": "Dearborn, MI, EUA",
     "website": "https://www.ford.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Henry_ford_1919.jpg/200px-Henry_ford_1919.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2416,7 +2570,8 @@
     "email": "info@lamborghini.com",
     "endereco": "Sant'Agata Bolognese, Itália",
     "website": "https://www.lamborghini.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Ferruccio_Lamborghini.jpg/200px-Ferruccio_Lamborghini.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2431,7 +2586,8 @@
     "email": "info@mercedes-benz.com",
     "endereco": "Stuttgart, Alemanha",
     "website": "https://www.mercedes-benz.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Carl_Benz.png/200px-Carl_Benz.png",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2446,7 +2602,8 @@
     "email": "einstein@physics.com",
     "endereco": "Princeton, NJ, EUA",
     "website": "https://www.einstein-website.de",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Einstein1921_by_F_Schmutzer_3.jpg/220px-Einstein1921_by_F_Schmutzer_3.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2461,7 +2618,8 @@
     "email": "curie@radiology.com",
     "endereco": "Paris, França",
     "website": "https://www.curie.fr",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Marie_Curie_c1920.jpg/200px-Marie_Curie_c1920.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2476,7 +2634,8 @@
     "email": "hawking@cosmos.com",
     "endereco": "Cambridge, Reino Unido",
     "website": "https://www.hawking.org.uk",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Stephen_Hawking.StarChild.jpg/200px-Stephen_Hawking.StarChild.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2491,7 +2650,8 @@
     "email": "rosalind@dna.com",
     "endereco": "Londres, Reino Unido",
     "website": "https://www.rosalindfranklin.org",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/pt/thumb/9/97/Rosalind_Franklin.jpg/200px-Rosalind_Franklin.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2506,7 +2666,8 @@
     "email": "sagan@cosmos.com",
     "endereco": "Ithaca, NY, EUA",
     "website": "https://www.carlsagan.com",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Carl_Sagan_Planetary_Society.JPG/220px-Carl_Sagan_Planetary_Society.JPG",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   },
@@ -2521,7 +2682,8 @@
     "email": "neil@haydenplanetarium.org",
     "endereco": "Nova York, NY, EUA",
     "website": "https://www.haydenplanetarium.org",
-    "imagemURL": "","seguir": false,
+    "imagemURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Tyson_-_Apollo_40th_anniversary_2009.jpg/200px-Tyson_-_Apollo_40th_anniversary_2009.jpg",
+    "seguir": false,
     "match": false,
     "aprendiz": false
   }

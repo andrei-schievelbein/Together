@@ -20,7 +20,7 @@ import androidx.compose.ui.unit.dp
 import br.com.noke.twogether.model.User
 import br.com.noke.twogether.viewmodel.UserViewModel
 
-@Composable //Importar dados do JSON para o Firestore
+@Composable //popular dados do JSON para o Firestore
 fun ExportToFirestore(modifier: Modifier = Modifier) {
     val context = LocalContext.current
     LaunchedEffect(key1 = Unit) {

@@ -13,7 +13,7 @@ import java.io.IOException
 fun importDataFromJson(context: Context) {
     val jsonString: String
     try {
-        jsonString = context.assets.open("simpledata.json").bufferedReader().use { it.readText() }
+        jsonString = context.assets.open("data.json").bufferedReader().use { it.readText() }
         val gson = Gson()
         val listOfUsersType = object : TypeToken<List<User>>() {}.type
         val users: List<User> = gson.fromJson(jsonString, listOfUsersType)
