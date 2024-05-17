@@ -31,6 +31,7 @@ import coil.compose.rememberAsyncImagePainter
 
 @Composable
 fun Logo(modifier: Modifier = Modifier) {
+    // Função para exibir o logotipo da aplicação
     Column {
         Spacer(modifier = Modifier.height(15.dp))
         Row(
@@ -49,42 +50,35 @@ fun Logo(modifier: Modifier = Modifier) {
 
 @Composable
 fun ListagemScreen(viewModel: UserViewModel, navController: NavHostController) {
+    // Obtenção das categorias de usuário e da lista de usuários do ViewModel
     val userCategories by viewModel.userCategories.collectAsState()
     val users by viewModel.users.collectAsState()
 
-    // Filtra um - por categoria e imageURL
-    var filteredUsersCategories by remember {
-        mutableStateOf(users.filter { user ->
-            user.imagemURL.isNotBlank() && user.categories.map { it.displayName }
-                .intersect(userCategories.toSet()).isNotEmpty()
-        })
-    }
+    // Estado que armazena todos os usuários
+    var filteredUsers by remember { mutableStateOf(emptyList<User>()) }
 
-    // Todos os usuários
-    var filteredUsers by remember { mutableStateOf(users) }
-    var isSearching by remember { mutableStateOf(false) }
-
+    // Efeito que busca as categorias de usuário quando a tela é carregada
     LaunchedEffect(Unit) {
         viewModel.fetchUserCategories()
     }
 
-    // Atualiza o filtro de usuários por categoria e imageURL quando `users` ou `userCategories` mudam
+    // Efeito que inicializa a filtragem de usuários quando `users` ou `userCategories` mudam
     LaunchedEffect(users, userCategories) {
-        filteredUsersCategories = users.filter { user ->
+        filteredUsers = users.filter { user ->
             user.imagemURL.isNotBlank() && user.categories.map { it.displayName }
                 .intersect(userCategories.toSet()).isNotEmpty()
         }
-        filteredUsers = filteredUsersCategories
     }
 
     Column(modifier = Modifier.padding(16.dp)) {
         Logo()
 
-        AdvancedSearch(users) { filtered ->
+        // Componente de busca avançada
+        AdvancedSearch(users, userCategories) { filtered ->
             filteredUsers = filtered
-            isSearching = filtered.isNotEmpty()
         }
 
+        // Exibe as categorias selecionadas
         if (userCategories.isNotEmpty()) {
             Text(
                 text = userCategories.joinToString(", ") { "#${it.replace("#", "").trim()}" },
@@ -93,10 +87,9 @@ fun ListagemScreen(viewModel: UserViewModel, navController: NavHostController) {
             )
         }
 
-        val displayedUsers = if (isSearching) filteredUsers else filteredUsersCategories
-
+        // Exibe a lista de usuários
         LazyColumn {
-            items(displayedUsers) { user ->
+            items(filteredUsers) { user ->
                 UserItem(user)
             }
         }
@@ -105,12 +98,13 @@ fun ListagemScreen(viewModel: UserViewModel, navController: NavHostController) {
 
 @Composable
 fun UserItem(user: User) {
+    // Componente para exibir um item de usuário
     Box(
         modifier = Modifier
             .fillMaxWidth()
             .padding(horizontal = 10.dp)
             .height(2.dp)
-            .background(color = Color.Black) // Você pode usar qualquer cor que desejar aqui
+            .background(color = Color.Black)
     )
     Row(
         verticalAlignment = Alignment.CenterVertically,
@@ -133,6 +127,7 @@ fun UserItem(user: User) {
 
 @Composable
 fun UserImage(imageUrl: String) {
+    // Componente para exibir a imagem do usuário
     Log.d("UserImage", "Loading image: $imageUrl")
     Image(
         painter = rememberAsyncImagePainter(imageUrl),
@@ -149,23 +144,37 @@ fun UserImage(imageUrl: String) {
 @Composable
 fun AdvancedSearch(
     users: List<User>,
+    userCategories: List<String>,
     onFilteredUsers: (List<User>) -> Unit
 ) {
+    // Estado para armazenar o texto de busca
     var searchText by remember { mutableStateOf("") }
+    // Estado para armazenar as categorias selecionadas
     var selectedCategories by remember { mutableStateOf(setOf<String>()) }
-    var filteredUsers by remember { mutableStateOf(users) }
+    // Estado para armazenar os usuários filtrados
+    var filteredUsers by remember { mutableStateOf(emptyList<User>()) }
 
     // Função para realizar a filtragem dos usuários
     fun filterUsers() {
-        filteredUsers = users.filter { user ->
-            val matchesCategory = selectedCategories.isEmpty() || user.categories.map { it.name }.intersect(selectedCategories).isNotEmpty()
-            val matchesSearch = searchText.isEmpty() || user.nome.contains(searchText, ignoreCase = true) || user.sobrenome.contains(searchText, ignoreCase = true)
-            val hasImage = user.imagemURL.isNotBlank()
-            matchesCategory && matchesSearch && hasImage
+        filteredUsers = if (searchText.isEmpty() && selectedCategories.isEmpty()) {
+            // Filtra por categoria e imageURL quando não há busca ativa
+            users.filter { user ->
+                user.imagemURL.isNotBlank() && user.categories.map { it.displayName }
+                    .intersect(userCategories.toSet()).isNotEmpty()
+            }
+        } else {
+            // Filtra por busca avançada
+            users.filter { user ->
+                val matchesCategory = selectedCategories.isEmpty() || user.categories.map { it.name }.intersect(selectedCategories).isNotEmpty()
+                val matchesSearch = searchText.isEmpty() || user.nome.contains(searchText, ignoreCase = true) || user.sobrenome.contains(searchText, ignoreCase = true)
+                val hasImage = user.imagemURL.isNotBlank()
+                matchesCategory && matchesSearch && hasImage
+            }
         }
         onFilteredUsers(filteredUsers)
     }
 
+    // Efeito que chama a função de filtragem quando `users`, `selectedCategories` ou `searchText` mudam
     LaunchedEffect(users, selectedCategories, searchText) {
         filterUsers()
     }
@@ -188,7 +197,7 @@ fun AdvancedSearch(
                             selectedCategories = if (isSelected) {
                                 selectedCategories - category
                             } else {
-                                setOf(category)
+                                selectedCategories + category
                             }
                             filterUsers()
                         },
