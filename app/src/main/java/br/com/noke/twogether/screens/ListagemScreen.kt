@@ -7,7 +7,6 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
@@ -28,25 +27,14 @@ import br.com.noke.twogether.model.Category
 import br.com.noke.twogether.model.User
 import br.com.noke.twogether.viewmodel.UserViewModel
 import coil.compose.rememberAsyncImagePainter
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.filled.KeyboardArrowDown
+import androidx.compose.material.icons.filled.KeyboardArrowUp
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.dp
 
-@Composable
-fun Logo(modifier: Modifier = Modifier) {
-    // Função para exibir o logotipo da aplicação
-    Column {
-        Spacer(modifier = Modifier.height(15.dp))
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(50.dp)
-        ) {
-            Image(
-                painter = painterResource(id = R.drawable.logo),
-                contentDescription = "Imagem do logo",
-            )
-        }
-    }
-}
+
 
 @Composable
 fun ListagemScreen(viewModel: UserViewModel, navController: NavHostController) {
@@ -69,15 +57,14 @@ fun ListagemScreen(viewModel: UserViewModel, navController: NavHostController) {
                 .intersect(userCategories.toSet()).isNotEmpty()
         }
     }
-
-    Column(modifier = Modifier.padding(16.dp)) {
+    Column (modifier = Modifier.padding(start = 8.dp)) {
         Logo()
 
         // Componente de busca avançada
         AdvancedSearch(users, userCategories) { filtered ->
             filteredUsers = filtered
         }
-
+        Text( text = "#Topics primários:")
         // Exibe as categorias selecionadas
         if (userCategories.isNotEmpty()) {
             Text(
@@ -141,6 +128,7 @@ fun UserImage(imageUrl: String) {
     )
 }
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun AdvancedSearch(
     users: List<User>,
@@ -153,6 +141,8 @@ fun AdvancedSearch(
     var selectedCategories by remember { mutableStateOf(setOf<String>()) }
     // Estado para armazenar os usuários filtrados
     var filteredUsers by remember { mutableStateOf(emptyList<User>()) }
+    // Estado para controlar a visibilidade do Card
+    var isCardVisible by remember { mutableStateOf(false) }
 
     // Função para realizar a filtragem dos usuários
     fun filterUsers() {
@@ -165,8 +155,13 @@ fun AdvancedSearch(
         } else {
             // Filtra por busca avançada
             users.filter { user ->
-                val matchesCategory = selectedCategories.isEmpty() || user.categories.map { it.name }.intersect(selectedCategories).isNotEmpty()
-                val matchesSearch = searchText.isEmpty() || user.nome.contains(searchText, ignoreCase = true) || user.sobrenome.contains(searchText, ignoreCase = true)
+                val matchesCategory =
+                    selectedCategories.isEmpty() || user.categories.map { it.name }
+                        .intersect(selectedCategories).isNotEmpty()
+                val matchesSearch = searchText.isEmpty() || user.nome.contains(
+                    searchText,
+                    ignoreCase = true
+                ) || user.sobrenome.contains(searchText, ignoreCase = true)
                 val hasImage = user.imagemURL.isNotBlank()
                 matchesCategory && matchesSearch && hasImage
             }
@@ -180,51 +175,99 @@ fun AdvancedSearch(
     }
 
     Column {
-        // LazyRow para exibir as categorias
-        LazyRow(
-            modifier = Modifier.padding(bottom = 16.dp),
-            horizontalArrangement = Arrangement.spacedBy(8.dp)
-        ) {
-            items(Category.values().map { it.name }) { category ->
-                val isSelected = selectedCategories.contains(category)
-                val backgroundColor = if (isSelected) Color.Blue else Color.Gray
-                Text(
-                    text = "#${category}",
-                    modifier = Modifier
-                        .background(backgroundColor)
-                        .padding(8.dp)
-                        .clickable {
-                            selectedCategories = if (isSelected) {
-                                selectedCategories - category
-                            } else {
-                                selectedCategories + category
-                            }
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            // Campo de busca
+            OutlinedTextField(
+                value = searchText,
+                onValueChange = { newValue ->
+                    searchText = newValue
+                    filterUsers()
+                },
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(start = 8.dp, end = 6.dp),
+                placeholder = { Text("Search...") },
+                trailingIcon = {
+                    Icon(
+                        imageVector = Icons.Default.Search,
+                        contentDescription = "Search Icon",
+                        modifier = Modifier.clickable {
                             filterUsers()
-                        },
-                    color = Color.White
+                        }
+                    )
+                },
+                singleLine = true
+            )
+            // Seta para abrir/fechar o Card
+            IconButton(onClick = { isCardVisible = !isCardVisible }) {
+                Icon(
+                    imageVector = if (isCardVisible) Icons.Default.KeyboardArrowUp else Icons.Default.KeyboardArrowDown,
+                    contentDescription = if (isCardVisible) "Collapse" else "Expand"
                 )
             }
         }
+        Spacer(modifier = Modifier.height(8.dp))
+        // Card que aparece quando isCardVisible é verdadeiro
+        if (isCardVisible) {
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 0.dp)
+                    .border(3.dp, color = Color.Black, RoundedCornerShape(12.dp)),
+                colors = CardDefaults.cardColors(Color.White),
 
-        // Campo de busca
-        OutlinedTextField(
-            value = searchText,
-            onValueChange = { newValue ->
-                searchText = newValue
-                filterUsers()
-            },
-            modifier = Modifier.fillMaxWidth(),
-            placeholder = { Text("Search...") },
-            trailingIcon = {
-                Icon(
-                    imageVector = Icons.Default.Search,
-                    contentDescription = "Search Icon",
-                    modifier = Modifier.clickable {
-                        filterUsers()
+            ) {
+                Column(
+                    modifier = Modifier
+                        .padding(16.dp)
+                ) {
+                    // FlowRow para exibir as categorias
+                    FlowRow(
+
+                        verticalArrangement = Arrangement.spacedBy(2.dp),
+                        horizontalArrangement = Arrangement.spacedBy(2.dp),
+                    ) {
+                        Category.values().forEach { category ->
+                            val isSelected = selectedCategories.contains(category.name)
+                            val backgroundColor = if (isSelected) Color(0xFF03A9F4) else Color(0xFFE6E6E6)
+
+                            Button(
+                                modifier = Modifier
+                                    .padding(2.dp)
+                                    .height(32.dp)
+                                    .clip(RoundedCornerShape(8.dp)),
+                                colors = ButtonDefaults.buttonColors(backgroundColor),
+                                shape = RoundedCornerShape(
+                                    topStart = 4.dp,
+                                    topEnd = 4.dp,
+                                    bottomEnd = 4.dp,
+                                    bottomStart = 4.dp
+                                ),
+                                contentPadding = PaddingValues(
+                                    horizontal = 6.dp,  // Reduz o padding horizontal
+                                    vertical = 4.dp     // Reduz o padding vertical
+                                ),
+                                onClick = {
+                                    selectedCategories = if (isSelected) {
+                                        selectedCategories - category.name
+                                    } else {
+                                        selectedCategories + category.name
+                                    }
+                                    filterUsers()
+                                }
+                            ) {
+                                Text(
+                                    modifier = Modifier
+                                        .padding(2.dp),
+                                    text = "#${category.name}",
+                                    color = if (isSelected) Color.White else Color.DarkGray,
+                                )
+//                                    size = 10.dp
+                            }
+                        }
                     }
-                )
-            },
-            singleLine = true
-        )
+                }
+            }
+        }
     }
 }
