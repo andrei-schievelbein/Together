@@ -31,9 +31,9 @@ import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.KeyboardArrowUp
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-
 
 
 @Composable
@@ -57,21 +57,13 @@ fun ListagemScreen(viewModel: UserViewModel, navController: NavHostController) {
                 .intersect(userCategories.toSet()).isNotEmpty()
         }
     }
-    Column (modifier = Modifier.padding(start = 8.dp)) {
+
+    Column(modifier = Modifier.padding(start = 8.dp)) {
         Logo()
 
         // Componente de busca avançada
         AdvancedSearch(users, userCategories) { filtered ->
             filteredUsers = filtered
-        }
-        Text( text = "#Topics primários:")
-        // Exibe as categorias selecionadas
-        if (userCategories.isNotEmpty()) {
-            Text(
-                text = userCategories.joinToString(", ") { "#${it.replace("#", "").trim()}" },
-                modifier = Modifier.padding(bottom = 16.dp),
-                fontWeight = FontWeight.Bold
-            )
         }
 
         // Exibe a lista de usuários
@@ -85,6 +77,7 @@ fun ListagemScreen(viewModel: UserViewModel, navController: NavHostController) {
 
 @Composable
 fun UserItem(user: User) {
+    var isFollowing by remember { mutableStateOf(false) }
     // Componente para exibir um item de usuário
     Box(
         modifier = Modifier
@@ -101,14 +94,23 @@ fun UserItem(user: User) {
     ) {
         if (user.imagemURL.isNotBlank()) {
             UserImage(imageUrl = user.imagemURL)
-        } else {
-            Spacer(modifier = Modifier.height(48.dp))
         }
-        Spacer(modifier = Modifier.width(16.dp))
-        Column {
-            Text(text = "${user.nome} ${user.sobrenome}")
+        Column (modifier = Modifier
+            .weight(1f)
+            .padding(start = 8.dp)
+        ){
+            Text(
+                text = "${user.nome} ${user.sobrenome}",
+                fontWeight = FontWeight.Bold
+            )
             Text(text = user.cargo)
         }
+        Text(
+            if (isFollowing) "together" else "match",
+            modifier = Modifier
+                .padding(end = 10.dp)
+                .clickable { isFollowing = !isFollowing }
+        )
     }
 }
 
@@ -176,7 +178,6 @@ fun AdvancedSearch(
 
     Column {
         Row(verticalAlignment = Alignment.CenterVertically) {
-            // Campo de busca
             OutlinedTextField(
                 value = searchText,
                 onValueChange = { newValue ->
@@ -206,7 +207,39 @@ fun AdvancedSearch(
                 )
             }
         }
+
         Spacer(modifier = Modifier.height(8.dp))
+        if (searchText.isEmpty() && selectedCategories.isEmpty()) {
+            Text(text = "#Topics primários:")
+            // Exibe as categorias selecionadas
+            if (userCategories.isNotEmpty()) {
+                Text(
+                    text = userCategories.joinToString(", ") { "#${it.replace("#", "").trim()}" },
+                    modifier = Modifier.padding(bottom = 16.dp),
+                    fontWeight = FontWeight.Bold
+                )
+            }
+        } else if (selectedCategories.isNotEmpty()) {
+
+            Text(text = "# Topics filtrados")
+            // Exibe as categorias selecionadas no card
+            if (selectedCategories.isNotEmpty()) {
+                Text(
+                    text = selectedCategories.joinToString(", ") {
+                        "#${
+                            it.replace("#", "").trim()
+                        }"
+                    },
+                    modifier = Modifier.padding(bottom = 16.dp),
+                    fontWeight = FontWeight.Bold,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis
+                )
+            }
+        } else {
+            Text(text = "Resultado da busca", modifier = Modifier.padding(bottom = 10.dp))
+        }
+
         // Card que aparece quando isCardVisible é verdadeiro
         if (isCardVisible) {
             Card(
@@ -215,21 +248,19 @@ fun AdvancedSearch(
                     .padding(top = 0.dp)
                     .border(3.dp, color = Color.Black, RoundedCornerShape(12.dp)),
                 colors = CardDefaults.cardColors(Color.White),
-
             ) {
                 Column(
-                    modifier = Modifier
-                        .padding(16.dp)
+                    modifier = Modifier.padding(16.dp)
                 ) {
                     // FlowRow para exibir as categorias
                     FlowRow(
-
                         verticalArrangement = Arrangement.spacedBy(2.dp),
                         horizontalArrangement = Arrangement.spacedBy(2.dp),
                     ) {
                         Category.values().forEach { category ->
                             val isSelected = selectedCategories.contains(category.name)
-                            val backgroundColor = if (isSelected) Color(0xFF03A9F4) else Color(0xFFE6E6E6)
+                            val backgroundColor =
+                                if (isSelected) Color(0xFF03A9F4) else Color(0xFFE6E6E6)
 
                             Button(
                                 modifier = Modifier
@@ -257,12 +288,10 @@ fun AdvancedSearch(
                                 }
                             ) {
                                 Text(
-                                    modifier = Modifier
-                                        .padding(2.dp),
+                                    modifier = Modifier.padding(2.dp),
                                     text = "#${category.name}",
                                     color = if (isSelected) Color.White else Color.DarkGray,
                                 )
-//                                    size = 10.dp
                             }
                         }
                     }
