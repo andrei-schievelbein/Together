@@ -19,14 +19,20 @@ import br.com.noke.twogether.repository.UserRepository
 import br.com.noke.twogether.viewmodel.UserViewModel
 import com.google.firebase.firestore.FirebaseFirestore
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
+import br.com.noke.twogether.model.User
 import br.com.noke.twogether.screens.CadastroScreen
 import br.com.noke.twogether.screens.CategoriaScreen
 import br.com.noke.twogether.screens.ListagemScreen
 import br.com.noke.twogether.screens.LoginScreen
+import br.com.noke.twogether.screens.MentorScreen
 import br.com.noke.twogether.ui.theme.TwogetherTheme
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -65,7 +71,13 @@ class MainActivity : ComponentActivity() {
                         composable(route = "cadastro") { CadastroScreen(viewModel, navController) }
                         composable(route = "categoria") { CategoriaScreen(viewModel, navController) }
                         composable(route = "listagem") { ListagemScreen(viewModel, navController) }
-
+                        composable(
+                            "mentor/{encodedUserJson}",
+                            arguments = listOf(navArgument("encodedUserJson") { type = NavType.StringType })
+                        ) { backStackEntry ->
+                            val encodedUserJson = backStackEntry.arguments?.getString("encodedUserJson") ?: ""
+                            MentorScreen(encodedUserJson, navController)
+                        }
 
 
                     }

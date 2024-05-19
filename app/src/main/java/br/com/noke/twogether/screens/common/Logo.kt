@@ -1,4 +1,4 @@
-package br.com.noke.twogether.screens
+package br.com.noke.twogether.screens.common
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
