@@ -31,6 +31,7 @@ import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.KeyboardArrowUp
+import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -98,6 +99,9 @@ fun UserItem(user: User) {
         Column (modifier = Modifier
             .weight(1f)
             .padding(start = 8.dp)
+            .clickable {
+                Log.d("UserItem", "User clicked: ${user.nome} ${user.sobrenome}, ${user.cargo}, ${user.imagemURL}")
+            }
         ){
             Text(
                 text = "${user.nome} ${user.sobrenome}",
@@ -109,15 +113,15 @@ fun UserItem(user: User) {
             if (isFollowing) "together" else "match",
             modifier = Modifier
                 .padding(end = 10.dp)
-                .clickable { isFollowing = !isFollowing }
+                .clickable { isFollowing = !isFollowing },
+            color = Color(0xFF34A5D8),
+            textDecoration = TextDecoration.Underline
         )
     }
 }
 
-@Composable
+@Composable // Componente para exibir a imagem do usuário
 fun UserImage(imageUrl: String) {
-    // Componente para exibir a imagem do usuário
-    Log.d("UserImage", "Loading image: $imageUrl")
     Image(
         painter = rememberAsyncImagePainter(imageUrl),
         contentDescription = null,
