@@ -1,6 +1,5 @@
 package br.com.noke.twogether.screens
 
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -20,7 +19,6 @@ import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.Divider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -58,7 +56,7 @@ fun MentorScreen(encodedUserJson: String, navController: NavHostController) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(bottom = 80.dp)  // Adiciona espaço para o botão na parte inferior
+                .padding(bottom = 80.dp)
         ) {
             Logo()
             UserProfileCard(user = user)
@@ -96,7 +94,7 @@ fun UserProfileCard(user: User) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .background(Color(0xFFEEEEEE)) // Ajuste a cor de fundo conforme necessário
+            .background(Color(0xFFEEEEEE))
             .padding(16.dp)
     ) {
         if (user.imagemURL.isNotBlank()) {
@@ -147,8 +145,6 @@ fun UserProfileBox(user: User, modifier: Modifier = Modifier) {
             modifier = Modifier
                 .fillMaxWidth()
                 .clip(RoundedCornerShape(8.dp))
-//                .background(Color.LightGray)
-//                .padding(16.dp)
                 .border(width = 2.dp, color = Color.Black, shape = RoundedCornerShape(4.dp))
         ) {
             Column {
@@ -170,7 +166,6 @@ fun UserProfileBox(user: User, modifier: Modifier = Modifier) {
                     )
                 }
                 if (expanded) {
-//                    Divider(color = Color.Gray, modifier = Modifier.padding(vertical = 8.dp))
                     Text(
                         text = """
                              E-mail: ${user.email}
