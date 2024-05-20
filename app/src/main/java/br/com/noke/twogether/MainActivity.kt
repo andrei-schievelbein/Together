@@ -2,9 +2,12 @@ package br.com.noke.twogether
 
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
@@ -14,30 +17,48 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import br.com.noke.twogether.factory.ViewModelFactory
-import br.com.noke.twogether.repository.UserRepository
-import br.com.noke.twogether.viewmodel.UserViewModel
-import com.google.firebase.firestore.FirebaseFirestore
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import br.com.noke.twogether.model.User
+import br.com.noke.notificationpush.notification.NotificationPush
+import br.com.noke.twogether.factory.ViewModelFactory
+import br.com.noke.twogether.repository.UserRepository
 import br.com.noke.twogether.screens.CadastroScreen
 import br.com.noke.twogether.screens.CategoriaScreen
 import br.com.noke.twogether.screens.ListagemScreen
 import br.com.noke.twogether.screens.LoginScreen
 import br.com.noke.twogether.screens.MentorScreen
+import br.com.noke.twogether.screens.common.NotificationScreen
 import br.com.noke.twogether.ui.theme.TwogetherTheme
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
+import br.com.noke.twogether.viewmodel.UserViewModel
+import com.google.firebase.firestore.FirebaseFirestore
+
 
 class MainActivity : ComponentActivity() {
+
+        private lateinit var notificationHelper: NotificationPush
+//    private lateinit var requestPermissionLauncher: ActivityResultLauncher<String>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
+        // Configuração da permissão para notificações
+        val requestPermissionLauncher = registerForActivityResult(
+            ActivityResultContracts.RequestPermission()
+        ) { isGranted: Boolean ->
+            if (!isGranted) {
+                Toast.makeText(this, "Permissão de notificação não concedida.", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        // Inicialização do NotificationHelper
+        notificationHelper = NotificationPush(this, requestPermissionLauncher)
+        notificationHelper.createNotificationChannel()
+        notificationHelper.requestNotificationPermission()
+
         setContent {
             TwogetherTheme {
                 Surface(
@@ -53,9 +74,13 @@ class MainActivity : ComponentActivity() {
                     // Obtenção do ViewModel
                     val viewModel: UserViewModel = viewModel(factory = factory)
 
+
+
+
+
                     NavHost(
                         navController = navController,
-                        startDestination = "login",
+                        startDestination = "notificacao",
                         exitTransition = {
                             slideOutHorizontally(animationSpec = tween(durationMillis = 1000)) + fadeOut(
                                 animationSpec = tween(1000)
@@ -69,17 +94,24 @@ class MainActivity : ComponentActivity() {
                     ) {
                         composable(route = "login") { LoginScreen(navController) }
                         composable(route = "cadastro") { CadastroScreen(viewModel, navController) }
-                        composable(route = "categoria") { CategoriaScreen(viewModel, navController) }
+                        composable(route = "categoria") {
+                            CategoriaScreen(
+                                viewModel,
+                                navController
+                            )
+                        }
                         composable(route = "listagem") { ListagemScreen(viewModel, navController) }
                         composable(
                             "mentor/{encodedUserJson}",
-                            arguments = listOf(navArgument("encodedUserJson") { type = NavType.StringType })
+                            arguments = listOf(navArgument("encodedUserJson") {
+                                type = NavType.StringType
+                            })
                         ) { backStackEntry ->
-                            val encodedUserJson = backStackEntry.arguments?.getString("encodedUserJson") ?: ""
+                            val encodedUserJson =
+                                backStackEntry.arguments?.getString("encodedUserJson") ?: ""
                             MentorScreen(encodedUserJson, navController)
                         }
-
-
+                        composable(route = "notificacao") { NotificationScreen(notificationHelper) }
                     }
 
                 }

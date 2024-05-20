@@ -20,7 +20,8 @@ fun UserImage(
     height: Dp = 50.dp,
     width: Dp = 50.dp,
     border: Dp = 1.dp,
-    borderColor: Color = Color.Black
+    borderColor: Color = Color.Black,
+    modifier: Modifier
 ) {
     Image(
         painter = rememberAsyncImagePainter(imageUrl),

@@ -103,7 +103,8 @@ fun UserProfileCard(user: User) {
                 height = 80.dp,
                 width = 80.dp,
                 border = 2.dp,
-                borderColor = Color.Black
+                borderColor = Color.Black,
+                modifier = Modifier.weight(0.25f)
             )
         }
 
