@@ -31,6 +31,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.sp
+import br.com.noke.notificationpush.notification.NotificationPush
 import br.com.noke.twogether.R
 import br.com.noke.twogether.screens.common.Logo
 import br.com.noke.twogether.screens.common.UserImage
@@ -40,7 +41,11 @@ import java.nio.charset.StandardCharsets
 
 
 @Composable
-fun ListagemScreen(viewModel: UserViewModel, navController: NavHostController) {
+fun ListagemScreen(
+    viewModel: UserViewModel,
+    navController: NavHostController,
+    notificationHelper: NotificationPush
+) {
     // Obtenção das categorias de usuário e da lista de usuários do ViewModel
     val userCategories by viewModel.userCategories.collectAsState()
     val users by viewModel.users.collectAsState()
@@ -72,15 +77,35 @@ fun ListagemScreen(viewModel: UserViewModel, navController: NavHostController) {
         // Exibe a lista de usuários
         LazyColumn {
             items(filteredUsers) { user ->
-                UserItem(user = user, navController = navController)
+                UserItem(
+                    user = user,
+                    navController = navController,
+                    notificationHelper = notificationHelper
+                )
             }
         }
     }
 }
 
 @Composable
-fun UserItem(user: User, navController: NavHostController) {
+fun UserItem(user: User, navController: NavHostController, notificationHelper: NotificationPush) {
     var isFollowing by remember { mutableStateOf(false) }
+    var shouldNotify by remember { mutableStateOf<Pair<Boolean, Boolean>?>(null) }
+
+    LaunchedEffect(shouldNotify) {
+        shouldNotify?.let { (following, notify) ->
+            if (notify) {
+                val message = if (following) {
+                    "Você está seguindo ${user.nome} ${user.sobrenome}"
+                } else {
+                    "Você deixou de seguir ${user.nome} ${user.sobrenome}"
+                }
+                notificationHelper.sendNotification("Notificação de Seguidor", message)
+                shouldNotify = null // Resetar o estado para evitar múltiplas notificações
+            }
+        }
+    }
+
     Box(
         modifier = Modifier
             .fillMaxWidth()
@@ -96,13 +121,20 @@ fun UserItem(user: User, navController: NavHostController) {
             modifier = Modifier
                 .weight(0.8f)
                 .clickable {
-                    Log.d("UserItem", "User clicked: ${user.nome} ${user.sobrenome}, ${user.cargo}, ${user.imagemURL}")
+                    Log.d(
+                        "UserItem",
+                        "User clicked: ${user.nome} ${user.sobrenome}, ${user.cargo}, ${user.imagemURL}"
+                    )
                     val userJson = Gson().toJson(user)
-                    val encodedUserJson = URLEncoder.encode(userJson, StandardCharsets.UTF_8.toString())
+                    val encodedUserJson =
+                        URLEncoder.encode(userJson, StandardCharsets.UTF_8.toString())
                     navController.navigate("mentor/$encodedUserJson")
                 }
         ) {
-            Row(modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
                 if (user.imagemURL.isNotBlank()) {
                     UserImage(imageUrl = user.imagemURL, modifier = Modifier.weight(0.25f))
                 }
@@ -128,7 +160,10 @@ fun UserItem(user: User, navController: NavHostController) {
             modifier = Modifier
                 .weight(0.2f)
                 .height(60.dp)
-                .clickable { isFollowing = !isFollowing },
+                .clickable {
+                    isFollowing = !isFollowing
+                    shouldNotify = Pair(isFollowing, true)
+                },
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {

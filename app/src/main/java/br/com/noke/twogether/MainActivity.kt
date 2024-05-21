@@ -80,7 +80,7 @@ class MainActivity : ComponentActivity() {
 
                     NavHost(
                         navController = navController,
-                        startDestination = "notificacao",
+                        startDestination = "login",
                         exitTransition = {
                             slideOutHorizontally(animationSpec = tween(durationMillis = 1000)) + fadeOut(
                                 animationSpec = tween(1000)
@@ -100,7 +100,7 @@ class MainActivity : ComponentActivity() {
                                 navController
                             )
                         }
-                        composable(route = "listagem") { ListagemScreen(viewModel, navController) }
+                        composable(route = "listagem") { ListagemScreen(viewModel, navController, notificationHelper) }
                         composable(
                             "mentor/{encodedUserJson}",
                             arguments = listOf(navArgument("encodedUserJson") {
@@ -111,7 +111,6 @@ class MainActivity : ComponentActivity() {
                                 backStackEntry.arguments?.getString("encodedUserJson") ?: ""
                             MentorScreen(encodedUserJson, navController)
                         }
-                        composable(route = "notificacao") { NotificationScreen(notificationHelper) }
                     }
 
                 }
