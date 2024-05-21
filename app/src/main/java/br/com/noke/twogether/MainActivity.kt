@@ -31,7 +31,6 @@ import br.com.noke.twogether.screens.CategoriaScreen
 import br.com.noke.twogether.screens.ListagemScreen
 import br.com.noke.twogether.screens.LoginScreen
 import br.com.noke.twogether.screens.MentorScreen
-import br.com.noke.twogether.screens.common.NotificationScreen
 import br.com.noke.twogether.ui.theme.TwogetherTheme
 import br.com.noke.twogether.viewmodel.UserViewModel
 import com.google.firebase.firestore.FirebaseFirestore

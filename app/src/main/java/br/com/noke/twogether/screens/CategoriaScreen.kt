@@ -76,7 +76,7 @@ fun CategoriaScreen(viewModel: UserViewModel, navController: NavHostController) 
                 .fillMaxWidth()
         ) {
             Text(
-                text = "Siga os #Topics para encontrar seus mentores.", maxLines = 2
+                text = "Siga os #Tópicos para encontrar seus mentores.", maxLines = 2
             )
         }
 
