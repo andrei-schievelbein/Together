@@ -23,6 +23,7 @@ import br.com.noke.twogether.model.Category
 import br.com.noke.twogether.model.User
 import br.com.noke.twogether.viewmodel.UserViewModel
 import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.KeyboardArrowUp
@@ -31,9 +32,11 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Popup
 import br.com.noke.notificationpush.notification.NotificationPush
 import br.com.noke.twogether.R
 import br.com.noke.twogether.screens.common.Logo
+import br.com.noke.twogether.screens.common.NotificationIcon
 import br.com.noke.twogether.screens.common.UserImage
 import com.google.gson.Gson
 import java.net.URLEncoder
@@ -53,6 +56,11 @@ fun ListagemScreen(
     // Estado que armazena todos os usuários
     var filteredUsers by remember { mutableStateOf(emptyList<User>()) }
 
+    var followerCount by remember { mutableStateOf(0) }
+
+    var showNotificationPopup by remember { mutableStateOf(false) }
+    var notificationMessages by remember { mutableStateOf(listOf<String>()) }
+
     // Efeito que busca as categorias de usuário quando a tela é carregada
     LaunchedEffect(Unit) {
         viewModel.fetchUserCategories()
@@ -67,7 +75,11 @@ fun ListagemScreen(
     }
 
     Column(modifier = Modifier.padding(start = 8.dp)) {
-        Logo()
+//        Logo()
+
+        NotificationIcon(followerCount) {
+            showNotificationPopup = true
+        }
 
         // Componente de busca avançada
         AdvancedSearch(users, userCategories) { filtered ->
@@ -75,20 +87,74 @@ fun ListagemScreen(
         }
 
         // Exibe a lista de usuários
-        LazyColumn {
+        LazyColumn(
+            modifier = Modifier
+                .fillMaxSize()
+                .weight(0.1f)
+        ) {
             items(filteredUsers) { user ->
                 UserItem(
                     user = user,
                     navController = navController,
-                    notificationHelper = notificationHelper
+                    notificationHelper = notificationHelper,
+                    onFollow = {
+                        followerCount++
+                        notificationMessages =
+                            notificationMessages + "Você está seguindo ${user.nome} ${user.sobrenome}"
+                    },
+                    onUnfollow = {
+                        followerCount--
+                        notificationMessages =
+                            notificationMessages + "Você deixou de seguir ${user.nome} ${user.sobrenome}"
+                    }
                 )
             }
+        }
+
+        Button(
+            onClick = { navController.navigate("categoria") },
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF34A5D8)),
+            modifier = Modifier
+                .padding(start = 16.dp, top = 16.dp, end = 16.dp, bottom = 30.dp)
+                .fillMaxWidth()
+                .height(55.dp)
+                .align(Alignment.CenterHorizontally),
+            shape = RoundedCornerShape(
+                topStart = 4.dp, topEnd = 4.dp, bottomEnd = 4.dp, bottomStart = 4.dp
+            )
+        ) {
+            Text(
+                text = "Voltar aos #Tópicos Primários",
+                style = TextStyle(
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold
+                )
+            )
+        }
+
+        if (showNotificationPopup) {
+            NotificationPopup(
+                followCount = followerCount,
+                messages = notificationMessages,
+                onDismiss = { showNotificationPopup = false },
+                onClear = {
+                    followerCount = 0
+                    notificationMessages = listOf()
+                    showNotificationPopup = false
+                }
+            )
         }
     }
 }
 
 @Composable
-fun UserItem(user: User, navController: NavHostController, notificationHelper: NotificationPush) {
+fun UserItem(
+    user: User,
+    navController: NavHostController,
+    notificationHelper: NotificationPush,
+    onFollow: () -> Unit,
+    onUnfollow: () -> Unit
+) {
     var isFollowing by remember { mutableStateOf(false) }
     var shouldNotify by remember { mutableStateOf<Pair<Boolean, Boolean>?>(null) }
 
@@ -102,6 +168,12 @@ fun UserItem(user: User, navController: NavHostController, notificationHelper: N
                 }
                 notificationHelper.sendNotification("Notificação de Seguidor", message)
                 shouldNotify = null // Resetar o estado para evitar múltiplas notificações
+
+                if (following) {
+                    onFollow()
+                } else {
+                    onUnfollow()
+                }
             }
         }
     }
@@ -264,7 +336,7 @@ fun AdvancedSearch(
 
         Spacer(modifier = Modifier.height(8.dp))
         if (searchText.isEmpty() && selectedCategories.isEmpty()) {
-            Text(text = "#Topics primários:")
+            Text(text = "#Tópicos primários:")
             // Exibe as categorias selecionadas
             if (userCategories.isNotEmpty()) {
                 Text(
@@ -275,7 +347,7 @@ fun AdvancedSearch(
             }
         } else if (selectedCategories.isNotEmpty()) {
 
-            Text(text = "# Topics filtrados")
+            Text(text = "# Tópicos filtrados")
             // Exibe as categorias selecionadas no card
             if (selectedCategories.isNotEmpty()) {
                 Text(
@@ -347,6 +419,119 @@ fun AdvancedSearch(
                                     color = if (isSelected) Color.White else Color.DarkGray,
                                 )
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//@Composable
+//fun NotificationIcon(followerCount: Int, onClick: () -> Unit) {
+//    Box(
+//        contentAlignment = Alignment.TopEnd,
+//        modifier = Modifier
+//            .size(48.dp)
+//            .clickable { onClick() }
+//    ) {
+//        Image(
+//            painter = painterResource(id = R.drawable.sino),
+//            contentDescription = "Ícone de sino",
+//            modifier = Modifier.size(40.dp)
+//        )
+//        if (followerCount > 0) {
+//            Box(
+//                contentAlignment = Alignment.Center,
+//                modifier = Modifier
+//                    .size(24.dp)
+//                    .background(Color.Red, shape = CircleShape)
+//                    .align(Alignment.TopEnd)
+//            ) {
+//                Text(
+//                    text = followerCount.toString(),
+//                    color = Color.White,
+//                    style = MaterialTheme.typography.bodySmall
+//                )
+//            }
+//        }
+//    }
+//}
+
+@Composable
+fun NotificationPopup(
+    followCount: Int,
+    messages: List<String>,
+    onDismiss: () -> Unit,
+    onClear: () -> Unit
+) {
+    Popup(alignment = Alignment.Center) {
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(Color.Black.copy(alpha = 0.5f))
+                .clickable { onDismiss() },
+            contentAlignment = Alignment.Center
+        ) {
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(Color.Transparent)
+                    .padding(16.dp)
+                    .border(2.dp, color = Color.Black, RoundedCornerShape(12.dp))
+                    .clickable { },
+                elevation = CardDefaults.cardElevation(defaultElevation = 10.dp)
+            ) {
+                Column(
+                    modifier = Modifier.padding(15.dp)
+                ) {
+                    Text(
+                        text = "Você tem $followCount novos seguidores.",
+                        style = TextStyle(fontSize = 18.sp, fontWeight = FontWeight.Bold)
+                    )
+                    Divider(
+                        color = Color.Black,
+                        thickness = 2.dp,
+                        modifier = Modifier.padding(vertical = 8.dp)
+                    )
+                    LazyColumn {
+                        items(messages) { message ->
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(8.dp)
+                            ) {
+                                Text(text = message)
+                            }
+                            Box(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .height(1.dp)
+                                    .background(color = Color.Black)
+                            )
+                        }
+                    }
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Row {
+                        Button(
+                            onClick = onClear,
+                            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF34A5D8)),
+                            shape = RoundedCornerShape(
+                                topStart = 4.dp, topEnd = 4.dp, bottomEnd = 4.dp, bottomStart = 4.dp
+                            )
+                        ) {
+                            Text("Limpar")
+                        }
+                        Spacer(modifier = Modifier.width(8.dp))
+                        Button(
+                            onClick = { onDismiss() },
+                            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF34A5D8)),
+                            shape = RoundedCornerShape(
+                                topStart = 4.dp, topEnd = 4.dp, bottomEnd = 4.dp, bottomStart = 4.dp
+                            ),
+                        )
+                        {
+                            Text("Fechar")
                         }
                     }
                 }
