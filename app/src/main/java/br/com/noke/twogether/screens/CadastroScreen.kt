@@ -172,7 +172,11 @@ fun CadastroScreen(viewModel: UserViewModel, navController: NavController) {
 
             Button(
                 onClick = {
-                    if (nome.isNotBlank() && email.isNotBlank() && celular.isNotBlank()) {
+                    val nameIsValid = nome.isNotBlank()
+                    val emailIsValid = email.isNotBlank() && "@" in email
+                    val phoneIsValid = celular.isNotBlank() && celular.all { it.isDigit() }
+
+                    if (nameIsValid && emailIsValid && phoneIsValid) {
                         viewModel.addUser(
                             User(
                                 nome = nome,
@@ -197,6 +201,7 @@ fun CadastroScreen(viewModel: UserViewModel, navController: NavController) {
                 ),
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF34A5D8))
             )
+
 
             {
                 Text(

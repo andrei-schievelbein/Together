@@ -3,6 +3,7 @@ package br.com.noke.twogether.screens
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.IntrinsicSize
@@ -21,6 +22,7 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -39,340 +41,294 @@ import androidx.navigation.compose.rememberNavController
 import br.com.noke.twogether.R
 import br.com.noke.twogether.util.DeleteAllDocuments
 import br.com.noke.twogether.util.ExportToFirestore
+import androidx.compose.runtime.*
 
 @Composable
 fun LoginScreen(navController: NavController) {
-//    DeleteAllDocuments()
-//    ExportToFirestore()
+    // Estado para controlar a visibilidade da mensagem de erro
+    var showError by remember { mutableStateOf(false) }
+
+    // Função para alterar o estado de erro
+    fun handleLoginClick() { showError = !showError }
+
     Box(modifier = Modifier.fillMaxSize()) {
-
-        Column(modifier = Modifier.fillMaxSize()) {
-            Spacer(modifier = Modifier.height(15.dp))
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(50.dp)
-            ) {
-                Image(
-                    painter = painterResource(id = R.drawable.logo),
-                    contentDescription = "Imagem do logo",
-                    modifier = Modifier
-                        .size(100.dp)
-                )
-            }
-
+        // Box interno para centralizar a coluna
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(16.dp),
+            contentAlignment = Alignment.Center
+        ) {
             Column(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(70.dp)
+                horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                Text(
-                    text = "Entrar",
-                    modifier = Modifier.padding(start = 8.dp, top = 1.dp),
-                    style = TextStyle(
-                        fontWeight = FontWeight.Bold,
-                        fontSize = 25.sp
+                Spacer(modifier = Modifier.height(1.dp))
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(100.dp)
+                        .padding(top = 30.dp)
+                ) {
+                    Image(
+                        painter = painterResource(id = R.drawable.logo),
+                        contentDescription = "Imagem do logo",
+                        modifier = Modifier.size(150.dp)
                     )
-                )
+                }
 
-
-                Row {
-                    // Texto "ou"
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(70.dp)
+                ) {
                     Text(
-                        text = "ou ",
+                        text = "Entrar",
                         modifier = Modifier.padding(start = 8.dp, top = 1.dp),
-                        style = TextStyle(fontSize = 14.sp)
-                    )
-                    ClickableText(
-                        text = AnnotatedString("cadastre-se"),
-                        onClick = { offset ->
-                            // Adicione a ação de clique desejada aqui
-                        },
-                        style = TextStyle(fontSize = 14.sp, color = Color.Blue),
-                        modifier = Modifier.padding(top = 1.dp)
-                    )
-                    Text(
-                        text = " no Together",
-                        style = TextStyle(fontSize = 14.sp)
-                    )
-                }
-            }
-
-            Card(
-                modifier = Modifier
-                    .fillMaxWidth(0.75f)
-                    .height(IntrinsicSize.Min)
-                    .padding(3.dp)
-                    .align(Alignment.CenterHorizontally)
-
-            ) {
-                Row(
-                    modifier = Modifier
-                        .background(color = Color.White)
-                        .padding(4.dp)
-                        .border(
-                            width = 1.dp,
-                            color = Color.Gray,
-                            shape = RoundedCornerShape(7.dp)
-                        )
-                )
-                {
-                    Column(
-                        modifier = Modifier
-                            .weight(0.1f)
-                            .padding(8.dp)
-
-                    ) {
-                        Image(
-                            painter = painterResource(id = R.drawable.google),
-                            contentDescription = "Logo do Google",
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .height(20.dp)
-                        )
-                    }
-                    Column(
-                        modifier = Modifier
-                            .weight(0.5f)
-                            .padding(8.dp)
-
-                    ) {
-                        Text(
-                            text = "Entrar com o Google",
-                            style = TextStyle(
-                                //fontWeight = FontWeight.Bold,
-                                fontSize = 16.sp
-                            )
-                        )
-                    }
-                }
-            }
-
-            Card(
-                modifier = Modifier
-                    .fillMaxWidth(0.75f)
-                    .height(IntrinsicSize.Min)
-                    .padding(3.dp)
-                    .align(Alignment.CenterHorizontally)
-            ) {
-                Row(
-                    modifier = Modifier
-                        .background(color = Color.White)
-                        .padding(4.dp)
-                        .clip(shape = RoundedCornerShape(size = 0.dp))
-                        .border(
-                            width = 1.dp,
-                            color = Color.Gray,
-                            shape = RoundedCornerShape(7.dp)
-                        )
-                ) {
-                    Column(
-                        modifier = Modifier
-                            .weight(0.1f)
-                            .padding(8.dp)
-                    ) {
-                        Image(
-                            painter = painterResource(id = R.drawable.apple),
-                            contentDescription = "Logo do Apple",
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .height(20.dp)
-                        )
-                    }
-                    Column(
-                        modifier = Modifier
-                            .weight(0.5f)
-                            .padding(8.dp)
-                    ) {
-                        Text(
-                            text = "Entrar com Apple",
-                            style = TextStyle(
-                                //fontWeight = FontWeight.Bold,
-                                fontSize = 16.sp
-                            )
-                        )
-                    }
-                }
-            }
-
-            Card(
-                modifier = Modifier
-                    .fillMaxWidth(0.75f)
-                    .height(IntrinsicSize.Min)
-                    .padding(3.dp)
-                    .align(Alignment.CenterHorizontally)
-                // .background(color = Color.LightGray)
-            ) {
-                Row(
-                    modifier = Modifier
-                        .background(color = Color.White)
-                        .padding(4.dp)
-                        .clip(shape = RoundedCornerShape(size = 0.dp))
-                        .border(
-                            width = 1.dp,
-                            color = Color.Gray,
-                            shape = RoundedCornerShape(7.dp)
-                        )
-                ) {
-                    Column(
-                        modifier = Modifier
-                            .weight(0.1f)
-                            .padding(8.dp)
-                    ) {
-                        Image(
-                            painter = painterResource(id = R.drawable.facebook),
-                            contentDescription = "Logo do Facebook",
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .height(20.dp)
-                        )
-                    }
-                    Column(
-                        modifier = Modifier
-                            .weight(0.5f)
-                            .padding(8.dp)
-                    ) {
-                        Text(
-                            text = "Entrar com Facebook",
-                            style = TextStyle(
-                                //fontWeight = FontWeight.Bold,
-                                fontSize = 16.sp
-                            )
-                        )
-                    }
-                }
-            }
-
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(50.dp)
-
-            ) {
-                Column {
-                    Text(
-                        text = "ou entre com os seus dados e senha.",
-                        modifier = Modifier.padding(start = 80.dp, top = 10.dp),
                         style = TextStyle(
-                            fontSize = 14.sp
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 25.sp
                         )
                     )
-                }
-            }
 
-            Card(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(200.dp)
-                    .padding(15.dp)
-            ) {
-                Box(
+                    Row {
+                        Text(
+                            text = "ou ",
+                            modifier = Modifier.padding(start = 8.dp, top = 1.dp),
+                            style = TextStyle(fontSize = 14.sp)
+                        )
+                        ClickableText(
+                            text = AnnotatedString("cadastre-se"),
+                            onClick = { offset ->
+                                // Adicione a ação de clique desejada aqui
+                            },
+                            style = TextStyle(fontSize = 14.sp, color = Color.Blue),
+                            modifier = Modifier.padding(top = 1.dp)
+                        )
+                        Text(
+                            text = " no Together",
+                            style = TextStyle(fontSize = 14.sp)
+                        )
+                    }
+                }
+
+                Spacer(modifier = Modifier.height(20.dp))
+
+                // Botões de login
+                LoginButton(
+                    text = "Entrar com o Google",
+                    imageRes = R.drawable.google,
+                    onClick = { handleLoginClick() }
+                )
+
+                Spacer(modifier = Modifier.height(10.dp))
+
+                LoginButton(
+                    text = "Entrar com Apple",
+                    imageRes = R.drawable.apple,
+                    onClick = { handleLoginClick() }
+                )
+
+                Spacer(modifier = Modifier.height(10.dp))
+
+                LoginButton(
+                    text = "Entrar com Facebook",
+                    imageRes = R.drawable.facebook,
+                    onClick = { handleLoginClick() },
+                    showError = showError
+                )
+
+                Spacer(modifier = Modifier.height(20.dp))
+
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
                     modifier = Modifier
-                        .fillMaxSize()
-                        .background(color = Color.White)
-                        .padding(16.dp)
+                        .fillMaxWidth()
+                        .padding(vertical = 10.dp)
                 ) {
-                    Column(
+                    Box(
+                        modifier = Modifier
+                            .weight(1f)
+                            .height(2.dp)
+                            .background(color = Color.Black)
+                    )
+                    Text(
+                        text = "ou",
+                        modifier = Modifier.padding(horizontal = 8.dp),
+                        style = TextStyle(
+                            fontSize = 18.sp,
+                            fontWeight = FontWeight.Bold
+                        )
+                    )
+                    Box(
+                        modifier = Modifier
+                            .weight(1f)
+                            .height(2.dp)
+                            .background(color = Color.Black)
+                    )
+                }
+
+                Card(
+                    modifier = Modifier
+                        .fillMaxWidth(1f)
+                        .height(IntrinsicSize.Min)
+                        .padding(1.dp)
+                ) {
+                    Box(
                         modifier = Modifier
                             .fillMaxSize()
+                            .background(color = Color.White)
+                            .padding(16.dp)
                     ) {
-
-                        OutlinedTextField(
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .padding(bottom = 8.dp),
-                            value = "",
-                            onValueChange = { },
-                            label = { Text("Email ou telefone") },
-                            textStyle = TextStyle(
-                                fontSize = 16.sp,
-                                color = Color.Black
+                        Column(
+                            modifier = Modifier.fillMaxSize()
+                        ) {
+                            TextField(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(bottom = 8.dp),
+                                value = "",
+                                onValueChange = { },
+                                label = { Text("Email ou telefone") },
+                                textStyle = TextStyle(
+                                    fontSize = 16.sp,
+                                    color = Color.Black
+                                )
                             )
-                        )
-
-                        OutlinedTextField(
-                            modifier = Modifier
-                                .fillMaxWidth(),
-                            value = "",
-                            onValueChange = {},
-                            label = { Text("Senha") },
-                            visualTransformation = PasswordVisualTransformation(),
-                            textStyle = TextStyle(
-                                fontSize = 16.sp,
-                                color = Color.Black
+                            Spacer(modifier = Modifier.height(0.dp)) // Remover traço acima da palavra "Senha"
+                            TextField(
+                                modifier = Modifier.fillMaxWidth(),
+                                value = "",
+                                onValueChange = {},
+                                label = { Text("Senha") },
+                                visualTransformation = PasswordVisualTransformation(),
+                                textStyle = TextStyle(
+                                    fontSize = 16.sp,
+                                    color = Color.Black
+                                )
                             )
-                        )
+                        }
                     }
                 }
-            }
 
-            Row(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(20.dp),
-                //.padding(top = 1.dp),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Checkbox(
-                    checked = false,
-                    onCheckedChange = { isChecked ->
-                        println("isChecked: $isChecked")
-                    }
-                )
-                Text(
-                    text = "Lembrar dos meus dados.",
-                    style = TextStyle(
-                        fontSize = 14.sp
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(20.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Checkbox(
+                        checked = false,
+                        onCheckedChange = { isChecked ->
+                            println("isChecked: $isChecked")
+                        }
                     )
-                )
+                    Text(
+                        text = "Lembrar dos meus dados.",
+                        style = TextStyle(fontSize = 14.sp)
+                    )
+                }
+
+                Spacer(modifier = Modifier.height(7.dp))
+
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(20.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        text = "Esqueceu a senha?",
+                        style = TextStyle(
+                            fontSize = 14.sp,
+                            color = Color(0xFF03A9F4)
+                        ),
+                        modifier = Modifier.padding(start = 12.dp)
+                    )
+                }
+
+                Button(
+                    onClick = { navController.navigate("cadastro") },
+                    modifier = Modifier
+                        .padding(16.dp)
+                        .fillMaxWidth(),
+                    shape = RoundedCornerShape(4.dp),
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF03A9F4))
+                ) {
+                    Text(
+                        text = "Continuar",
+                        style = TextStyle(
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 16.sp,
+                            color = Color.White
+                        )
+                    )
+                }
             }
+        }
+    }
+}
 
-            Spacer(modifier = Modifier.height(75.dp))
-
+@Composable
+fun LoginButton(
+    text: String,
+    imageRes: Int,
+    onClick: () -> Unit,
+    showError: Boolean = false
+) {
+    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(0.75f)
+                .height(IntrinsicSize.Min)
+                .padding(3.dp)
+        ) {
             Row(
                 modifier = Modifier
-                    .fillMaxWidth()
-                    .height(20.dp),
-                //.padding(top = 1.dp),
-                verticalAlignment = Alignment.CenterVertically
+                    .background(color = Color.White)
+                    .padding(4.dp)
+                    .clip(shape = RoundedCornerShape(7.dp))
+                    .border(
+                        width = 4.dp,
+                        color = Color.Black,
+                        shape = RoundedCornerShape(7.dp)
+                    )
+                    .clickable { onClick() }
             ) {
-
-
-                Text(
-                    text = "Lembrar dos meus dados.",
-                    style = TextStyle(
-                        fontSize = 14.sp
-                    ),
-                    modifier = Modifier.padding(start = 12.dp)
-                )
+                Column(
+                    modifier = Modifier
+                        .height(40.dp)
+                        .weight(0.1f)
+                        .padding(8.dp)
+                ) {
+                    Image(
+                        painter = painterResource(id = imageRes),
+                        contentDescription = "Logo",
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(20.dp)
+                    )
+                }
+                Column(
+                    modifier = Modifier
+                        .weight(0.5f)
+                        .padding(8.dp)
+                ) {
+                    Text(
+                        text = text,
+                        style = TextStyle(fontSize = 16.sp)
+                    )
+                }
             }
+        }
 
-            Button(
-                onClick = { navController.navigate("cadastro") },
-                modifier = Modifier
-                    .padding(16.dp)
-                    .fillMaxWidth(),
-                shape = RoundedCornerShape(
-                    topStart = 4.dp,
-                    topEnd = 4.dp,
-                    bottomEnd = 4.dp,
-                    bottomStart = 4.dp
-                ),
-                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF03A9F4))
+        if (showError) {
+            Text(
+                text = "Ainda em fase de desenvolvimento!",
+                color = Color.Red,
+                style = TextStyle(fontSize = 16.sp),
+                modifier = Modifier.padding(top = 8.dp)
             )
-
-            {
-                Text(
-                    text = "Continuar",
-                    style = TextStyle(
-                        fontWeight = FontWeight.Bold,
-                        fontSize = 16.sp,
-                        color = Color.White
-                    )
-                )
-            }
         }
     }
 }
