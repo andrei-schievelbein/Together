@@ -1,5 +1,4 @@
-package br.com.noke.notificationpush.notification
-
+package br.com.noke.twogether.notification
 
 import android.Manifest
 import android.app.NotificationChannel

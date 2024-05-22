@@ -3,10 +3,8 @@ package br.com.noke.twogether.screens.common
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
@@ -27,8 +25,7 @@ import androidx.compose.ui.unit.dp
 import br.com.noke.twogether.R
 
 @Composable
-fun Logo(modifier: Modifier = Modifier) {
-    // Função para exibir o logotipo da aplicação
+fun Logo() {
     Column {
         Spacer(modifier = Modifier.height(30.dp))
         Row(
@@ -101,11 +98,9 @@ fun NotificationIcon(followerCount: Int, onClick: () -> Unit) {
 }
 
 
-
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun PreviewNotificationIcon() {
     NotificationIcon(followerCount = 5) {
-        // Action when clicked (for preview, this can be empty)
     }
 }

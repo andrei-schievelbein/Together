@@ -1,6 +1,5 @@
 package br.com.noke.twogether.model
 
-
 data class User(
     val nome: String = "",
     val sobrenome: String = "",

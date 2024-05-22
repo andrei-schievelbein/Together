@@ -60,17 +60,17 @@ fun MentorScreen(encodedUserJson: String, navController: NavHostController) {
         ) {
             Logo()
             UserProfileCard(user = user)
-            UserProfileBox(user, modifier = Modifier.weight(1f))
+            UserProfileBox(user)
             Text(
                 text = "Perfil: ${user.perfil}",
                 modifier = Modifier.padding(top = 16.dp, start = 16.dp, end = 16.dp, bottom = 8.dp)
             )
         }
         Button(
-            onClick = {navController.navigate("listagem")},
+            onClick = { navController.navigate("listagem") },
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF34A5D8)),
             modifier = Modifier
-                .padding(start = 16.dp,top = 16.dp, end = 16.dp, bottom = 30.dp)
+                .padding(start = 16.dp, top = 16.dp, end = 16.dp, bottom = 30.dp)
                 .fillMaxWidth()
                 .height(55.dp)
                 .align(Alignment.BottomCenter),
@@ -103,8 +103,7 @@ fun UserProfileCard(user: User) {
                 height = 80.dp,
                 width = 80.dp,
                 border = 2.dp,
-                borderColor = Color.Black,
-                modifier = Modifier.weight(0.25f)
+                borderColor = Color.Black
             )
         }
 
@@ -138,7 +137,7 @@ fun UserProfileCard(user: User) {
 }
 
 @Composable
-fun UserProfileBox(user: User, modifier: Modifier = Modifier) {
+fun UserProfileBox(user: User) {
     var expanded by remember { mutableStateOf(false) }
 
     Column(modifier = Modifier.padding(5.dp)) {

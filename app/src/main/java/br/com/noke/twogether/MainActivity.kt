@@ -1,12 +1,10 @@
 package br.com.noke.twogether
 
-
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
@@ -23,7 +21,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import br.com.noke.notificationpush.notification.NotificationPush
+import br.com.noke.twogether.notification.NotificationPush
 import br.com.noke.twogether.factory.ViewModelFactory
 import br.com.noke.twogether.repository.UserRepository
 import br.com.noke.twogether.screens.CadastroScreen
@@ -38,8 +36,8 @@ import com.google.firebase.firestore.FirebaseFirestore
 
 class MainActivity : ComponentActivity() {
 
-        private lateinit var notificationHelper: NotificationPush
-//    private lateinit var requestPermissionLauncher: ActivityResultLauncher<String>
+    private lateinit var notificationHelper: NotificationPush
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -49,7 +47,8 @@ class MainActivity : ComponentActivity() {
             ActivityResultContracts.RequestPermission()
         ) { isGranted: Boolean ->
             if (!isGranted) {
-                Toast.makeText(this, "Permissão de notificação não concedida.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Permissão de notificação não concedida.", Toast.LENGTH_SHORT)
+                    .show()
             }
         }
 
@@ -73,10 +72,6 @@ class MainActivity : ComponentActivity() {
                     // Obtenção do ViewModel
                     val viewModel: UserViewModel = viewModel(factory = factory)
 
-
-
-
-
                     NavHost(
                         navController = navController,
                         startDestination = "login",
@@ -99,7 +94,13 @@ class MainActivity : ComponentActivity() {
                                 navController
                             )
                         }
-                        composable(route = "listagem") { ListagemScreen(viewModel, navController, notificationHelper) }
+                        composable(route = "listagem") {
+                            ListagemScreen(
+                                viewModel,
+                                navController,
+                                notificationHelper
+                            )
+                        }
                         composable(
                             "mentor/{encodedUserJson}",
                             arguments = listOf(navArgument("encodedUserJson") {
@@ -111,7 +112,6 @@ class MainActivity : ComponentActivity() {
                             MentorScreen(encodedUserJson, navController)
                         }
                     }
-
                 }
             }
         }

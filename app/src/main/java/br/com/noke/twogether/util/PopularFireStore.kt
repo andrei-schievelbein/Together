@@ -1,15 +1,14 @@
 package br.com.noke.twogether.util
 
-import android.util.Log
-import br.com.noke.twogether.viewmodel.UserViewModel
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
 import android.content.Context
 import br.com.noke.twogether.model.User
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.IOException
 
+//função para importar os dados do json para o firebase
 fun importDataFromJson(context: Context) {
     val jsonString: String
     try {

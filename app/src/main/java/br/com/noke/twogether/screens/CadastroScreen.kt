@@ -1,7 +1,7 @@
 package br.com.noke.twogether.screens
 
-import br.com.noke.twogether.R
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Call
 import androidx.compose.material.icons.filled.Email
@@ -32,60 +33,79 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import br.com.noke.twogether.R
 import br.com.noke.twogether.model.User
 import br.com.noke.twogether.viewmodel.UserViewModel
 
-
 @Composable
 fun CadastroScreen(viewModel: UserViewModel, navController: NavController) {
-    var nome by remember { mutableStateOf("teste") }
-    var sobrenome by remember { mutableStateOf("") }
-    var email by remember { mutableStateOf("teste") }
-    var celular by remember { mutableStateOf("teste") }
-    var senha by remember { mutableStateOf("teste") }
-    var confirmacao by remember { mutableStateOf("teste") }
-    var showError by remember { mutableStateOf(false) }
+    var nome by remember { mutableStateOf("") }
+    var email by remember { mutableStateOf("") }
+    var celular by remember { mutableStateOf("") }
+    var senha by remember { mutableStateOf("") }
+    var confirmacao by remember { mutableStateOf("") }
 
+    var errorMessage by remember { mutableStateOf<List<String>>(emptyList()) }
 
+    // Função para validar os campos
+    fun validateFields(): List<String> {
+        val errors = mutableListOf<String>()
+        val nameIsValid = nome.isNotBlank()
+        val emailIsValid = email.isNotBlank() && "@" in email
+        val phoneIsValid = celular.isNotBlank() && celular.all { it.isDigit() }
+        val passwordsMatch = senha == confirmacao
+        val allFieldsFilled = nome.isNotBlank() && email.isNotBlank() && celular.isNotBlank() && senha.isNotBlank() && confirmacao.isNotBlank()
 
+        if (!allFieldsFilled) {
+            errors.add("Favor preencha todos os campos.")
+        } else {
+            if (!emailIsValid) {
+                errors.add("Utilize um e-mail válido.")
+            }
+            if (!phoneIsValid) {
+                errors.add("Utilize somente números no celular.")
+            }
+            if (!passwordsMatch) {
+                errors.add("Confirme a senha correta.")
+            }
+        }
+        return errors
+    }
 
     Box(modifier = Modifier.fillMaxSize()) {
-        Column(modifier = Modifier.fillMaxSize()) {
+        Column(modifier = Modifier
+            .padding(16.dp)
+            .fillMaxSize()) {
             Spacer(modifier = Modifier.height(15.dp))
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(50.dp)
-                //.background(color = Color.Cyan)
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.logo),
                     contentDescription = "Imagem do logo",
                     modifier = Modifier
-                        .size(100.dp)
-                    //.padding(2.dp)
+                        .size(150.dp)
                 )
             }
-
-            // AQUI COLOQUEI O TEXTO CADASTRE-SE //
 
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(70.dp)
-                //.background(color = Color.Cyan)
             ) {
                 Column {
                     Text(
@@ -99,84 +119,87 @@ fun CadastroScreen(viewModel: UserViewModel, navController: NavController) {
                 }
             }
 
-            // Campos de texto do formulário
-            Column(modifier = Modifier.fillMaxWidth()) {
-
+            Column(modifier = Modifier.weight(1f, fill = true)) {
                 OutlinedTextField(
                     value = nome,
-                    onValueChange = { nome = it },
+                    onValueChange = {
+                        nome = it
+                        errorMessage = validateFields()
+                    },
                     label = { TextWithIcon("Seu nome", Icons.Outlined.AccountCircle) },
                     modifier = Modifier
                         .padding(top = 10.dp)
-//                        .width(380.dp)
-//                        .height(70.dp)
                         .fillMaxWidth()
-                        .align(Alignment.CenterHorizontally)
 
                 )
                 Spacer(modifier = Modifier.height(10.dp))
                 OutlinedTextField(
-                    value = email, // valor inicial do campo
-                    onValueChange = { email = it }, // função para atualizar o valor
+                    value = email,
+                    onValueChange = {
+                        email = it
+                        errorMessage = validateFields()
+                    },
                     label = { TextWithIcon("Seu e-mail", Icons.Filled.Email) },
                     modifier = Modifier
                         .padding(top = 10.dp)
-                        .width(380.dp)
-                        .height(70.dp)
-                        .align(Alignment.CenterHorizontally)
+                        .fillMaxWidth()
                 )
                 Spacer(modifier = Modifier.height(10.dp))
                 OutlinedTextField(
-                    value = celular, // valor inicial do campo
-                    onValueChange = { celular = it }, // função para atualizar o valor
+                    value = celular,
+                    onValueChange = {
+                        celular = it
+                        errorMessage = validateFields()
+                    },
                     label = { TextWithIcon("Seu número de celular", Icons.Filled.Call) },
+                    keyboardOptions = KeyboardOptions.Default.copy(keyboardType = KeyboardType.Number),
                     modifier = Modifier
                         .padding(top = 10.dp)
-                        .width(380.dp)
-                        .height(70.dp)
-                        .align(Alignment.CenterHorizontally)
+                        .fillMaxWidth()
                 )
                 Spacer(modifier = Modifier.height(10.dp))
                 OutlinedTextField(
-                    value = senha, // valor inicial do campo
-                    onValueChange = { senha = it }, // função para atualizar o valor
+                    value = senha,
+                    onValueChange = {
+                        senha = it
+                        errorMessage = validateFields()
+                    },
                     label = { TextWithIcon("Senha numérica de 8 dígitos!", Icons.Outlined.Lock) },
                     modifier = Modifier
                         .padding(top = 10.dp)
-                        .width(380.dp)
-                        .height(70.dp)
-                        .align(Alignment.CenterHorizontally)
+                        .fillMaxWidth()
                 )
                 Spacer(modifier = Modifier.height(10.dp))
                 OutlinedTextField(
                     value = confirmacao,
-                    onValueChange = { confirmacao = it },
+                    onValueChange = {
+                        confirmacao = it
+                        errorMessage = validateFields()
+                    },
                     label = { TextWithIcon("Confirme a senha", Icons.Outlined.Lock) },
                     modifier = Modifier
                         .padding(top = 10.dp)
-                        .width(380.dp)
-                        .height(70.dp)
-                        .align(Alignment.CenterHorizontally)
+                        .fillMaxWidth()
                 )
-            }
 
-            if (showError) {
-                Text(
-                    text = "Favor preencha todos os campos.",
-                    color = Color.Red,
-                    modifier = Modifier.padding(top = 8.dp, start = 16.dp, end = 16.dp)
-                )
+                if (errorMessage.isNotEmpty()) {
+                    Column(modifier = Modifier.padding(top = 8.dp, start = 16.dp, end = 16.dp)) {
+                        errorMessage.forEach { message ->
+                            Text(
+                                text = message,
+                                color = Color.Red,
+                                modifier = Modifier.padding(bottom = 4.dp)
+                            )
+                        }
+                    }
+                }
+                Spacer(modifier = Modifier.weight(1f))
             }
-
-            Spacer(modifier = Modifier.height(90.dp))
 
             Button(
                 onClick = {
-                    val nameIsValid = nome.isNotBlank()
-                    val emailIsValid = email.isNotBlank() && "@" in email
-                    val phoneIsValid = celular.isNotBlank() && celular.all { it.isDigit() }
-
-                    if (nameIsValid && emailIsValid && phoneIsValid) {
+                    errorMessage = validateFields()
+                    if (errorMessage.isEmpty()) {
                         viewModel.addUser(
                             User(
                                 nome = nome,
@@ -185,25 +208,15 @@ fun CadastroScreen(viewModel: UserViewModel, navController: NavController) {
                             )
                         )
                         navController.navigate("categoria")
-                    } else {
-                        showError = true
                     }
                 },
                 modifier = Modifier
-                    .padding(16.dp)
-                    .width(350.dp)
+                    .padding(start = 16.dp, end = 16.dp, bottom = 60.dp)
+                    .fillMaxWidth()
                     .height(60.dp),
-                shape = RoundedCornerShape(
-                    topStart = 4.dp,
-                    topEnd = 4.dp,
-                    bottomEnd = 4.dp,
-                    bottomStart = 4.dp
-                ),
+                shape = RoundedCornerShape(4.dp),
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF34A5D8))
-            )
-
-
-            {
+            ) {
                 Text(
                     text = "Criar conta",
                     style = TextStyle(

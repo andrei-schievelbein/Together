@@ -9,11 +9,11 @@ import br.com.noke.twogether.repository.UserRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
-//class UserViewModel(private val userRepository: UserRepository) : ViewModel()
-class UserViewModel(val userRepository: UserRepository) : ViewModel() {
+
+class UserViewModel(private val userRepository: UserRepository) : ViewModel() {
     private val _users = MutableStateFlow<List<User>>(emptyList())
     val users: StateFlow<List<User>> = _users
-    var userId: String? = null
+    private var userId: String? = null
     private val _userCategories = MutableStateFlow<List<String>>(emptyList())
     val userCategories: StateFlow<List<String>> = _userCategories
 

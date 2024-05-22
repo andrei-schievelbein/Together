@@ -10,8 +10,9 @@ import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.withContext
 
-
 class UserRepository(private val db: FirebaseFirestore) {
+
+    // Cadastra Usuário no Firestore
     suspend fun addUser(user: User): Boolean = withContext(Dispatchers.IO) {
         try {
             // Transforma as categorias enum em strings antes de salvar
@@ -66,6 +67,7 @@ class UserRepository(private val db: FirebaseFirestore) {
         )
     }
 
+    // Função para obter um usuário pelo ID
     suspend fun getUserById(userId: String): User? = withContext(Dispatchers.IO) {
         try {
             val document = db.collection("users").document(userId).get().await()
@@ -75,7 +77,7 @@ class UserRepository(private val db: FirebaseFirestore) {
         }
     }
 
-
+    // Função para obter todos os usuários
     suspend fun getUsers(): Flow<List<User>> = callbackFlow {
         val listenerRegistration = db.collection("users")
             .addSnapshotListener { snapshot, e ->

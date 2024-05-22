@@ -32,7 +32,6 @@ import br.com.noke.twogether.model.Category
 import br.com.noke.twogether.screens.common.Logo
 import br.com.noke.twogether.viewmodel.UserViewModel
 
-
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun CategoriaScreen(viewModel: UserViewModel, navController: NavHostController) {
@@ -100,9 +99,8 @@ fun CategoriaScreen(viewModel: UserViewModel, navController: NavHostController) 
                     onClick = {
 
                         if (selectedCategories.value.size in 1..3) {
-                            viewModel.updateUserCategories(selectedCategories.value.toList()) { success ->
+                            viewModel.updateUserCategories(selectedCategories.value.toList()) {
                                 navController.navigate("listagem")
-                                // Aqui você pode tratar o resultado do sucesso ou falha
                             }
                         }
                     },
@@ -116,15 +114,16 @@ fun CategoriaScreen(viewModel: UserViewModel, navController: NavHostController) 
                         topStart = 4.dp, topEnd = 4.dp, bottomEnd = 4.dp, bottomStart = 4.dp
                     )
                 ) {
-                    Text(buttonText, style = TextStyle(
-                        fontSize = 20.sp, fontWeight = FontWeight.Bold
-                    ))
+                    Text(
+                        buttonText, style = TextStyle(
+                            fontSize = 20.sp, fontWeight = FontWeight.Bold
+                        )
+                    )
                 }
             }
         }
     }
 }
-
 
 @Composable
 fun CategoryButton(category: String, isSelected: Boolean, onSelectedChange: (Boolean) -> Unit) {

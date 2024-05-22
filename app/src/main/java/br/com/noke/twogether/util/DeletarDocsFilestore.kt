@@ -3,6 +3,7 @@ package br.com.noke.twogether.util
 import android.util.Log
 import com.google.firebase.firestore.FirebaseFirestore
 
+// Função para deletar todos os documentos de uma coleção
 fun deleteAllDocumentsFromCollection(collectionPath: String) {
     val db = FirebaseFirestore.getInstance()
     // Referência para a coleção

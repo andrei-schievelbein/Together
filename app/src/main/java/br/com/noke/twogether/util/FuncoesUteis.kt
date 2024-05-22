@@ -20,28 +20,34 @@ import androidx.compose.ui.unit.dp
 import br.com.noke.twogether.model.User
 import br.com.noke.twogether.viewmodel.UserViewModel
 
-@Composable //popular dados do JSON para o Firestore
-fun ExportToFirestore(modifier: Modifier = Modifier) {
+//popular dados do JSON para o Firestore
+@Composable
+fun ExportToFirestore() {
     val context = LocalContext.current
     LaunchedEffect(key1 = Unit) {
         importDataFromJson(context)
     }
 }
 
-@Composable //Deletar todos os documentos da coleção "users"
-fun DeleteAllDocuments(modifier: Modifier = Modifier) {
+//Deletar todos os documentos da coleção "users"
+@Composable
+fun DeleteAllDocuments() {
     deleteAllDocumentsFromCollection("users")
 }
 
-@Composable //lista dos os usuários do Firestore por nome e sobrenome
-fun ReadAllDocuments(viewModel: UserViewModel, modifier: Modifier = Modifier) {
+//lista dos os usuários do Firestore por nome e sobrenome
+@Composable
+fun ReadAllDocuments(viewModel: UserViewModel) {
     //Ler Nome e Sobrenome de todos os usuários do Firestore
     val users by viewModel.users.collectAsState()
     LazyColumn(modifier = Modifier.height(200.dp)) {
         items(users) { user ->
             Text(text = "User: ${user.nome} ${user.sobrenome}")
-        }}}
+        }
+    }
+}
 
+//Tela de adicionar usuário
 @Composable
 fun AddUserScreen(viewModel: UserViewModel) {
     var nome by remember { mutableStateOf("") }
