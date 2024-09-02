@@ -18,9 +18,11 @@ Ao iniciar o aplicativo, clique em "Permitir" para ativar as notificações. Cli
 
 ## 📝 Como Executar
 1. Clone o repositório para a sua máquina local.
-   ```bash
-git clone [https://github.com/andrei-schievelbein/NotificationPush.git](https://github.com/andrei-schievelbein/Together.git)
+
+```bash
+git clone https://github.com/andrei-schievelbein/Together.git
 ```
+
 3. Abra o projeto no Android Studio.
 4. Compile e execute o aplicativo em um emulador ou dispositivo físico.
 ## 📷 Screenshots
