@@ -14,7 +14,7 @@ O aplicativo **Together** permite a conexão entre mentores e aprendizes, oferec
 - **Coil:** Biblioteca de carregamento de imagens para Android.
 
 ## 📱 Uso
-Clique em "Continuar" para iniciar o cadastro. Preencha todos os dados necessários, selecione no mínimo 3 categorias de interesse para buscar mentores, dê um "Together" nos mentores preferidos e escolha com quais deles deseja manter um relacionamento de mentor/aprendiz.
+Ao iniciar o aplicativo, clique em "Permitir" para ativar as notificações. Clique em "Continuar" na tela de login para iniciar o cadastro. Preencha todos os dados necessários, selecione no mínimo 3 categorias de interesse para buscar mentores, dê um "Together" nos mentores preferidos e escolha com quais deles deseja manter um relacionamento de mentor/aprendiz.
 
 ## 📝 Como Executar
 1. Clone o repositório para a sua máquina local.
